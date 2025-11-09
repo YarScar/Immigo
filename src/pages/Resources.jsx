@@ -3,7 +3,6 @@ import '../styles/App.css'
 
 function Resources() {
   const { t } = useTranslation()
-
   const legalAidOrganizations = [
     {
       name: 'National Immigration Law Center',
@@ -72,7 +71,7 @@ function Resources() {
                 <h3>{org.name}</h3>
                 <p>{org.description}</p>
                 <a href={org.website} target="_blank" rel="noopener noreferrer" className="resource-link">
-                  Visit Website →
+                  {t('resources.visitWebsite')}
                 </a>
               </div>
             ))}
@@ -108,7 +107,7 @@ function Resources() {
       </section>
 
       <section className="disclaimer">
-        <p><strong>⚠️ Note:</strong> Resource information may change. Please verify contact information and services before reaching out.</p>
+        <p><strong>⚠️ {t('resources.noteTitle')}:</strong> {t('resources.noteContent')}</p>
       </section>
     </div>
   )

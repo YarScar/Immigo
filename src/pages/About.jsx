@@ -13,33 +13,29 @@ function About() {
 
       <section className="about-content">
         <div className="about-section">
-          <h2>Our Mission</h2>
+          <h2>{t('about.missionTitle')}</h2>
           <p>{t('about.description')}</p>
         </div>
 
         <div className="about-section">
-          <h2>What We Offer</h2>
+          <h2>{t('about.whatWeOfferTitle')}</h2>
           <ul className="features-list">
-            <li>📜 <strong>Know Your Rights:</strong> Clear, accessible information about immigrant rights in the United States.</li>
-            <li>🧭 <strong>Resource Finder:</strong> Comprehensive directory of legal aid organizations, hotlines, and community resources.</li>
-            <li>🧾 <strong>Paperwork Help:</strong> Guidance on common immigration forms and applications.</li>
-            <li>🤖 <strong>AI Assistant:</strong> Get answers to your immigration questions using our AI-powered chatbot.</li>
-            <li>🗣️ <strong>Multilingual Support:</strong> Access information in multiple languages for better accessibility.</li>
+            <li>📜 <strong>{t('about.features.rightsLabel')}:</strong> {t('home.features.rights.description')}</li>
+            <li>🧭 <strong>{t('about.features.resourceFinderLabel')}:</strong> {t('resources.subtitle')}</li>
+            <li>🧾 <strong>{t('about.features.paperworkHelpLabel')}:</strong> {t('help.description')}</li>
+            <li>🤖 <strong>{t('about.features.aiAssistantLabel')}:</strong> {t('home.features.chatbot.description')}</li>
+            <li>🗣️ <strong>{t('about.features.multilingualSupportLabel')}:</strong> {t('about.subtitle')}</li>
           </ul>
         </div>
 
         <div className="about-section">
-          <h2>Disclaimer</h2>
-          <p>
-            Immigo is an informational resource and does not provide legal advice. The information on this website is for educational purposes only and should not be used as a substitute for professional legal counsel. Immigration laws are complex and can change frequently. For specific legal matters, please consult with a qualified immigration attorney.
-          </p>
+          <h2>{t('about.disclaimerTitle')}</h2>
+          <p>{t('about.disclaimerText')}</p>
         </div>
 
         <div className="about-section">
-          <h2>Contact</h2>
-          <p>
-            If you have questions or suggestions about Immigo, please reach out through our chatbot or contact your local immigration legal services organization.
-          </p>
+          <h2>{t('about.contactTitle')}</h2>
+          <p>{t('about.contactText')}</p>
         </div>
       </section>
     </div>

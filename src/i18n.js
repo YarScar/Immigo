@@ -52,6 +52,8 @@ const resources = {
           title: 'Right to Documentation',
           content: 'You have the right to carry identification, but you do not have to show it unless you are being lawfully detained or arrested.'
         }
+        ,
+        disclaimer: 'This information is for educational purposes only and does not constitute legal advice. Please consult with a qualified immigration attorney for specific legal matters.'
       },
       resources: {
         title: 'Resources',
@@ -68,23 +70,63 @@ const resources = {
           title: 'Community Organizations',
           description: 'Local organizations that provide support and resources.'
         }
+        ,
+        visitWebsite: 'Visit Website →',
+        noteTitle: 'Note',
+        noteContent: 'Resource information may change. Please verify contact information and services before reaching out.'
       },
+      
       help: {
         title: 'Paperwork Help',
         subtitle: 'Guidance on Common Immigration Forms',
-        description: 'Get help understanding and filling out common immigration forms and applications.'
+        description: 'Get help understanding and filling out common immigration forms and applications.',
+        commonFormsTitle: 'Common Immigration Forms',
+        viewFormLabel: 'View Form →',
+        tipsTitle: 'Tips for Filling Out Forms',
+  tips: {
+          tip1: 'Read all instructions carefully before filling out the form.',
+          tip2: 'Use black ink and print clearly or type your answers.',
+          tip3: 'Answer all questions truthfully and completely.',
+          tip4: 'Keep copies of all forms and supporting documents.',
+          tip5: 'Consider consulting with an immigration attorney if you have questions.',
+          tip6: 'Double-check all information before submitting.'
+        },
+        chatbotSectionTitle: 'Need Help? Ask Our AI Assistant',
+        chatbotSectionDescription: 'Use our AI chatbot (available in the bottom right corner) to get answers to questions about immigration forms and procedures.'
+      ,
+        disclaimerText: 'This information is for guidance only. Immigration forms and requirements can change. Always check the official USCIS website for the most current information and consider consulting with an immigration attorney for legal advice.'
       },
       about: {
         title: 'About Immigo',
         subtitle: 'Empowering Immigrants with Information',
-        description: 'Immigo is dedicated to helping immigrants understand their rights and access resources, regardless of language or documentation status.'
+        description: 'Immigo is dedicated to helping immigrants understand their rights and access resources, regardless of language or documentation status.',
+        missionTitle: 'Our Mission',
+        whatWeOfferTitle: 'What We Offer',
+        features: {
+          rightsLabel: 'Know Your Rights',
+          resourceFinderLabel: 'Resource Finder',
+          paperworkHelpLabel: 'Paperwork Help',
+          aiAssistantLabel: 'AI Assistant',
+          multilingualSupportLabel: 'Multilingual Support'
+        },
+        disclaimerTitle: 'Disclaimer',
+        contactTitle: 'Contact'
+        ,
+        disclaimerText: 'Immigo is an informational resource and does not provide legal advice. The information on this website is for educational purposes only and should not be used as a substitute for professional legal counsel.',
+        contactText: 'If you have questions or suggestions about Immigo, please reach out through our chatbot or contact your local immigration legal services organization.'
       },
       chatbot: {
         title: 'AI Assistant',
         placeholder: 'Ask a question about immigration...',
         send: 'Send',
         thinking: 'Thinking...',
-        error: 'Sorry, an error occurred. Please try again.'
+        error: 'Sorry, an error occurred. Please try again.',
+        apiKeyMissing: '⚠️ Please set VITE_OPENAI_API_KEY in your .env file to use the chatbot.',
+        welcomeGreeting: '👋 AI Assistant',
+        welcomePrompt: 'Ask me anything about immigration rights, laws, or resources!',
+        toggleAria: 'Toggle chatbot',
+        closeAria: 'Close chatbot',
+        systemPrompt: 'You are a helpful assistant that provides information about immigration rights, laws, and resources in the United States. Provide accurate, helpful, and supportive information. Always remind users that you are not a substitute for legal advice and they should consult with an immigration attorney for specific legal matters.'
       },
       footer: {
         description: 'Empowering immigrants with knowledge and resources.',
@@ -140,6 +182,8 @@ const resources = {
           title: 'Derecho a Documentación',
           content: 'Tienes derecho a portar identificación, pero no tienes que mostrarla a menos que seas detenido o arrestado legalmente.'
         }
+        ,
+        disclaimer: 'Esta información es solo para fines educativos y no constituye asesoramiento legal. Consulte con un abogado de inmigración calificado para asuntos legales específicos.'
       },
       resources: {
         title: 'Recursos',
@@ -156,23 +200,60 @@ const resources = {
           title: 'Organizaciones Comunitarias',
           description: 'Organizaciones locales que brindan apoyo y recursos.'
         }
+        ,
+        visitWebsite: 'Visitar Sitio →',
+        noteTitle: 'Nota',
+        noteContent: 'La información de los recursos puede cambiar. Verifique la información de contacto y los servicios antes de comunicarse.'
       },
       help: {
         title: 'Ayuda con Documentos',
         subtitle: 'Guía sobre Formularios de Inmigración Comunes',
-        description: 'Obtén ayuda para entender y completar formularios y solicitudes de inmigración comunes.'
+        description: 'Obtén ayuda para entender y completar formularios y solicitudes de inmigración comunes.',
+        commonFormsTitle: 'Formularios Comunes de Inmigración',
+        viewFormLabel: 'Ver Formulario →',
+        tipsTitle: 'Consejos para Completar Formularios',
+        tips: {
+          tip1: 'Lee todas las instrucciones cuidadosamente antes de completar el formulario.',
+          tip2: 'Usa tinta negra y escribe claramente o escribe tus respuestas.',
+          tip3: 'Responde todas las preguntas con verdad y completamente.',
+          tip4: 'Conserva copias de todos los formularios y documentos de respaldo.',
+          tip5: 'Considera consultar con un abogado de inmigración si tienes preguntas.',
+          tip6: 'Verifica toda la información antes de enviar.'
+        },
+        chatbotSectionTitle: '¿Necesitas ayuda? Pregunta a nuestro asistente IA',
+        chatbotSectionDescription: 'Usa nuestro chatbot de IA (disponible en la esquina inferior derecha) para obtener respuestas sobre formularios y procedimientos de inmigración.',
+        disclaimerText: 'Esta información es solo una guía. Los formularios y requisitos de inmigración pueden cambiar. Consulte siempre el sitio oficial de USCIS para la información más actual y considere consultar con un abogado de inmigración.'
       },
       about: {
         title: 'Acerca de Immigo',
         subtitle: 'Empoderando Inmigrantes con Información',
-        description: 'Immigo está dedicado a ayudar a inmigrantes a entender sus derechos y acceder a recursos, sin importar el idioma o el estado de documentación.'
+        description: 'Immigo está dedicado a ayudar a inmigrantes a entender sus derechos y acceder a recursos, sin importar el idioma o el estado de documentación.',
+        missionTitle: 'Nuestra Misión',
+        whatWeOfferTitle: 'Lo Que Ofrecemos',
+        features: {
+          rightsLabel: 'Conoce Tus Derechos',
+          resourceFinderLabel: 'Buscador de Recursos',
+          paperworkHelpLabel: 'Ayuda con Documentos',
+          aiAssistantLabel: 'Asistente IA',
+          multilingualSupportLabel: 'Soporte Multilingüe'
+        },
+        disclaimerTitle: 'Aviso Legal',
+        contactTitle: 'Contacto',
+        disclaimerText: 'Immigo es un recurso informativo y no proporciona asesoramiento legal. La información en este sitio web es solo para fines educativos y no debe utilizarse como sustituto del asesoramiento legal profesional.',
+        contactText: 'Si tiene preguntas o sugerencias sobre Immigo, comuníquese a través de nuestro chatbot o contacte a la organización local de servicios legales de inmigración.'
       },
       chatbot: {
         title: 'Asistente IA',
         placeholder: 'Haz una pregunta sobre inmigración...',
         send: 'Enviar',
         thinking: 'Pensando...',
-        error: 'Lo siento, ocurrió un error. Por favor intenta de nuevo.'
+        error: 'Lo siento, ocurrió un error. Por favor intenta de nuevo.',
+        apiKeyMissing: '⚠️ Por favor establezca VITE_OPENAI_API_KEY en su archivo .env para usar el chatbot.',
+        welcomeGreeting: '👋 Asistente IA',
+        welcomePrompt: '¡Pregúntame cualquier cosa sobre derechos, leyes o recursos de inmigración!',
+        toggleAria: 'Alternar chatbot',
+        closeAria: 'Cerrar chatbot',
+        systemPrompt: 'Eres un asistente útil que proporciona información sobre derechos, leyes y recursos de inmigración. Proporciona información precisa, útil y solidaria. Recuerda siempre a los usuarios que no eres un sustituto del asesoramiento legal y que deben consultar con un abogado de inmigración para asuntos legales específicos.'
       },
       footer: {
         description: 'Empoderando inmigrantes con conocimiento y recursos.',
@@ -211,26 +292,65 @@ const resources = {
       },
       rights: {
         title: 'Connaissez Vos Droits',
-        subtitle: 'Comprendre Vos Droits en tant qu\'Immigrant'
+        subtitle: 'Comprendre Vos Droits en tant qu\'Immigrant',
+        disclaimer: 'Ces informations sont fournies à titre éducatif et ne constituent pas un avis juridique. Veuillez consulter un avocat spécialisé en immigration pour des questions juridiques spécifiques.'
       },
       resources: {
         title: 'Ressources',
         subtitle: 'Aide Juridique et Ressources Communautaires'
+      ,
+        visitWebsite: 'Visiter le Site →',
+        noteTitle: 'Remarque',
+        noteContent: 'Les informations sur les ressources peuvent changer. Veuillez vérifier les coordonnées et les services avant de contacter.'
       },
       help: {
         title: 'Aide aux Documents',
-        subtitle: 'Guide sur les Formulaires d\'Immigration Courants'
+        subtitle: 'Guide sur les Formulaires d\'Immigration Courants',
+        description: 'Obtenez de l\'aide pour comprendre et remplir les formulaires et demandes d\'immigration courants.',
+        commonFormsTitle: 'Formulaires d\'Immigration Courants',
+        viewFormLabel: 'Voir le Formulaire →',
+        tipsTitle: 'Conseils pour Remplir les Formulaires',
+        tips: {
+          tip1: 'Lisez toutes les instructions attentivement avant de remplir le formulaire.',
+          tip2: 'Utilisez de l\'encre noire et écrivez clairement ou tapez vos réponses.',
+          tip3: 'Répondez à toutes les questions honnêtement et complètement.',
+          tip4: 'Conservez des copies de tous les formulaires et des documents justificatifs.',
+          tip5: 'Envisagez de consulter un avocat spécialisé en immigration si vous avez des questions.',
+          tip6: 'Vérifiez toutes les informations avant de soumettre.'
+        },
+  chatbotSectionTitle: 'Besoin d\'aide ? Demandez à notre Assistant IA',
+  chatbotSectionDescription: 'Utilisez notre chatbot IA (disponible dans le coin inférieur droit) pour obtenir des réponses sur les formulaires et procédures d\'immigration.',
+  disclaimerText: 'Ces informations sont fournies à titre indicatif. Les formulaires et exigences d\'immigration peuvent changer. Consultez toujours le site officiel de l\'USCIS pour les informations les plus récentes et envisagez de consulter un avocat spécialisé en immigration.'
       },
       about: {
         title: 'À Propos d\'Immigo',
-        subtitle: 'Autonomiser les Immigrants avec des Informations'
+        subtitle: 'Autonomiser les Immigrants avec des Informations',
+        missionTitle: 'Notre Mission',
+        whatWeOfferTitle: 'Ce Que Nous Offrons',
+        features: {
+          rightsLabel: 'Connaissez Vos Droits',
+          resourceFinderLabel: 'Recherche de Ressources',
+          paperworkHelpLabel: 'Aide aux Documents',
+          aiAssistantLabel: 'Assistant IA',
+          multilingualSupportLabel: 'Support Multilingue'
+        },
+  disclaimerTitle: 'Avertissement',
+  contactTitle: 'Contact',
+  disclaimerText: 'Immigo est une ressource d\'information et ne fournit pas de conseils juridiques. Les informations sur ce site sont à titre éducatif et ne remplacent pas un avis juridique professionnel.',
+  contactText: 'Si vous avez des questions ou des suggestions concernant Immigo, veuillez nous contacter via notre chatbot ou contacter une organisation locale de services juridiques en immigration.'
       },
       chatbot: {
         title: 'Assistant IA',
         placeholder: 'Posez une question sur l\'immigration...',
         send: 'Envoyer',
         thinking: 'Réflexion...',
-        error: 'Désolé, une erreur s\'est produite. Veuillez réessayer.'
+        error: 'Désolé, une erreur s\'est produite. Veuillez réessayer.',
+        apiKeyMissing: '⚠️ Veuillez définir VITE_OPENAI_API_KEY dans votre fichier .env pour utiliser le chatbot.',
+        welcomeGreeting: '👋 Assistant IA',
+        welcomePrompt: 'Posez-moi n\'importe quelle question sur les droits, lois ou ressources d\'immigration!',
+        toggleAria: 'Basculer le chatbot',
+        closeAria: 'Fermer le chatbot',
+        systemPrompt: 'Vous êtes un assistant utile qui fournit des informations sur les droits, les lois et les ressources en matière d\'immigration. Fournissez des informations précises, utiles et solidaires. Rappelez toujours aux utilisateurs que vous ne remplacez pas un avis juridique et qu\'ils doivent consulter un avocat spécialisé en immigration pour des questions juridiques spécifiques.'
       },
       footer: {
         description: 'Autonomiser les immigrants avec des connaissances et des ressources.',
@@ -303,23 +423,62 @@ const resources = {
           title: 'المنظمات المجتمعية',
           description: 'المنظمات المحلية التي تقدم الدعم والموارد.'
         }
+        ,
+        visitWebsite: 'زيارة الموقع →',
+        noteTitle: 'ملاحظة',
+        noteContent: 'قد تتغير معلومات الموارد. يرجى التحقق من معلومات الاتصال والخدمات قبل التواصل.'
       },
       help: {
         title: 'مساعدة بالأوراق',
         subtitle: 'إرشادات حول نماذج الهجرة الشائعة',
         description: 'احصل على مساعدة لفهم وملء نماذج وطلبات الهجرة الشائعة.'
+        ,
+        commonFormsTitle: 'النماذج الشائعة للهجرة',
+        viewFormLabel: 'عرض النموذج →',
+        tipsTitle: 'نصائح لملء النماذج',
+        tips: {
+          tip1: 'اقرأ جميع التعليمات بعناية قبل ملء النموذج.',
+          tip2: 'استخدم حبرًا أسود واكتب بوضوح أو اكتب إجاباتك.',
+          tip3: 'أجب عن جميع الأسئلة بصدق وبشكل كامل.',
+          tip4: 'احتفظ بنسخ من جميع النماذج والمستندات الداعمة.',
+          tip5: 'فكر في استشارة محامٍ متخصص في الهجرة إذا كانت لديك أسئلة.',
+          tip6: 'تحقق من جميع المعلومات قبل الإرسال.'
+        },
+        chatbotSectionTitle: 'هل تحتاج مساعدة؟ اسأل مساعدنا الذكي',
+        chatbotSectionDescription: 'استخدم روبوت المحادثة الذكي (متوفر في الزاوية السفلية اليمنى) للحصول على إجابات حول النماذج وإجراءات الهجرة.',
+        disclaimerText: 'هذه المعلومات لأغراض إرشادية فقط. قد تتغير نماذج ومتطلبات الهجرة. راجع دائمًا موقع USCIS الرسمي للحصول على أحدث المعلومات وفكر في استشارة محامٍ متخصص في الهجرة.'
       },
       about: {
         title: 'حول Immigo',
         subtitle: 'تمكين المهاجرين بالمعلومات',
         description: 'تلتزم Immigo بمساعدة المهاجرين على فهم حقوقهم والوصول إلى الموارد، بغض النظر عن اللغة أو حالة الوثائق.'
+        ,
+        missionTitle: 'مهمتنا',
+        whatWeOfferTitle: 'ما الذي نقدمه',
+        features: {
+          rightsLabel: 'اعرف حقوقك',
+          resourceFinderLabel: 'أداة البحث عن الموارد',
+          paperworkHelpLabel: 'مساعدة بالأوراق',
+          aiAssistantLabel: 'المساعد الذكي',
+          multilingualSupportLabel: 'دعم متعدد اللغات'
+        },
+        disclaimerTitle: 'إخلاء المسؤولية',
+        contactTitle: 'اتصل',
+        disclaimerText: 'Immigo مورد معلوماتي ولا يقدم نصائح قانونية. المعلومات على هذا الموقع لأغراض تعليمية فقط ولا تحل محل المشورة القانونية المهنية.',
+        contactText: 'إذا كانت لديك أسئلة أو اقتراحات حول Immigo، يرجى التواصل عبر روبوت المحادثة الخاص بنا أو الاتصال بمنظمة الخدمات القانونية المحلية المختصة بالهجرة.'
       },
       chatbot: {
         title: 'المساعد الذكي',
         placeholder: 'اسأل سؤالًا عن الهجرة...',
         send: 'إرسال',
         thinking: 'جاري التفكير...',
-        error: 'عذرًا، حدث خطأ. يرجى المحاولة مرة أخرى.'
+        error: 'عذرًا، حدث خطأ. يرجى المحاولة مرة أخرى.',
+        apiKeyMissing: '⚠️ يرجى تعيين VITE_OPENAI_API_KEY في ملف .env الخاص بك لاستخدام روبوت المحادثة.',
+        welcomeGreeting: '👋 المساعد الذكي',
+        welcomePrompt: 'اطرح عليَّ أي سؤال عن حقوق الهجرة أو القوانين أو الموارد!',
+        toggleAria: 'تبديل روبوت المحادثة',
+        closeAria: 'إغلاق روبوت المحادثة',
+        systemPrompt: 'أنت مساعد مفيد يقدم معلومات حول حقوق الهجرة والقوانين والموارد. قدّم معلومات دقيقة ومفيدة وداعمة. ذكر المستخدمين دائمًا بأنك لست بديلاً عن الاستشارة القانونية وأنه يجب عليهم استشارة محامٍ في شؤون الهجرة للمسائل القانونية المحددة.'
       },
       footer: {
         description: 'تمكين المهاجرين بالمعرفة والموارد.',

@@ -32,7 +32,7 @@ function Chatbot() {
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful assistant that provides information about immigration rights, laws, and resources in the United States. Provide accurate, helpful, and supportive information. Always remind users that you are not a substitute for legal advice and they should consult with an immigration attorney for specific legal matters.'
+            content: t('chatbot.systemPrompt')
           },
           ...newMessages
         ],
@@ -67,7 +67,7 @@ function Chatbot() {
   if (!apiKey) {
     return (
       <div className="chatbot-warning">
-        <p>⚠️ Please set VITE_OPENAI_API_KEY in your .env file to use the chatbot.</p>
+        <p>{t('chatbot.apiKeyMissing')}</p>
       </div>
     )
   }
@@ -77,7 +77,7 @@ function Chatbot() {
       <button
         className="chatbot-toggle"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle chatbot"
+        aria-label={t('chatbot.toggleAria')}
       >
         🤖 {t('chatbot.title')}
       </button>
@@ -88,7 +88,7 @@ function Chatbot() {
             <button
               className="chatbot-close"
               onClick={() => setIsOpen(false)}
-              aria-label="Close chatbot"
+              aria-label={t('chatbot.closeAria')}
             >
               ×
             </button>
@@ -96,8 +96,8 @@ function Chatbot() {
           <div className="chatbot-messages">
             {messages.length === 0 && (
               <div className="chatbot-welcome">
-                <p>👋 {t('chatbot.title')}</p>
-                <p>Ask me anything about immigration rights, laws, or resources!</p>
+                <p>{t('chatbot.welcomeGreeting')}</p>
+                <p>{t('chatbot.welcomePrompt')}</p>
               </div>
             )}
             {messages.map((msg, idx) => (

@@ -34,7 +34,7 @@ function Rights() {
       </section>
 
       <section className="disclaimer">
-        <p><strong>⚠️ Disclaimer:</strong> This information is for educational purposes only and does not constitute legal advice. Please consult with a qualified immigration attorney for specific legal matters.</p>
+        <p><strong>⚠️ {t('about.disclaimerTitle')}:</strong> {t('rights.disclaimer')}</p>
       </section>
     </div>
   )
