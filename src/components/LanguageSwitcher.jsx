@@ -7,7 +7,8 @@ function LanguageSwitcher() {
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
     { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'fr', name: 'Français', flag: '🇫🇷' }
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'ar', name: 'العربية', flag: '🇸🇦' }
   ]
 
   const changeLanguage = (lng) => {
@@ -17,7 +18,7 @@ function LanguageSwitcher() {
   return (
     <div className="language-switcher">
       <select
-        value={i18n.language}
+        value={i18n.language ? i18n.language.split('-')[0] : 'en'}
         onChange={(e) => changeLanguage(e.target.value)}
         className="language-select"
       >
