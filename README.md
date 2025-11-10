@@ -30,7 +30,7 @@ This app empowers users to:
 | **Language Support** | i18next |
 | **AI Assistant** | OpenAI API |
 | **Version Control** | Git & GitHub |
-| **Environment Variables** | `.env` file with `VITE_OPENAI_API_KEY` |
+| **Environment Variables** | `.env` file with `VITE_GEMINI_API_KEY` |
 
 ---
 
@@ -65,7 +65,7 @@ Immigo/
 │ ├── main.jsx # Entry file for React + Vite
 │ └── i18n.js # Language configuration
 │
-├── .env # Contains your API key (VITE_OPENAI_API_KEY)
+├── .env # Contains your API key (VITE_GEMINI_API_KEY)
 ├── .gitignore
 ├── index.html
 ├── package.json
@@ -98,7 +98,7 @@ Immigo/
    - Create a `.env` file in the root directory
    - Add your OpenAI API key:
      ```
-     VITE_OPENAI_API_KEY=your_openai_api_key_here
+     VITE_GEMINI_API_KEY=your_openai_api_key_here
      ```
 
 4. **Start the development server**:

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import OpenAI from 'openai'
+import ReactMarkdown from 'react-markdown'
 import '../styles/Chatbot.css'
 
 function Chatbot() {
@@ -10,7 +10,7 @@ function Chatbot() {
   const [isLoading, setIsLoading] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
-  const apiKey = import.meta.env.VITE_OPENAI_API_KEY
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY
 
   const handleSend = async () => {
     if (!input.trim() || !apiKey) return
@@ -22,28 +22,35 @@ function Chatbot() {
     setIsLoading(true)
 
     try {
-      const openai = new OpenAI({
-        apiKey: apiKey,
-        dangerouslyAllowBrowser: true
-      })
+      const model = 'gemini-2.5-flash'
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            systemInstruction: {
+              parts: [{ text: t('chatbot.systemPrompt') }]
+            },
+            contents: newMessages.map(m => ({
+              role: m.role === 'assistant' ? 'model' : 'user',
+              parts: [{ text: m.content }]
+            })),
+            generationConfig: { temperature: 0.7 }
+          })
+        }
+      )
 
-      const response = await openai.chat.completions.create({
-        model: 'gpt-4o-mini',
-        messages: [
-          {
-            role: 'system',
-            content: t('chatbot.systemPrompt')
-          },
-          ...newMessages
-        ],
-        temperature: 0.7
-      })
+      const data = await response.json()
+      if (!response.ok) throw new Error(data.error?.message || 'Gemini request failed')
 
-      const assistantMessage = {
-        role: 'assistant',
-        content: response.choices[0].message.content
-      }
+      const assistantText =
+        data.candidates?.[0]?.content?.parts
+          ?.map(p => p.text)
+          .join(' ')
+          .trim() || t('chatbot.error')
 
+      const assistantMessage = { role: 'assistant', content: assistantText }
       setMessages([...newMessages, assistantMessage])
     } catch (error) {
       console.error('Error:', error)
@@ -105,7 +112,7 @@ function Chatbot() {
                 key={idx}
                 className={`chatbot-message ${msg.role === 'user' ? 'user' : 'assistant'}`}
               >
-                <p>{msg.content}</p>
+                <ReactMarkdown>{msg.content}</ReactMarkdown>
               </div>
             ))}
             {isLoading && (
