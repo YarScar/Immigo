@@ -485,6 +485,136 @@ const resources = {
         rights: 'جميع الحقوق محفوظة.'
       }
     }
+  },
+  zh: {
+    translation: {
+      nav: {
+        home: '首页',
+        rights: '权利',
+        resources: '资源',
+        help: '帮助',
+        about: '关于'
+      },
+      home: {
+        title: '欢迎来到 Immigo',
+        subtitle: '您移民权利和资源的指南',
+        description: '通过了解自己的权利、法律信息和社区资源来赋予移民权力。',
+        getStarted: '开始',
+        features: {
+          rights: {
+            title: '了解你的权利',
+            description: '了解作为有文件或无文件移民的权利。'
+          },
+          resources: {
+            title: '查找资源',
+            description: '访问您所在地区可靠的法律和社区资源。'
+          },
+          chatbot: {
+            title: 'AI 助手',
+            description: '通过我们的 AI 聊天机器人获取有关移民问题的答案。'
+          }
+        }
+      },
+      rights: {
+        title: '你的权利',
+        subtitle: '了解你作为移民的权利',
+        section1: {
+          title: '保持沉默的权利',
+          content: '你有权保持沉默，不回答有关你移民身份的问题。你可以说“我希望保持沉默”或“我想咨询律师”。'
+        },
+        section2: {
+          title: '律师权利',
+          content: '在回答任何问题之前，你有权与律师交谈。如果你负担不起律师费，你可能有资格获得免费的法律援助。'
+        },
+        section3: {
+          title: '拒绝搜查的权利',
+          content: '在没有搜查令的情况下，除非发生紧急情况或你自愿同意，否则你有权拒绝对你的住所或物品进行搜查。'
+        },
+        section4: {
+          title: '文件权利',
+          content: '你有权携带身份证明，但除非在合法拘留或逮捕的情况下，否则你没有义务出示。'
+        }
+        ,
+        disclaimer: '这些信息仅用于教育目的，并不构成法律建议。有关具体法律事务，请咨询合格的移民律师。'
+      },
+      resources: {
+        title: '资源',
+        subtitle: '法律援助和社区资源',
+        legalAid: {
+          title: '法律援助组织',
+          description: '在您所在地区寻找免费或低成本的法律援助。'
+        },
+        hotlines: {
+          title: '紧急热线',
+          description: '24/7 热线提供即时援助和支持。'
+        },
+        community: {
+          title: '社区组织',
+          description: '提供支持和资源的地方组织。'
+        }
+        ,
+        visitWebsite: '访问网站 →',
+        noteTitle: '注意',
+        noteContent: '资源信息可能会更改。请在联系之前验证联系信息和服务。'
+      },
+      
+      help: {
+        title: '表格帮助',
+        subtitle: '关于常见移民表格的指导',
+        description: '获取有关理解和填写常见移民表格和申请的帮助。',
+        commonFormsTitle: '常见移民表格',
+        viewFormLabel: '查看表格 →',
+        tipsTitle: '填写表格的提示',
+  tips: {
+          tip1: '在填写表格之前，请仔细阅读所有说明。',
+          tip2: '使用黑色墨水，清晰打印或输入您的答案。',
+          tip3: '如实完整地回答所有问题。',
+          tip4: '保留所有表格和支持文件的副本。',
+          tip5: '如果您有疑问，请考虑咨询移民律师。',
+          tip6: '在提交之前仔细检查所有信息。'
+        },
+        chatbotSectionTitle: '需要帮助吗？问我们的 AI 助手',
+        chatbotSectionDescription: '使用我们的 AI 聊天机器人（在右下角可用）获取有关移民表格和程序的问题的答案。'
+      ,
+        disclaimerText: '这些信息仅供参考。移民表格和要求可能会更改。请始终查看 USCIS 官方网站以获取最新信息，并考虑咨询移民律师以获取法律建议。'
+      },
+      about: {
+        title: '关于 Immigo',
+        subtitle: '通过信息赋能移民',
+        description: 'Immigo 致力于帮助移民了解他们的权利并获取资源，无论语言或文件状态如何。',
+        missionTitle: '我们的使命',
+        whatWeOfferTitle: '我们提供什么',
+        features: {
+          rightsLabel: '了解你的权利',
+          resourceFinderLabel: '资源查找器',
+          paperworkHelpLabel: '表格帮助',
+          aiAssistantLabel: 'AI 助手',
+          multilingualSupportLabel: '多语言支持'
+        },
+        disclaimerTitle: '免责声明',
+        contactTitle: '联系'
+        ,
+        disclaimerText: 'Immigo 是一个信息资源，不提供法律建议。 本网站上的信息仅用于教育目的，不应作为专业法律顾问的替代品。',
+        contactText: '如果您对 Immigo 有任何疑问或建议，请通过我们的聊天机器人与我们联系，或联系您当地的移民法律服务机构。'
+      },
+      chatbot: {
+        title: 'AI 助手',
+        placeholder: '输入你的移民问题...',
+        send: '发送',
+        thinking: '思考中...',
+        error: '抱歉，发生错误。 请再试一次。',
+        apiKeyMissing: '⚠️ 请在您的 .env 文件中设置 VITE_GEMINI_API_KEY 以使用聊天机器人。',
+        welcomeGreeting: '👋 AI 助手',
+        welcomePrompt: '询问我有关移民权利、法律或资源的任何问题！',
+        toggleAria: '切换聊天机器人',
+        closeAria: '关闭聊天机器人',
+        systemPrompt: '您是一个提供有关美国移民权利、法律和资源的信息的有用助手。 提供准确、有帮助和支持性的信息。 始终提醒用户您不是法律建议的替代品，他们应咨询移民律师以获取具体法律事务的建议。'
+      },
+      footer: {
+        description: '通过知识和资源赋能移民。',
+        rights: '保留所有权利。'
+      }
+    }
   }
 };
 
@@ -492,7 +622,13 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources,
+    resources: {
+      en: resources.en,
+      es: resources.es,
+      fr: resources.fr,
+      ar: resources.ar,
+      zh: resources.zh, // add zh into your existing resources object
+    },
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false
