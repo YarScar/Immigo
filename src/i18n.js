@@ -615,6 +615,135 @@ const resources = {
         rights: '保留所有权利。'
       }
     }
+  },
+  ja: {
+    translation: {
+      nav: {
+        home: 'ホーム',
+        rights: '権利',
+        resources: 'リソース',
+        help: 'ヘルプ',
+        about: '私たちについて'
+      },
+      home: {
+        title: 'ようこそ Immigo へ',
+        subtitle: '移民の権利とリソースへのガイド',
+        description: '移民が自分の権利、法律情報、コミュニティリソースについての知識を得ることで、力を与えます。',
+        getStarted: '始める',
+        features: {
+          rights: {
+            title: 'あなたの権利を知る',
+            description: '書類のある移民または書類のない移民としての権利について学びます。'
+          },
+          resources: {
+            title: 'リソースを見つける',
+            description: '地域の信頼できる法律およびコミュニティリソースにアクセスします。'
+          },
+          chatbot: {
+            title: 'AI アシスタント',
+            description: 'AI チャットボットを使って移民に関する質問に答えます。'
+          }
+        }
+      },
+      rights: {
+        title: 'あなたの権利',
+        subtitle: '移民としての権利を理解する',
+        section1: {
+          title: '沈黙する権利',
+          content: '移民ステータスに関する質問に答えず、沈黙を保つ権利があります。「沈黙を保ちたい」または「弁護士と話したい」と言うことができます。'
+        },
+        section2: {
+          title: '弁護士を求める権利',
+          content: '質問に答える前に弁護士と話す権利があります。弁護士を雇う余裕がない場合は、無料の法的支援を受ける資格があるかもしれません。'
+        },
+        section3: {
+          title: '捜索を拒否する権利',
+          content: '緊急事態がない限り、または同意しない限り、令状なしに自宅や所持品の捜索を拒否する権利があります。'
+        },
+        section4: {
+          title: '文書の権利',
+          content: '身分証明書を携帯する権利がありますが、法的に拘束または逮捕されている場合を除いて、提示する必要はありません。'
+        }
+        ,
+        disclaimer: 'この情報は教育目的のみであり、法的助言を構成するものではありません。具体的な法的事項については、資格のある移民弁護士に相談してください。'
+      },
+      resources: {
+        title: 'リソース',
+        subtitle: '法的支援とコミュニティリソース',
+        legalAid: {
+          title: '法的支援団体',
+          description: '地域で無料または低料金の法的支援を見つけます。'
+        },
+        hotlines: {
+          title: '緊急ホットライン',
+          description: '24 時間年中無休のホットラインで、即時の支援とサポートを提供します。'
+        },
+        community: {
+          title: 'コミュニティ組織',
+          description: 'サポートとリソースを提供する地域の組織。'
+        }
+        ,
+        visitWebsite: 'ウェブサイトを訪問 →',
+        noteTitle: '注意',
+        noteContent: 'リソース情報は変更される可能性があります。連絡先情報とサービスを確認してからお問い合わせください。'
+      },
+      
+      help: {
+        title: '書類の手伝い',
+        subtitle: '一般的な移民フォームに関するガイダンス',
+        description: '一般的な移民フォームや申請書の理解と記入を手伝います。',
+        commonFormsTitle: '一般的な移民フォーム',
+        viewFormLabel: 'フォームを見る →',
+        tipsTitle: 'フォーム記入のヒント',
+  tips: {
+          tip1: 'フォームに記入する前に、すべての指示を注意深くお読みください。',
+          tip2: '黒インクを使用し、回答を明確に印刷または入力してください。',
+          tip3: 'すべての質問に対して真実かつ完全に回答してください。',
+          tip4: 'すべてのフォームとサポート文書のコピーを保管してください。',
+          tip5: '質問がある場合は、移民弁護士に相談することを検討してください。',
+          tip6: '提出する前にすべての情報を再確認してください。'
+        },
+        chatbotSectionTitle: 'ヘルプが必要ですか？ AI アシスタントに聞いてみてください',
+        chatbotSectionDescription: '右下隅にある AI チャットボットを使用して、移民フォームや手続きに関する質問に対する回答を取得します。'
+      ,
+        disclaimerText: 'この情報はあくまでガイドです。移民フォームや要件は変更される可能性があります。最新の情報については、必ず USCIS の公式ウェブサイトを確認し、法的助言については移民弁護士に相談してください。'
+      },
+      about: {
+        title: 'Immigo について',
+        subtitle: '情報を通じて移民に力を与える',
+        description: 'Immigo は、言語や書類の状況に関係なく、移民が権利を理解し、リソースにアクセスできるよう支援することに専念しています。',
+        missionTitle: '私たちの使命',
+        whatWeOfferTitle: '私たちが提供するもの',
+        features: {
+          rightsLabel: 'あなたの権利を知る',
+          resourceFinderLabel: 'リソース検索',
+          paperworkHelpLabel: '書類の手伝い',
+          aiAssistantLabel: 'AI アシスタント',
+          multilingualSupportLabel: '多言語サポート'
+        },
+        disclaimerTitle: '免責事項',
+        contactTitle: 'お問い合わせ',
+        disclaimerText: 'Immigo は情報リソースであり、法的助言を提供するものではありません。このウェブサイトの情報は教育目的のみであり、専門の法的助言の代わりに使用されるべきではありません。',
+        contactText: 'Immigo に関する質問や提案がある場合は、チャットボットを通じてお問い合わせいただくか、地元の移民法律サービス機関にお問い合わせください。'
+      },
+      chatbot: {
+        title: 'AI アシスタント',
+        placeholder: '移民に関する質問を入力してください...',
+        send: '送信',
+        thinking: '考えています...',
+        error: '申し訳ありませんが、エラーが発生しました。再試行してください。',
+        apiKeyMissing: '⚠️ チャットボットを使用するには、.env ファイルに VITE_GEMINI_API_KEY を設定してください。',
+        welcomeGreeting: '👋 AI アシスタント',
+        welcomePrompt: '移民の権利、法律、またはリソースに関する質問を何でも聞いてください！',
+        toggleAria: 'チャットボットを切り替える',
+        closeAria: 'チャットボットを閉じる',
+        systemPrompt: 'あなたは、米国の移民権、法律、およびリソースに関する情報を提供する有益なアシスタントです。 正確で役立つサポート情報を提供してください。 ユーザーに対して、あなたが法的助言の代わりではなく、特定の法的事項について移民弁護士に相談する必要があることを常に思い出させてください。'
+      },
+      footer: {
+        description: '移民に知識とリソースを提供する。',
+        rights: 'すべての権利を保留します。'
+      }
+    }
   }
 };
 
@@ -628,6 +757,7 @@ i18n
       fr: resources.fr,
       ar: resources.ar,
       zh: resources.zh, // add zh into your existing resources object
+      ja: resources.ja
     },
     fallbackLng: 'en',
     interpolation: {
