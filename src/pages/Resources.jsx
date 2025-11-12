@@ -2,7 +2,24 @@ import { useTranslation } from 'react-i18next'
 import '../styles/App.css'
 
 function Resources() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  // Language -> playlist ID (extracted from your provided links)
+  const playlistMap = {
+    en: 'PLtv4Zwto6R31UTw5ymlLzQEQaQu4vDPSI', // English
+    es: 'PLtv4Zwto6R33EQeWboaCqDK0m03CFP4Zz', // Spanish
+    ar: 'PLtv4Zwto6R31YQyGOEUL1XFDydJRm9jA4', // Arabic
+    fr: 'PLtv4Zwto6R30xYio3yDfqWgdtSPSXWxx6', // French
+    zh: 'PLtv4Zwto6R328Cyqm4_FuzfgSQJ7sTh5i'  // Mandarin
+    // ja: no playlist yet -> fallback to English
+  }
+
+  const rawLang = (i18n.language || 'en').toLowerCase()
+  const lang = rawLang.startsWith('zh') ? 'zh' : rawLang.split('-')[0]
+  const playlistId = playlistMap[lang] || playlistMap.en
+  const hl = lang === 'zh' ? 'zh-CN' : lang
+  const embedUrl = `https://www.youtube.com/embed/videoseries?list=${playlistId}&rel=0&modestbranding=1&hl=${encodeURIComponent(hl)}`
+
   const legalAidOrganizations = [
     {
       name: 'National Immigration Law Center',
@@ -103,6 +120,40 @@ function Resources() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="resources-section">
+          <h2>🎥 {t('resources.videoPlaylistTitle')}</h2>
+          <p style={{ marginBottom: '1rem' }}>{t('resources.videoPlaylistIntro')}</p>
+
+          <div
+            style={{
+              background: '#0d1117',
+              border: '1px solid #1f2937',
+              borderRadius: 12,
+              padding: '12px',
+              maxWidth: 900,
+              margin: '0 auto 1rem'
+            }}
+          >
+            <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%' }}>
+              <iframe
+                key={playlistId}
+                src={embedUrl}
+                title="Resources playlist"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+              />
+            </div>
+          </div>
+
+          {!playlistMap[lang] && (
+            <p style={{ textAlign: 'center', color: '#c9d1d9', fontSize: '.9rem' }}>
+              {t('resources.playlistComingSoon')}
+            </p>
+          )}
         </div>
       </section>
 
