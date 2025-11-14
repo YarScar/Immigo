@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-// Translation resources
+// Clean, consistent translation resources
 const resources = {
   en: {
     translation: {
@@ -51,13 +51,13 @@ const resources = {
         section4: {
           title: 'Right to Documentation',
           content: 'You have the right to carry identification, but you do not have to show it unless you are being lawfully detained or arrested.'
-        }
-        ,
+        },
         disclaimer: 'This information is for educational purposes only and does not constitute legal advice. Please consult with a qualified immigration attorney for specific legal matters.'
       },
       resources: {
         title: 'Resources',
         subtitle: 'Legal Aid & Community Resources',
+        videoResourcesTitle: 'Video Resources',
         legalAid: {
           title: 'Legal Aid Organizations',
           description: 'Find free or low-cost legal assistance in your area.'
@@ -69,13 +69,12 @@ const resources = {
         community: {
           title: 'Community Organizations',
           description: 'Local organizations that provide support and resources.'
-        }
-        ,
+        },
         visitWebsite: 'Visit Website →',
+        playlistComingSoon: 'Playlist coming soon in your language. Showing English for now.',
         noteTitle: 'Note',
         noteContent: 'Resource information may change. Please verify contact information and services before reaching out.'
       },
-      
       help: {
         title: 'Paperwork Help',
         subtitle: 'Guidance on Common Immigration Forms',
@@ -83,7 +82,7 @@ const resources = {
         commonFormsTitle: 'Common Immigration Forms',
         viewFormLabel: 'View Form →',
         tipsTitle: 'Tips for Filling Out Forms',
-  tips: {
+        tips: {
           tip1: 'Read all instructions carefully before filling out the form.',
           tip2: 'Use black ink and print clearly or type your answers.',
           tip3: 'Answer all questions truthfully and completely.',
@@ -92,8 +91,7 @@ const resources = {
           tip6: 'Double-check all information before submitting.'
         },
         chatbotSectionTitle: 'Need Help? Ask Our AI Assistant',
-        chatbotSectionDescription: 'Use our AI chatbot (available in the bottom right corner) to get answers to questions about immigration forms and procedures.'
-      ,
+        chatbotSectionDescription: 'Use our AI chatbot (available in the bottom right corner) to get answers to questions about immigration forms and procedures.',
         disclaimerText: 'This information is for guidance only. Immigration forms and requirements can change. Always check the official USCIS website for the most current information and consider consulting with an immigration attorney for legal advice.'
       },
       about: {
@@ -110,8 +108,7 @@ const resources = {
           multilingualSupportLabel: 'Multilingual Support'
         },
         disclaimerTitle: 'Disclaimer',
-        contactTitle: 'Contact'
-        ,
+        contactTitle: 'Contact',
         disclaimerText: 'Immigo is an informational resource and does not provide legal advice. The information on this website is for educational purposes only and should not be used as a substitute for professional legal counsel.',
         contactText: 'If you have questions or suggestions about Immigo, please reach out through our chatbot or contact your local immigration legal services organization.'
       },
@@ -181,13 +178,13 @@ const resources = {
         section4: {
           title: 'Derecho a Documentación',
           content: 'Tienes derecho a portar identificación, pero no tienes que mostrarla a menos que seas detenido o arrestado legalmente.'
-        }
-        ,
+        },
         disclaimer: 'Esta información es solo para fines educativos y no constituye asesoramiento legal. Consulte con un abogado de inmigración calificado para asuntos legales específicos.'
       },
       resources: {
         title: 'Recursos',
         subtitle: 'Asistencia Legal y Recursos Comunitarios',
+        videoResourcesTitle: 'Recursos en Video',
         legalAid: {
           title: 'Organizaciones de Asistencia Legal',
           description: 'Encuentra asistencia legal gratuita o de bajo costo en tu área.'
@@ -199,9 +196,9 @@ const resources = {
         community: {
           title: 'Organizaciones Comunitarias',
           description: 'Organizaciones locales que brindan apoyo y recursos.'
-        }
-        ,
+        },
         visitWebsite: 'Visitar Sitio →',
+        playlistComingSoon: 'La lista de reproducción estará disponible pronto en tu idioma. Mostrando inglés por ahora.',
         noteTitle: 'Nota',
         noteContent: 'La información de los recursos puede cambiar. Verifique la información de contacto y los servicios antes de comunicarse.'
       },
@@ -250,7 +247,7 @@ const resources = {
         error: 'Lo siento, ocurrió un error. Por favor intenta de nuevo.',
         apiKeyMissing: '⚠️ Por favor establezca VITE_GEMINI_API_KEY en su archivo .env para usar el chatbot.',
         welcomeGreeting: '👋 Asistente IA',
-        welcomePrompt: '¡Pregúntame cualquier cosa sobre derechos, leyes o recursos de inmigración!',
+        welcomePrompt: '¡Pregúntame cualquier cosa sobre derechos, leyes o recursos de inmigración! ',
         toggleAria: 'Alternar chatbot',
         closeAria: 'Cerrar chatbot',
         systemPrompt: 'Eres un asistente útil que proporciona información sobre derechos, leyes y recursos de inmigración. Proporciona información precisa, útil y solidaria. Recuerda siempre a los usuarios que no eres un sustituto del asesoramiento legal y que deben consultar con un abogado de inmigración para asuntos legales específicos.'
@@ -297,9 +294,22 @@ const resources = {
       },
       resources: {
         title: 'Ressources',
-        subtitle: 'Aide Juridique et Ressources Communautaires'
-      ,
+        subtitle: 'Aide Juridique et Ressources Communautaires',
+        videoResourcesTitle: 'Ressources vidéo',
+        legalAid: {
+          title: 'Organisations d\'aide juridique',
+          description: 'Trouvez une aide juridique gratuite ou à faible coût dans votre région.'
+        },
+        hotlines: {
+          title: 'Lignes d\'urgence',
+          description: 'Lignes directes 24/7 pour une assistance immédiate.'
+        },
+        community: {
+          title: 'Organisations communautaires',
+          description: 'Organisations locales qui fournissent soutien et ressources.'
+        },
         visitWebsite: 'Visiter le Site →',
+        playlistComingSoon: 'La liste de lecture sera bientôt disponible dans votre langue. Affichage en anglais pour l’instant.',
         noteTitle: 'Remarque',
         noteContent: 'Les informations sur les ressources peuvent changer. Veuillez vérifier les coordonnées et les services avant de contacter.'
       },
@@ -318,9 +328,9 @@ const resources = {
           tip5: 'Envisagez de consulter un avocat spécialisé en immigration si vous avez des questions.',
           tip6: 'Vérifiez toutes les informations avant de soumettre.'
         },
-  chatbotSectionTitle: 'Besoin d\'aide ? Demandez à notre Assistant IA',
-  chatbotSectionDescription: 'Utilisez notre chatbot IA (disponible dans le coin inférieur droit) pour obtenir des réponses sur les formulaires et procédures d\'immigration.',
-  disclaimerText: 'Ces informations sont fournies à titre indicatif. Les formulaires et exigences d\'immigration peuvent changer. Consultez toujours le site officiel de l\'USCIS pour les informations les plus récentes et envisagez de consulter un avocat spécialisé en immigration.'
+        chatbotSectionTitle: 'Besoin d\'aide ? Demandez à notre Assistant IA',
+        chatbotSectionDescription: 'Utilisez notre chatbot IA (disponible dans le coin inférieur droit) pour obtenir des réponses sur les formulaires et procédures d\'immigration.',
+        disclaimerText: 'Ces informations sont fournies à titre indicatif. Les formulaires et exigences d\'immigration peuvent changer. Consultez toujours le site officiel de l\'USCIS pour les informations les plus récentes et envisagez de consulter un avocat spécialisé en immigration.'
       },
       about: {
         title: 'À Propos d\'Immigo',
@@ -334,10 +344,10 @@ const resources = {
           aiAssistantLabel: 'Assistant IA',
           multilingualSupportLabel: 'Support Multilingue'
         },
-  disclaimerTitle: 'Avertissement',
-  contactTitle: 'Contact',
-  disclaimerText: 'Immigo est une ressource d\'information et ne fournit pas de conseils juridiques. Les informations sur ce site sont à titre éducatif et ne remplacent pas un avis juridique professionnel.',
-  contactText: 'Si vous avez des questions ou des suggestions concernant Immigo, veuillez nous contacter via notre chatbot ou contacter une organisation locale de services juridiques en immigration.'
+        disclaimerTitle: 'Avertissement',
+        contactTitle: 'Contact',
+        disclaimerText: 'Immigo est une ressource d\'information et ne fournit pas de conseils juridiques. Les informations sur ce site sont à titre éducatif et ne remplacent pas un avis juridique professionnel.',
+        contactText: 'Si vous avez des questions ou des suggestions concernant Immigo, veuillez nous contacter via notre chatbot ou contacter une organisation locale de services juridiques en immigration.'
       },
       chatbot: {
         title: 'Assistant IA',
@@ -357,8 +367,7 @@ const resources = {
         rights: 'Tous droits réservés.'
       }
     }
-  }
-  ,
+  },
   ar: {
     translation: {
       nav: {
@@ -411,6 +420,7 @@ const resources = {
       resources: {
         title: 'الموارد',
         subtitle: 'المساعدة القانونية والموارد المجتمعية',
+        videoResourcesTitle: 'موارد فيديو',
         legalAid: {
           title: 'منظمات المساعدة القانونية',
           description: 'ابحث عن مساعدة قانونية مجانية أو منخفضة التكلفة في منطقتك.'
@@ -422,17 +432,16 @@ const resources = {
         community: {
           title: 'المنظمات المجتمعية',
           description: 'المنظمات المحلية التي تقدم الدعم والموارد.'
-        }
-        ,
+        },
         visitWebsite: 'زيارة الموقع →',
+        playlistComingSoon: 'ستتوفر قائمة التشغيل قريبًا بلغتك. يتم عرض الإنجليزية الآن.',
         noteTitle: 'ملاحظة',
         noteContent: 'قد تتغير معلومات الموارد. يرجى التحقق من معلومات الاتصال والخدمات قبل التواصل.'
       },
       help: {
         title: 'مساعدة بالأوراق',
         subtitle: 'إرشادات حول نماذج الهجرة الشائعة',
-        description: 'احصل على مساعدة لفهم وملء نماذج وطلبات الهجرة الشائعة.'
-        ,
+        description: 'احصل على مساعدة لفهم وملء نماذج وطلبات الهجرة الشائعة.',
         commonFormsTitle: 'النماذج الشائعة للهجرة',
         viewFormLabel: 'عرض النموذج →',
         tipsTitle: 'نصائح لملء النماذج',
@@ -451,8 +460,7 @@ const resources = {
       about: {
         title: 'حول Immigo',
         subtitle: 'تمكين المهاجرين بالمعلومات',
-        description: 'تلتزم Immigo بمساعدة المهاجرين على فهم حقوقهم والوصول إلى الموارد، بغض النظر عن اللغة أو حالة الوثائق.'
-        ,
+        description: 'تلتزم Immigo بمساعدة المهاجرين على فهم حقوقهم والوصول إلى الموارد، بغض النظر عن اللغة أو حالة الوثائق.',
         missionTitle: 'مهمتنا',
         whatWeOfferTitle: 'ما الذي نقدمه',
         features: {
@@ -497,49 +505,49 @@ const resources = {
       },
       home: {
         title: '欢迎来到 Immigo',
-        subtitle: '您移民权利和资源的指南',
-        description: '通过了解自己的权利、法律信息和社区资源来赋予移民权力。',
-        getStarted: '开始',
+        subtitle: '您的移民权利与资源指南',
+        description: '通过权利知识、法律信息与社区资源赋能移民。',
+        getStarted: '开始使用',
         features: {
           rights: {
-            title: '了解你的权利',
-            description: '了解作为有文件或无文件移民的权利。'
+            title: '了解您的权利',
+            description: '了解作为有证或无证移民的权利。'
           },
           resources: {
             title: '查找资源',
-            description: '访问您所在地区可靠的法律和社区资源。'
+            description: '访问您所在地区可靠的法律与社区资源。'
           },
           chatbot: {
-            title: 'AI 助手',
-            description: '通过我们的 AI 聊天机器人获取有关移民问题的答案。'
+            title: '智能助手',
+            description: '使用我们的智能聊天机器人获取移民问题解答。'
           }
         }
       },
       rights: {
-        title: '你的权利',
-        subtitle: '了解你作为移民的权利',
+        title: '了解您的权利',
+        subtitle: '作为移民，了解您的权利',
         section1: {
           title: '保持沉默的权利',
-          content: '你有权保持沉默，不回答有关你移民身份的问题。你可以说“我希望保持沉默”或“我想咨询律师”。'
+          content: '您有权保持沉默，不回答有关移民身份的问题。您可以说“我希望保持沉默”或“我想与律师谈话”。'
         },
         section2: {
-          title: '律师权利',
-          content: '在回答任何问题之前，你有权与律师交谈。如果你负担不起律师费，你可能有资格获得免费的法律援助。'
+          title: '律师权',
+          content: '您有权在回答任何问题前与律师交谈。若无力支付，您可能符合免费法律援助的资格。'
         },
         section3: {
           title: '拒绝搜查的权利',
-          content: '在没有搜查令的情况下，除非发生紧急情况或你自愿同意，否则你有权拒绝对你的住所或物品进行搜查。'
+          content: '没有搜查令，您有权拒绝对您住所或物品的搜查，紧急情况或您同意除外。'
         },
         section4: {
-          title: '文件权利',
-          content: '你有权携带身份证明，但除非在合法拘留或逮捕的情况下，否则你没有义务出示。'
-        }
-        ,
-        disclaimer: '这些信息仅用于教育目的，并不构成法律建议。有关具体法律事务，请咨询合格的移民律师。'
+          title: '证件权',
+          content: '您有权携带身份证件，但除非被合法盘查或逮捕，否则无需出示。'
+        },
+        disclaimer: '此信息仅用于教育用途，不构成法律建议。具体法律问题请咨询合格的移民律师。'
       },
       resources: {
         title: '资源',
         subtitle: '法律援助和社区资源',
+        videoResourcesTitle: '视频资源',
         legalAid: {
           title: '法律援助组织',
           description: '在您所在地区寻找免费或低成本的法律援助。'
@@ -551,64 +559,61 @@ const resources = {
         community: {
           title: '社区组织',
           description: '提供支持和资源的地方组织。'
-        }
-        ,
+        },
         visitWebsite: '访问网站 →',
+        playlistComingSoon: '你所选语言的视频列表即将上线。当前显示英文列表。',
         noteTitle: '注意',
         noteContent: '资源信息可能会更改。请在联系之前验证联系信息和服务。'
       },
-      
       help: {
-        title: '表格帮助',
-        subtitle: '关于常见移民表格的指导',
-        description: '获取有关理解和填写常见移民表格和申请的帮助。',
+        title: '文书协助',
+        subtitle: '常见移民表格指引',
+        description: '帮助您理解并填写常见的移民表格与申请。',
         commonFormsTitle: '常见移民表格',
         viewFormLabel: '查看表格 →',
-        tipsTitle: '填写表格的提示',
-  tips: {
-          tip1: '在填写表格之前，请仔细阅读所有说明。',
-          tip2: '使用黑色墨水，清晰打印或输入您的答案。',
-          tip3: '如实完整地回答所有问题。',
-          tip4: '保留所有表格和支持文件的副本。',
-          tip5: '如果您有疑问，请考虑咨询移民律师。',
-          tip6: '在提交之前仔细检查所有信息。'
+        tipsTitle: '填表提示',
+        tips: {
+          tip1: '填写前请仔细阅读全部说明。',
+          tip2: '使用黑色墨水，工整书写或打印。',
+          tip3: '如实、完整地回答所有问题。',
+          tip4: '保存所有表格及支持文件的副本。',
+          tip5: '如有疑问，考虑咨询移民律师。',
+          tip6: '提交前请再次核对所有信息。'
         },
-        chatbotSectionTitle: '需要帮助吗？问我们的 AI 助手',
-        chatbotSectionDescription: '使用我们的 AI 聊天机器人（在右下角可用）获取有关移民表格和程序的问题的答案。'
-      ,
-        disclaimerText: '这些信息仅供参考。移民表格和要求可能会更改。请始终查看 USCIS 官方网站以获取最新信息，并考虑咨询移民律师以获取法律建议。'
+        chatbotSectionTitle: '需要帮助？询问我们的智能助手',
+        chatbotSectionDescription: '使用我们的智能聊天机器人（右下角可用）获取关于移民表格与流程的解答。',
+        disclaimerText: '本信息仅作指引。移民表格与要求可能变化。请始终查阅 USCIS 官方网站的最新信息，并考虑咨询移民律师以获取法律建议。'
       },
       about: {
         title: '关于 Immigo',
-        subtitle: '通过信息赋能移民',
-        description: 'Immigo 致力于帮助移民了解他们的权利并获取资源，无论语言或文件状态如何。',
+        subtitle: '用信息赋能移民',
+        description: 'Immigo 致力于帮助移民了解权利并获取资源，无论语言或证件状态。',
         missionTitle: '我们的使命',
-        whatWeOfferTitle: '我们提供什么',
+        whatWeOfferTitle: '我们提供',
         features: {
-          rightsLabel: '了解你的权利',
-          resourceFinderLabel: '资源查找器',
-          paperworkHelpLabel: '表格帮助',
-          aiAssistantLabel: 'AI 助手',
+          rightsLabel: '了解您的权利',
+          resourceFinderLabel: '资源查找',
+          paperworkHelpLabel: '文书协助',
+          aiAssistantLabel: '智能助手',
           multilingualSupportLabel: '多语言支持'
         },
         disclaimerTitle: '免责声明',
-        contactTitle: '联系'
-        ,
-        disclaimerText: 'Immigo 是一个信息资源，不提供法律建议。 本网站上的信息仅用于教育目的，不应作为专业法律顾问的替代品。',
-        contactText: '如果您对 Immigo 有任何疑问或建议，请通过我们的聊天机器人与我们联系，或联系您当地的移民法律服务机构。'
+        contactTitle: '联系方式',
+        disclaimerText: 'Immigo 为信息资源，不提供法律建议。本站信息仅供教育用途，不能替代专业法律意见。',
+        contactText: '如对 Immigo 有问题或建议，请通过聊天机器人联系我们，或联系当地移民法律服务机构。'
       },
       chatbot: {
-        title: 'AI 助手',
-        placeholder: '输入你的移民问题...',
+        title: '智能助手',
+        placeholder: '询问移民相关问题…',
         send: '发送',
-        thinking: '思考中...',
-        error: '抱歉，发生错误。 请再试一次。',
-        apiKeyMissing: '⚠️ 请在您的 .env 文件中设置 VITE_GEMINI_API_KEY 以使用聊天机器人。',
-        welcomeGreeting: '👋 AI 助手',
-        welcomePrompt: '询问我有关移民权利、法律或资源的任何问题！',
+        thinking: '思考中…',
+        error: '抱歉，发生错误。请重试。',
+        apiKeyMissing: '⚠️ 请在 .env 中设置 VITE_GEMINI_API_KEY 以使用聊天机器人。',
+        welcomeGreeting: '👋 智能助手',
+        welcomePrompt: '欢迎就移民权利、法律或资源提问！',
         toggleAria: '切换聊天机器人',
         closeAria: '关闭聊天机器人',
-        systemPrompt: '您是一个提供有关美国移民权利、法律和资源的信息的有用助手。 提供准确、有帮助和支持性的信息。 始终提醒用户您不是法律建议的替代品，他们应咨询移民律师以获取具体法律事务的建议。'
+        systemPrompt: '你是一个有帮助的助手，提供美国移民权利、法律与资源的信息。请提供准确、有用且富有同理心的内容。始终提醒用户你不提供法律建议，具体问题应咨询移民律师。'
       },
       footer: {
         description: '通过知识和资源赋能移民。',
@@ -616,132 +621,130 @@ const resources = {
       }
     }
   },
-  ja: {
+  ht: {
     translation: {
       nav: {
-        home: 'ホーム',
-        rights: '権利',
-        resources: 'リソース',
-        help: 'ヘルプ',
-        about: '私たちについて'
+        home: 'Akèy',
+        rights: 'Konnen Dwa Ou',
+        resources: 'Resous',
+        help: 'Èd Papye',
+        about: 'Konsènan'
       },
       home: {
-        title: 'ようこそ Immigo へ',
-        subtitle: '移民の権利とリソースへのガイド',
-        description: '移民が自分の権利、法律情報、コミュニティリソースについての知識を得ることで、力を与えます。',
-        getStarted: '始める',
+        title: 'Byenveni nan Immigo',
+        subtitle: 'Gid ou pou Dwa ak Resous Imigran yo',
+        description: 'Ap bay imigran konesans sou dwa yo, enfòmasyon legal, ak resous kominotè.',
+        getStarted: 'Kòmanse',
         features: {
           rights: {
-            title: 'あなたの権利を知る',
-            description: '書類のある移民または書類のない移民としての権利について学びます。'
+            title: 'Konnen Dwa Ou',
+            description: 'Aprann sou dwa ou kòm imigran, si w gen papye oswa si w pa gen papye.'
           },
           resources: {
-            title: 'リソースを見つける',
-            description: '地域の信頼できる法律およびコミュニティリソースにアクセスします。'
+            title: 'Chèche Resous',
+            description: 'Aksede resous legal ak kominotè serye nan zòn ou.'
           },
           chatbot: {
-            title: 'AI アシスタント',
-            description: 'AI チャットボットを使って移民に関する質問に答えます。'
+            title: 'Asistan IA',
+            description: 'Jwenn repons pou kesyon sou imigrasyon ak chatbot nou an.'
           }
         }
       },
       rights: {
-        title: 'あなたの権利',
-        subtitle: '移民としての権利を理解する',
+        title: 'Konnen Dwa Ou',
+        subtitle: 'Konprann Dwa Ou kòm Imigran',
         section1: {
-          title: '沈黙する権利',
-          content: '移民ステータスに関する質問に答えず、沈黙を保つ権利があります。「沈黙を保ちたい」または「弁護士と話したい」と言うことができます。'
+          title: 'Dwa pou Rete an Silans',
+          content: 'Ou gen dwa rete an silans epi pa reponn kesyon sou estati imigrasyon ou. Ou ka di "Mwen vle rete an silans" oswa "Mwen vle pale ak yon avoka."'
         },
         section2: {
-          title: '弁護士を求める権利',
-          content: '質問に答える前に弁護士と話す権利があります。弁護士を雇う余裕がない場合は、無料の法的支援を受ける資格があるかもしれません。'
+          title: 'Dwa pou Pale ak yon Avoka',
+          content: 'Ou gen dwa pale ak yon avoka anvan ou reponn nenpòt kesyon. Si ou pa ka peye, ou ka kalifye pou jwenn asistans legal gratis.'
         },
         section3: {
-          title: '捜索を拒否する権利',
-          content: '緊急事態がない限り、または同意しない限り、令状なしに自宅や所持品の捜索を拒否する権利があります。'
+          title: 'Dwa pou Refize Fouy',
+          content: 'Ou gen dwa refize yo fouye kay ou oswa afè ou san manda, sòf si gen ijans oswa ou bay konsantman.'
         },
         section4: {
-          title: '文書の権利',
-          content: '身分証明書を携帯する権利がありますが、法的に拘束または逮捕されている場合を除いて、提示する必要はありません。'
-        }
-        ,
-        disclaimer: 'この情報は教育目的のみであり、法的助言を構成するものではありません。具体的な法的事項については、資格のある移民弁護士に相談してください。'
+          title: 'Dwa Dokiman',
+          content: 'Ou gen dwa pote idantite, men ou pa oblije montre li sòf si yo arete w oswa yo kenbe w legalman.'
+        },
+        disclaimer: 'Enfòmasyon sa yo se pou edikasyon sèlman; yo pa konsèy legal. Tanpri konsilte yon avoka imigrasyon kalifye pou kesyon espesifik legal.'
       },
       resources: {
-        title: 'リソース',
-        subtitle: '法的支援とコミュニティリソース',
+        title: 'Resous',
+        subtitle: 'Èd Legal ak Resous Kominotè',
+        videoResourcesTitle: 'Resous an Videyo',
         legalAid: {
-          title: '法的支援団体',
-          description: '地域で無料または低料金の法的支援を見つけます。'
+          title: 'Òganizasyon Èd Legal',
+          description: 'Jwenn èd legal gratis oswa a ti pri nan zòn ou.'
         },
         hotlines: {
-          title: '緊急ホットライン',
-          description: '24 時間年中無休のホットラインで、即時の支援とサポートを提供します。'
+          title: 'Liy Ijans',
+          description: 'Liy dirèk 24/7 pou asistans imedya ak sipò.'
         },
         community: {
-          title: 'コミュニティ組織',
-          description: 'サポートとリソースを提供する地域の組織。'
-        }
-        ,
-        visitWebsite: 'ウェブサイトを訪問 →',
-        noteTitle: '注意',
-        noteContent: 'リソース情報は変更される可能性があります。連絡先情報とサービスを確認してからお問い合わせください。'
-      },
-      
-      help: {
-        title: '書類の手伝い',
-        subtitle: '一般的な移民フォームに関するガイダンス',
-        description: '一般的な移民フォームや申請書の理解と記入を手伝います。',
-        commonFormsTitle: '一般的な移民フォーム',
-        viewFormLabel: 'フォームを見る →',
-        tipsTitle: 'フォーム記入のヒント',
-  tips: {
-          tip1: 'フォームに記入する前に、すべての指示を注意深くお読みください。',
-          tip2: '黒インクを使用し、回答を明確に印刷または入力してください。',
-          tip3: 'すべての質問に対して真実かつ完全に回答してください。',
-          tip4: 'すべてのフォームとサポート文書のコピーを保管してください。',
-          tip5: '質問がある場合は、移民弁護士に相談することを検討してください。',
-          tip6: '提出する前にすべての情報を再確認してください。'
+          title: 'Òganizasyon Kominotè',
+          description: 'Òganizasyon lokal ki bay sipò ak resous.'
         },
-        chatbotSectionTitle: 'ヘルプが必要ですか？ AI アシスタントに聞いてみてください',
-        chatbotSectionDescription: '右下隅にある AI チャットボットを使用して、移民フォームや手続きに関する質問に対する回答を取得します。'
-      ,
-        disclaimerText: 'この情報はあくまでガイドです。移民フォームや要件は変更される可能性があります。最新の情報については、必ず USCIS の公式ウェブサイトを確認し、法的助言については移民弁護士に相談してください。'
+        visitWebsite: 'Vizite Sit la →',
+        playlistComingSoon: 'Lis videyo a ap vini byento nan lang ou. Pou kounye a n ap montre vèsyon angle a.',
+        noteTitle: 'Nòt',
+        noteContent: 'Enfòmasyon sou resous yo ka chanje. Tanpri verifye enfòmasyon kontak ak sèvis yo avan ou rele.'
+      },
+      help: {
+        title: 'Èd Papye',
+        subtitle: 'Gid sou Fòm Imigrasyon Komen',
+        description: 'Jwenn èd pou konprann ak ranpli fòm ak aplikasyon imigrasyon ki pi komen yo.',
+        commonFormsTitle: 'Fòm Imigrasyon Komen',
+        viewFormLabel: 'Gade Fòm nan →',
+        tipsTitle: 'Konsèy pou Ranpli Fòm yo',
+        tips: {
+          tip1: 'Li tout enstriksyon yo ak anpil atansyon anvan ou ranpli fòm nan.',
+          tip2: 'Sèvi ak lank nwa epi ekri klè oswa tape repons ou yo.',
+          tip3: 'Reponn tout kesyon yo onètman epi konplètman.',
+          tip4: 'Kenbe kopi tout fòm yo ak dokiman sipò yo.',
+          tip5: 'Konsidere konsilte yon avoka imigrasyon si ou gen kesyon.',
+          tip6: 'Revize tout enfòmasyon anvan ou voye fòm nan.'
+        },
+        chatbotSectionTitle: 'Bezwen èd? Poze Asistan IA nou an',
+        chatbotSectionDescription: 'Itilize chatbot IA nou an (nan kwen anba adwat) pou jwenn repons sou fòm ak pwosedi imigrasyon.',
+        disclaimerText: 'Enfòmasyon sa yo se pou gid sèlman. Fòm ak egzijans imigrasyon ka chanje. Toujou tcheke sit ofisyèl USCIS la pou enfòmasyon ki pi resan epi konsidere konsilte yon avoka imigrasyon pou konsèy legal.'
       },
       about: {
-        title: 'Immigo について',
-        subtitle: '情報を通じて移民に力を与える',
-        description: 'Immigo は、言語や書類の状況に関係なく、移民が権利を理解し、リソースにアクセスできるよう支援することに専念しています。',
-        missionTitle: '私たちの使命',
-        whatWeOfferTitle: '私たちが提供するもの',
+        title: 'Konsènan Immigo',
+        subtitle: 'Bay Imigran Pouvwa atravè Enfòmasyon',
+        description: 'Immigo angaje pou ede imigran yo konprann dwa yo epi jwenn resous, kèlkeswa lang oswa estati dokiman.',
+        missionTitle: 'Misyon Nou',
+        whatWeOfferTitle: 'Sa Nou Ofri',
         features: {
-          rightsLabel: 'あなたの権利を知る',
-          resourceFinderLabel: 'リソース検索',
-          paperworkHelpLabel: '書類の手伝い',
-          aiAssistantLabel: 'AI アシスタント',
-          multilingualSupportLabel: '多言語サポート'
+          rightsLabel: 'Konnen Dwa Ou',
+          resourceFinderLabel: 'Rechèch Resous',
+          paperworkHelpLabel: 'Èd Papye',
+          aiAssistantLabel: 'Asistan IA',
+          multilingualSupportLabel: 'Sipò Plizyelang'
         },
-        disclaimerTitle: '免責事項',
-        contactTitle: 'お問い合わせ',
-        disclaimerText: 'Immigo は情報リソースであり、法的助言を提供するものではありません。このウェブサイトの情報は教育目的のみであり、専門の法的助言の代わりに使用されるべきではありません。',
-        contactText: 'Immigo に関する質問や提案がある場合は、チャットボットを通じてお問い合わせいただくか、地元の移民法律サービス機関にお問い合わせください。'
+        disclaimerTitle: 'Avi Legal',
+        contactTitle: 'Kontak',
+        disclaimerText: 'Immigo se yon resous enfòmasyon; li pa bay konsèy legal. Enfòmasyon sou sit sa a la se pou edikasyon sèlman e li pa ranplase konsèy legal pwofesyonèl.',
+        contactText: 'Si ou gen kesyon oswa sijesyon sou Immigo, tanpri kontakte nou atravè chatbot la oswa kontakte yon òganizasyon sèvis legal imigrasyon nan zòn ou.'
       },
       chatbot: {
-        title: 'AI アシスタント',
-        placeholder: '移民に関する質問を入力してください...',
-        send: '送信',
-        thinking: '考えています...',
-        error: '申し訳ありませんが、エラーが発生しました。再試行してください。',
-        apiKeyMissing: '⚠️ チャットボットを使用するには、.env ファイルに VITE_GEMINI_API_KEY を設定してください。',
-        welcomeGreeting: '👋 AI アシスタント',
-        welcomePrompt: '移民の権利、法律、またはリソースに関する質問を何でも聞いてください！',
-        toggleAria: 'チャットボットを切り替える',
-        closeAria: 'チャットボットを閉じる',
-        systemPrompt: 'あなたは、米国の移民権、法律、およびリソースに関する情報を提供する有益なアシスタントです。 正確で役立つサポート情報を提供してください。 ユーザーに対して、あなたが法的助言の代わりではなく、特定の法的事項について移民弁護士に相談する必要があることを常に思い出させてください。'
+        title: 'Asistan IA',
+        placeholder: 'Poze yon kesyon sou imigrasyon...',
+        send: 'Voye',
+        thinking: 'Ap panse...',
+        error: 'Padon, gen yon erè. Tanpri eseye ankò.',
+        apiKeyMissing: '⚠️ Tanpri mete VITE_GEMINI_API_KEY nan fichye .env ou pou w sèvi ak chatbot la.',
+        welcomeGreeting: '👋 Asistan IA',
+        welcomePrompt: 'Poze m nenpòt kesyon sou dwa, lwa, oswa resous imigrasyon!',
+        toggleAria: 'Chanje chatbot la',
+        closeAria: 'Fèmen chatbot la',
+        systemPrompt: 'Ou se yon asistan itil ki bay enfòmasyon sou dwa, lwa, ak resous imigrasyon Ozetazini. Bay enfòmasyon ki egzak, itil, ak solidè. Toujou raple itilizatè yo sa pa se konsèy legal epi yo ta dwe konsilte yon avoka imigrasyon pou kesyon espesifik.'
       },
       footer: {
-        description: '移民に知識とリソースを提供する。',
-        rights: 'すべての権利を保留します。'
+        description: 'Ap bay imigran konesans ak resous.',
+        rights: 'Tout dwa rezève.'
       }
     }
   }
@@ -751,18 +754,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources: {
-      en: resources.en,
-      es: resources.es,
-      fr: resources.fr,
-      ar: resources.ar,
-      zh: resources.zh, // add zh into your existing resources object
-      ja: resources.ja
-    },
+    resources,
     fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false
-    }
+    interpolation: { escapeValue: false }
   });
 
 export default i18n;

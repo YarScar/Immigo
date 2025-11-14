@@ -123,8 +123,7 @@ function Resources() {
         </div>
 
         <div className="resources-section">
-          <h2>🎥 {t('resources.videoPlaylistTitle')}</h2>
-          <p style={{ marginBottom: '1rem' }}>{t('resources.videoPlaylistIntro')}</p>
+          <h2>🎥 {t('resources.videoResourcesTitle')}</h2>
 
           <div
             style={{

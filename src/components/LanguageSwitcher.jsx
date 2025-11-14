@@ -14,7 +14,7 @@ function LanguageSwitcher() {
     { code: 'fr', name: 'Français', country: 'fr' },
     { code: 'ar', name: 'العربية', country: 'sa' },
     { code: 'zh', name: '中文', country: 'cn' },
-    { code: 'ja', name: '日本語', country: 'jp' }
+    { code: 'ht', name: 'Kreyòl Ayisyen', country: 'ht' }
   ]
 
   const flagUrl = (cc) => `https://flagcdn.com/w20/${cc}.png`
