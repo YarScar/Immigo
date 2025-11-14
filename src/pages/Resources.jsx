@@ -4,14 +4,13 @@ import '../styles/App.css'
 function Resources() {
   const { t, i18n } = useTranslation()
 
-  // Language -> playlist ID (extracted from your provided links)
+  // Playlist IDs per language
   const playlistMap = {
-    en: 'PLtv4Zwto6R31UTw5ymlLzQEQaQu4vDPSI', // English
-    es: 'PLtv4Zwto6R33EQeWboaCqDK0m03CFP4Zz', // Spanish
-    ar: 'PLtv4Zwto6R31YQyGOEUL1XFDydJRm9jA4', // Arabic
-    fr: 'PLtv4Zwto6R30xYio3yDfqWgdtSPSXWxx6', // French
-    zh: 'PLtv4Zwto6R328Cyqm4_FuzfgSQJ7sTh5i'  // Mandarin
-    // ja: no playlist yet -> fallback to English
+    en: 'PLtv4Zwto6R31UTw5ymlLzQEQaQu4vDPSI',
+    es: 'PLtv4Zwto6R33EQeWboaCqDK0m03CFP4Zz',
+    ar: 'PLtv4Zwto6R31YQyGOEUL1XFDydJRm9jA4',
+    fr: 'PLtv4Zwto6R30xYio3yDfqWgdtSPSXWxx6',
+    zh: 'PLtv4Zwto6R328Cyqm4_FuzfgSQJ7sTh5i'
   }
 
   const rawLang = (i18n.language || 'en').toLowerCase()
@@ -20,56 +19,17 @@ function Resources() {
   const hl = lang === 'zh' ? 'zh-CN' : lang
   const embedUrl = `https://www.youtube.com/embed/videoseries?list=${playlistId}&rel=0&modestbranding=1&hl=${encodeURIComponent(hl)}`
 
-  const legalAidOrganizations = [
-    {
-      name: 'National Immigration Law Center',
-      website: 'https://www.nilc.org',
-      description: 'National organization dedicated to defending and advancing the rights of low-income immigrants.'
-    },
-    {
-      name: 'Immigration Advocates Network',
-      website: 'https://www.immigrationadvocates.org',
-      description: 'Network of organizations providing free immigration legal services.'
-    },
-    {
-      name: 'American Immigration Lawyers Association',
-      website: 'https://www.aila.org',
-      description: 'Professional organization of immigration attorneys.'
-    }
-  ]
+  // Translation-driven IDs
+  const legalAidIds = ['nilc', 'ian', 'aila']
+  const hotlineIds = ['detentionHotline', 'iceLocator', 'unitedWeDream']
+  const communityIds = ['localCenters', 'religiousOrgs', 'legalAidSocieties']
 
-  const hotlines = [
-    {
-      name: 'National Immigration Detention Hotline',
-      phone: '1-888-373-7888',
-      description: '24/7 hotline for immigrants in detention.'
-    },
-    {
-      name: 'ICE Detainee Locator',
-      phone: '1-855-448-6903',
-      description: 'Locate someone in ICE custody.'
-    },
-    {
-      name: 'United We Dream Hotline',
-      phone: '1-844-363-1423',
-      description: 'Support and resources for immigrant youth and families.'
-    }
-  ]
-
-  const communityOrganizations = [
-    {
-      name: 'Local Community Centers',
-      description: 'Check your local community centers for immigrant support services.'
-    },
-    {
-      name: 'Religious Organizations',
-      description: 'Many churches, mosques, and synagogues offer immigrant support services.'
-    },
-    {
-      name: 'Legal Aid Societies',
-      description: 'Local legal aid societies often provide free or low-cost immigration services.'
-    }
-  ]
+  // Static website links (language-independent)
+  const legalAidLinks = {
+    nilc: 'https://www.nilc.org',
+    ian: 'https://www.immigrationadvocates.org',
+    aila: 'https://www.aila.org'
+  }
 
   return (
     <div className="page resources-page">
@@ -79,15 +39,16 @@ function Resources() {
       </section>
 
       <section className="resources-content">
+        {/* Legal Aid Organizations */}
         <div className="resources-section">
           <h2>⚖️ {t('resources.legalAid.title')}</h2>
-          <p>{t('resources.legalAid.description')}</p>
+            <p>{t('resources.legalAid.description')}</p>
           <div className="resources-list">
-            {legalAidOrganizations.map((org, idx) => (
-              <div key={idx} className="resource-item">
-                <h3>{org.name}</h3>
-                <p>{org.description}</p>
-                <a href={org.website} target="_blank" rel="noopener noreferrer" className="resource-link">
+            {legalAidIds.map(id => (
+              <div key={id} className="resource-item">
+                <h3>{t(`resources.legalAid.organizations.${id}.name`)}</h3>
+                <p>{t(`resources.legalAid.organizations.${id}.description`)}</p>
+                <a href={legalAidLinks[id]} target="_blank" rel="noopener noreferrer" className="resource-link">
                   {t('resources.visitWebsite')}
                 </a>
               </div>
@@ -95,36 +56,38 @@ function Resources() {
           </div>
         </div>
 
+        {/* Hotlines */}
         <div className="resources-section">
           <h2>📞 {t('resources.hotlines.title')}</h2>
           <p>{t('resources.hotlines.description')}</p>
           <div className="resources-list">
-            {hotlines.map((hotline, idx) => (
-              <div key={idx} className="resource-item">
-                <h3>{hotline.name}</h3>
-                <p className="resource-phone">{hotline.phone}</p>
-                <p>{hotline.description}</p>
+            {hotlineIds.map(id => (
+              <div key={id} className="resource-item">
+                <h3>{t(`resources.hotlines.entries.${id}.name`)}</h3>
+                <p className="resource-phone">{t(`resources.hotlines.entries.${id}.phone`)}</p>
+                <p>{t(`resources.hotlines.entries.${id}.description`)}</p>
               </div>
             ))}
           </div>
         </div>
 
+        {/* Community Organizations */}
         <div className="resources-section">
           <h2>🤝 {t('resources.community.title')}</h2>
           <p>{t('resources.community.description')}</p>
           <div className="resources-list">
-            {communityOrganizations.map((org, idx) => (
-              <div key={idx} className="resource-item">
-                <h3>{org.name}</h3>
-                <p>{org.description}</p>
+            {communityIds.map(id => (
+              <div key={id} className="resource-item">
+                <h3>{t(`resources.community.entries.${id}.name`)}</h3>
+                <p>{t(`resources.community.entries.${id}.description`)}</p>
               </div>
             ))}
           </div>
         </div>
 
+        {/* Video Resources */}
         <div className="resources-section">
           <h2>🎥 {t('resources.videoResourcesTitle')}</h2>
-
           <div
             style={{
               background: '#0d1117',
@@ -147,7 +110,6 @@ function Resources() {
               />
             </div>
           </div>
-
           {!playlistMap[lang] && (
             <p style={{ textAlign: 'center', color: '#c9d1d9', fontSize: '.9rem' }}>
               {t('resources.playlistComingSoon')}
