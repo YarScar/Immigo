@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
+import logo from '../assets/image.png'
 import '../styles/Navbar.css'
 
 function Navbar() {
@@ -10,7 +11,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          🌎 Immigo
+          <img src={logo} alt="Immigo" className="navbar-logo-img" />
+          <span className="navbar-logo-text">Immigo</span>
         </Link>
         <ul className="navbar-menu">
           <li className="navbar-item">
