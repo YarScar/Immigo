@@ -10,7 +10,7 @@ function Chatbot() {
   const [isLoading, setIsLoading] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY
+  const apiKey = import.meta.env.VITE_OPENAI_API_KEY
 
   const handleSend = async () => {
     if (!input.trim() || !apiKey) return
@@ -22,33 +22,32 @@ function Chatbot() {
     setIsLoading(true)
 
     try {
-      const model = 'gemini-2.5-flash'
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+        'https://api.openai.com/v1/chat/completions',
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+          },
           body: JSON.stringify({
-            systemInstruction: {
-              parts: [{ text: t('chatbot.systemPrompt') }]
-            },
-            contents: newMessages.map(m => ({
-              role: m.role === 'assistant' ? 'model' : 'user',
-              parts: [{ text: m.content }]
-            })),
-            generationConfig: { temperature: 0.7 }
+            model: 'gpt-4o-mini',
+            messages: [
+              {
+                role: 'system',
+                content: t('chatbot.systemPrompt')
+              },
+              ...newMessages
+            ],
+            temperature: 0.7
           })
         }
       )
 
       const data = await response.json()
-      if (!response.ok) throw new Error(data.error?.message || 'Gemini request failed')
+      if (!response.ok) throw new Error(data.error?.message || 'OpenAI request failed')
 
-      const assistantText =
-        data.candidates?.[0]?.content?.parts
-          ?.map(p => p.text)
-          .join(' ')
-          .trim() || t('chatbot.error')
+      const assistantText = data.choices?.[0]?.message?.content?.trim() || t('chatbot.error')
 
       const assistantMessage = { role: 'assistant', content: assistantText }
       setMessages([...newMessages, assistantMessage])
