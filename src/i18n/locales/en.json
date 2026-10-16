@@ -1,0 +1,932 @@
+{
+  "nav": {
+    "home": "Home",
+    "rights": "Know Your Rights",
+    "resources": "Resources",
+    "takeAction": "Take Action",
+    "help": "Paperwork Help",
+    "about": "About",
+    "menu": "Menu",
+    "language": "Choose language"
+  },
+  "common": {
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerText": "This is general information, not legal advice. Talk to a licensed immigration attorney or a DOJ-accredited representative about your situation.",
+    "lastChecked": "Last checked October 16, 2026. Laws and policies are changing fast.",
+    "clickForInfo": "Click here for info →",
+    "sourcesTitle": "Where this information comes from"
+  },
+  "home": {
+    "title": "Welcome to Immigo",
+    "subtitle": "Your guide to immigrant rights and resources",
+    "description": "Clear, checked information about your rights, where to find free legal help, and how to support immigrant communities — in six languages.",
+    "getStarted": "Know your rights",
+    "needHelpNow": "I need help now",
+    "quickRightsTitle": "If you remember nothing else",
+    "quickRights": [
+      {
+        "title": "You can stay silent.",
+        "text": "You do not have to answer questions about where you were born or your immigration status."
+      },
+      {
+        "title": "Keep your door closed.",
+        "text": "Agents need a warrant signed by a judge to come in. Ask them to slide it under the door."
+      },
+      {
+        "title": "Don't sign anything",
+        "text": "you don't understand — especially papers that agree to deportation or \"voluntary\" departure."
+      },
+      {
+        "title": "Ask for a lawyer.",
+        "text": "Say: \"I want to speak to a lawyer before I answer any questions.\""
+      },
+      {
+        "title": "Never lie or run.",
+        "text": "Don't show false papers or resist. Staying silent is your right; lying can hurt you."
+      }
+    ],
+    "quickRightsMore": "See what to do in each situation →",
+    "featuresLabel": "What you can do on Immigo",
+    "features": {
+      "rights": {
+        "title": "Know Your Rights",
+        "description": "What to do and say at home, in public, at work, in a car, at the airport, or if someone is detained.",
+        "cta": "Learn your rights"
+      },
+      "resources": {
+        "title": "Find Help",
+        "description": "Know-your-rights videos, hotlines, free legal help, and news you can trust.",
+        "cta": "See resources"
+      },
+      "action": {
+        "title": "Take Action",
+        "description": "Support immigrant communities: volunteer, speak out, contact lawmakers, and sign petitions.",
+        "cta": "Get involved"
+      },
+      "chatbot": {
+        "title": "AI Assistant",
+        "description": "Ask a general question about rights, forms, or resources. It is not a lawyer.",
+        "cta": "Ask the assistant"
+      }
+    }
+  },
+  "rights": {
+    "title": "Know Your Rights",
+    "subtitle": "Everyone in the U.S. has rights — with or without papers",
+    "intro": "The U.S. Constitution protects every person in the country, not only citizens. Knowing your rights — and practicing what to say — can protect you and your family. Share this page with people you love.",
+    "tocLabel": "On this page",
+    "toc": [
+      {
+        "href": "#core",
+        "label": "Your core rights"
+      },
+      {
+        "href": "#situations",
+        "label": "What to do where"
+      },
+      {
+        "href": "#warrants",
+        "label": "Check the warrant"
+      },
+      {
+        "href": "#card",
+        "label": "Rights card"
+      },
+      {
+        "href": "#detained",
+        "label": "If someone is detained"
+      },
+      {
+        "href": "#plan",
+        "label": "Safety plan"
+      },
+      {
+        "href": "#everyone",
+        "label": "Rights for everyone"
+      },
+      {
+        "href": "#ice",
+        "label": "Understanding ICE"
+      },
+      {
+        "href": "#fraud",
+        "label": "Avoid scams"
+      },
+      {
+        "href": "#updates",
+        "label": "What's changing"
+      }
+    ],
+    "core": {
+      "title": "Your core rights",
+      "items": [
+        {
+          "icon": "🤐",
+          "title": "You can stay silent",
+          "text": "You do not have to answer questions about where you were born, your immigration status, or how you came to the U.S. Say out loud: \"I am using my right to remain silent.\" (Different rules apply at the border and airports.)"
+        },
+        {
+          "icon": "🚪",
+          "title": "Keep the door closed",
+          "text": "To come into your home without your permission, agents need a warrant signed by a judge. A form signed by an ICE officer is not the same thing. Opening the door can be treated as permission to come in."
+        },
+        {
+          "icon": "🙅",
+          "title": "Say no to searches",
+          "text": "Say clearly: \"I do not consent to a search.\" It may not stop them, but it protects your rights later. Never physically resist."
+        },
+        {
+          "icon": "✋",
+          "title": "Don't sign anything",
+          "text": "Do not sign papers you don't understand. \"Voluntary departure\" or \"stipulated removal\" papers can mean giving up your right to see a judge."
+        },
+        {
+          "icon": "⚖️",
+          "title": "You can have a lawyer",
+          "text": "You have the right to a lawyer in immigration court, but the government will not pay for one. Find free or low-cost help now, before you need it. If you are charged with a crime, you can ask for a free public defender."
+        },
+        {
+          "icon": "🚫",
+          "title": "Never lie or show false papers",
+          "text": "Lying or using fake documents can lead to criminal charges and hurt your case. You can stay silent instead."
+        }
+      ]
+    },
+    "scenarios": {
+      "title": "What to do in each situation",
+      "intro": "Pick a situation. Read it now, so you are ready if it happens.",
+      "doTitle": "Do",
+      "dontTitle": "Don't",
+      "sayTitle": "What you can say",
+      "items": [
+        {
+          "id": "home",
+          "icon": "🏠",
+          "label": "At home",
+          "intro": "If immigration agents knock, you do not have to open the door.",
+          "do": [
+            "Keep the door closed. Talk through the door or a window.",
+            "Ask: \"Are you with ICE? Do you have a warrant signed by a judge?\"",
+            "Ask them to slide the warrant under the door or hold it against the window.",
+            "Check that it names a court and is signed by a judge (see \"Check the warrant\" below).",
+            "If they come in anyway, say \"I do not consent to your entry or to a search,\" then stay silent.",
+            "Afterward, write down names, badge numbers, the agency, the time, and what happened. Call a lawyer or a local rapid-response hotline."
+          ],
+          "dont": [
+            "Don't open the door just because they say \"police.\" ICE agents often wear vests that say POLICE.",
+            "Don't physically block, fight, or run.",
+            "Don't lie or show false documents.",
+            "Don't sign anything."
+          ],
+          "say": [
+            "I do not wish to speak with you.",
+            "Please slide the warrant under the door.",
+            "I do not consent to your entry.",
+            "I am using my right to remain silent."
+          ]
+        },
+        {
+          "id": "public",
+          "icon": "🚶",
+          "label": "In public",
+          "intro": "On the street, at a store, or at a bus stop, you can stay silent and ask if you are free to go.",
+          "do": [
+            "Stay calm. Keep your hands where they can be seen.",
+            "Ask: \"Am I free to go?\" If they say yes, walk away calmly.",
+            "If you are 18 or older and have valid immigration papers (green card, visa, work permit), carry them — the law requires it — and show them if an immigration officer asks.",
+            "Carry a rights card and the phone number of a lawyer or someone you trust."
+          ],
+          "dont": [
+            "Don't run. Running can be used as a reason to stop you.",
+            "Don't lie about who you are or show false papers.",
+            "If you don't have legal status, many legal groups advise not carrying papers from another country, like a foreign passport, in daily life."
+          ],
+          "say": [
+            "Am I free to go?",
+            "I am using my right to remain silent.",
+            "I do not consent to a search."
+          ]
+        },
+        {
+          "id": "car",
+          "icon": "🚗",
+          "label": "In a car",
+          "intro": "If police or agents stop your car, the driver has to follow some rules. Passengers have more right to stay silent.",
+          "do": [
+            "Pull over safely, turn off the car, and keep your hands on the wheel.",
+            "Drivers: show your license, registration, and proof of insurance if asked.",
+            "Passengers: you can ask \"Am I free to leave?\" and stay silent. Some states require you to give your name.",
+            "Say \"I do not consent to a search.\" Police may still search if they believe they have a legal reason."
+          ],
+          "dont": [
+            "Don't give a false name or false papers.",
+            "Don't argue or resist, even if you think the stop is unfair. You can challenge it later.",
+            "Avoid driving without a license when you can. Unlicensed driving is a common way traffic stops turn into immigration arrests."
+          ],
+          "say": [
+            "I do not consent to a search.",
+            "Am I free to leave?",
+            "I am using my right to remain silent."
+          ]
+        },
+        {
+          "id": "work",
+          "icon": "🏭",
+          "label": "At work",
+          "intro": "Agents can enter public areas of a business, like a lobby or store floor. Private, employee-only areas need a judge's warrant or the employer's permission.",
+          "do": [
+            "Stay calm and stay silent about your status and where you were born.",
+            "Ask for a lawyer before answering questions.",
+            "Remember: minimum wage, overtime, and safety laws protect you no matter your immigration status."
+          ],
+          "dont": [
+            "Don't run — it can be used as a reason to detain you.",
+            "Don't lie or show false documents.",
+            "Don't sign anything without a lawyer."
+          ],
+          "say": [
+            "I am using my right to remain silent.",
+            "I want to speak to a lawyer."
+          ]
+        },
+        {
+          "id": "airport",
+          "icon": "✈️",
+          "label": "Airport & border",
+          "intro": "At the border and at airports, the rules are different. Officers can search you and your things without a warrant.",
+          "do": [
+            "Know that officers can search bags and phones without a warrant.",
+            "U.S. citizens: you cannot be denied entry, though you may be delayed if you don't answer.",
+            "Green-card holders: answer basic questions about who you are and your trip. You can ask to see an immigration judge.",
+            "Visa holders and visitors: you can be turned away for refusing to answer. Talk to a lawyer before traveling if you have any immigration or criminal history.",
+            "Within 100 miles of a border, Border Patrol checkpoints may ask about citizenship. Searching your car still needs your consent or probable cause."
+          ],
+          "dont": [
+            "Green-card holders: don't sign Form I-407. It gives up your green card.",
+            "Don't lie to officers.",
+            "Don't physically resist a search. Say you don't consent."
+          ],
+          "say": [
+            "I do not consent to a search.",
+            "I want to speak to a lawyer.",
+            "I will not sign anything until I talk to a lawyer."
+          ]
+        },
+        {
+          "id": "arrested",
+          "icon": "🚨",
+          "label": "If you are arrested",
+          "intro": "If immigration or police arrest you, protect your case by staying silent and asking for a lawyer.",
+          "do": [
+            "Say you want to stay silent and want a lawyer.",
+            "Memorize phone numbers for a family member and a lawyer — your phone may be taken.",
+            "Tell officers if you have children who need care, health problems, or medicine you need.",
+            "Ask to contact your country's consulate.",
+            "Ask to see an immigration judge and ask about bond."
+          ],
+          "dont": [
+            "Don't sign anything — especially \"voluntary departure\" or \"stipulated removal\" — without a lawyer.",
+            "Don't talk about your status or how you entered with anyone except your lawyer. Jail phone calls are recorded.",
+            "Don't lie or show false documents."
+          ],
+          "say": [
+            "I want to speak to a lawyer.",
+            "I will not sign anything until I talk to a lawyer.",
+            "I want to contact my consulate."
+          ]
+        }
+      ]
+    },
+    "warrant": {
+      "title": "Check the warrant",
+      "intro": "There are two kinds of \"warrants.\" Only one lets agents come into your home without your permission. You can check without opening the door.",
+      "judicial": {
+        "title": "A judge's warrant (judicial warrant)",
+        "points": [
+          "Issued by a court — the top names a court, like \"United States District Court\" or a state court.",
+          "Signed by a judge or magistrate judge.",
+          "Has your correct address and says what can be searched or who can be arrested.",
+          "Has a date and has not expired.",
+          "A search warrant lets agents search the places it lists. An arrest warrant lets them come in to look for the person named."
+        ]
+      },
+      "admin": {
+        "title": "An ICE warrant (administrative warrant)",
+        "points": [
+          "Says \"Department of Homeland Security\" or \"Immigration and Customs Enforcement\" at the top.",
+          "Usually Form I-200 (Warrant for Arrest) or Form I-205 (Warrant of Removal).",
+          "Signed by an immigration officer, not a judge — even if it has your name on it.",
+          "On its own, it does not give agents permission to enter your home. You can keep the door closed.",
+          "Warning: a 2025 ICE memo claims officers can force their way into a home with an I-205 when the person has a final deportation order. This is being challenged in court. If they force their way in, don't resist — say you don't consent, and tell a lawyer."
+        ]
+      },
+      "tip": "Ask them to slide the paper under the door or hold it up to a window. You never have to open the door to read it."
+    },
+    "card": {
+      "title": "Your rights card",
+      "intro": "Print this card and keep it in your wallet or by your door. If agents come, you can show it through a window or slide it under the door instead of talking.",
+      "heading": "I am using my constitutional rights",
+      "lines": [
+        "I will not speak with you or answer your questions. I am using my right to remain silent under the Fifth Amendment.",
+        "I do not give you permission to enter my home unless you show me a warrant signed by a judge.",
+        "I do not consent to a search of me, my home, my car, or my belongings, under the Fourth Amendment.",
+        "I will not sign anything until I speak with a lawyer.",
+        "I want to speak with a lawyer."
+      ],
+      "print": "Print this card",
+      "officialLink": "Get official ILRC red cards in 59 languages →"
+    },
+    "detained": {
+      "title": "If you or a family member is detained",
+      "intro": "Act quickly. These steps can help you find the person and protect their case.",
+      "steps": [
+        {
+          "title": "Find where they are.",
+          "text": "Use the ICE Online Detainee Locator at locator.ice.gov. You need their 9-digit A-number and country of birth, or their exact name and country of birth. It can take a day or two to show up, and it doesn't list people under 18."
+        },
+        {
+          "title": "Gather their information.",
+          "text": "Full name, date of birth, A-number (the 9-digit \"A\" number on immigration papers), country of birth, and where and when they were arrested."
+        },
+        {
+          "title": "Get a lawyer fast.",
+          "text": "Contact a free or low-cost legal group from the Resources page. Detention cases move quickly. Do not pay a notario."
+        },
+        {
+          "title": "Check their court case.",
+          "text": "Use the EOIR Automated Case Information portal (acis.eoir.justice.gov) or call 1-800-898-7180 with their A-number to find hearing dates."
+        },
+        {
+          "title": "Ask about bond.",
+          "text": "Right now many people who entered without inspection are being told they can't get a bond hearing. Courts disagree, and the Supreme Court agreed on October 1, 2026 to decide the question. A lawyer may be able to ask a federal court for a bond hearing."
+        },
+        {
+          "title": "Contact their consulate.",
+          "text": "Their country's consulate may be able to help, visit, or find a lawyer."
+        },
+        {
+          "title": "Take care of family.",
+          "text": "Use your safety plan: make sure children are cared for and bills are handled."
+        }
+      ],
+      "hotlinesLink": "See detention hotlines and lookup tools →"
+    },
+    "plan": {
+      "title": "Make a family safety plan",
+      "intro": "A plan made ahead of time keeps your family safer if someone is detained. Check off each step as you finish it.",
+      "progress": "{{done}} of {{total}} steps done",
+      "privacyNote": "Your checklist is saved only on this device. Nothing is sent to us.",
+      "items": [
+        {
+          "title": "Memorize 2–3 phone numbers",
+          "text": "— a family member and a lawyer or hotline. Your phone may be taken."
+        },
+        {
+          "title": "Choose a caregiver for your children",
+          "text": "and fill out your state's caregiver or power-of-attorney form with a legal-aid group (not a notario). Rules are different in each state."
+        },
+        {
+          "title": "Tell your children's school and doctor",
+          "text": "who is allowed to pick them up."
+        },
+        {
+          "title": "Keep important documents safe",
+          "text": "— passports, birth certificates, immigration papers, court notices — with copies kept by someone you trust."
+        },
+        {
+          "title": "Write down your A-number",
+          "text": "and your lawyer's name and number, and give a copy to a trusted person."
+        },
+        {
+          "title": "Keep proof you have lived in the U.S. 2+ years",
+          "text": "— leases, pay stubs, school or medical records. This matters because of expedited removal."
+        },
+        {
+          "title": "Plan for money and bills",
+          "text": "— rent, utilities, pets. Decide who can access your accounts if needed."
+        },
+        {
+          "title": "Find a legal-aid group now",
+          "text": "before there is an emergency, and save their number."
+        },
+        {
+          "title": "Practice with your family",
+          "text": "— including kids — what to say and do if agents come."
+        }
+      ]
+    },
+    "everyone": {
+      "title": "Rights everyone has, no matter their status",
+      "intro": "These protections apply to everyone in the United States.",
+      "items": [
+        {
+          "icon": "🛡️",
+          "title": "Constitutional rights",
+          "text": "The 4th, 5th, and 14th Amendments protect every person: freedom from unreasonable searches, the right to remain silent, and the right to fair treatment under the law."
+        },
+        {
+          "icon": "🏫",
+          "title": "Public school",
+          "text": "All children can attend free public school (K–12), whatever their or their parents' status. This comes from the Supreme Court case Plyler v. Doe (1982), which is still the law. Some states are trying to challenge it."
+        },
+        {
+          "icon": "🏥",
+          "title": "Emergency medical care",
+          "text": "Hospital emergency rooms must check and stabilize anyone with an emergency, whatever their status or ability to pay."
+        },
+        {
+          "icon": "💼",
+          "title": "Workers' rights",
+          "text": "Minimum wage, overtime, and workplace safety laws protect you whatever your status. It's illegal for an employer to punish you for complaining."
+        },
+        {
+          "icon": "📞",
+          "title": "Calling for help",
+          "text": "In an emergency, call 911. Victims of some crimes or trafficking may qualify for special visas (U or T visas). Ask a lawyer."
+        }
+      ]
+    },
+    "ice": {
+      "title": "Understanding ICE",
+      "intro": "This section grew out of the sociology project that started Immigo, updated with current facts.",
+      "sections": [
+        {
+          "icon": "👮",
+          "title": "What is ICE?",
+          "text": "ICE (U.S. Immigration and Customs Enforcement) is a government agency that is part of the Department of Homeland Security. It was created in 2003. It finds, arrests, detains, and deports people it says are breaking immigration laws. People sometimes call them \"ICE police.\"",
+          "points": [
+            {
+              "title": "ERO",
+              "text": "Enforcement and Removal Operations — the part of ICE that arrests, detains, and deports people."
+            },
+            {
+              "title": "HSI",
+              "text": "Homeland Security Investigations — investigates crimes like smuggling and trafficking."
+            },
+            {
+              "title": "Border Patrol (CBP)",
+              "text": "A different agency that works at borders and airports — but since 2025 it has also made immigration arrests in cities."
+            }
+          ]
+        },
+        {
+          "icon": "⚠️",
+          "title": "What can ICE do?",
+          "points": [
+            {
+              "title": "Arrest people",
+              "text": "ICE can arrest people it believes are in the U.S. without permission."
+            },
+            {
+              "title": "Detain people",
+              "text": "After an arrest, ICE can hold people in detention centers, sometimes for a long time."
+            },
+            {
+              "title": "Deport people — sometimes without a hearing",
+              "text": "\"Expedited removal\" lets officers deport some people without seeing a judge. Since 2025 the government uses it anywhere in the U.S. for people who can't prove 2 years in the country, and a court allowed this in June 2026."
+            },
+            {
+              "title": "Make arrests at homes, workplaces, and courthouses",
+              "text": "ICE carries out operations at homes and workplaces, and has arrested people outside immigration court."
+            },
+            {
+              "title": "Work with local police",
+              "text": "Through \"287(g)\" agreements, local police can help with immigration enforcement. There were about 1,950 agreements in 39 states as of June 2026, up from about 135 in January 2025."
+            },
+            {
+              "title": "Use technology",
+              "text": "ICE uses tools like a face-scanning phone app, license-plate camera data, and information from other government agencies. Courts are still deciding how much data (for example, from the IRS or Medicaid) can be shared."
+            }
+          ]
+        },
+        {
+          "icon": "🛑",
+          "title": "What ICE can't do",
+          "points": [
+            "ICE can't make you answer questions — you can stay silent.",
+            "ICE can't search your home without a judge's warrant or your permission (except in emergencies, and see the I-205 warning above).",
+            "ICE can't delete your videos or search your phone without a judge's warrant (border searches are different).",
+            "ICE is not allowed to deport U.S. citizens — but citizens have been wrongly detained, so citizens should know their rights too."
+          ]
+        },
+        {
+          "icon": "🏘️",
+          "title": "Effects on communities",
+          "points": [
+            {
+              "title": "Fear and trauma",
+              "text": "Research reviewed by the Brookings Institution (2026) links immigration enforcement to depression, anxiety, and PTSD symptoms in children."
+            },
+            {
+              "title": "People stop reporting crimes",
+              "text": "A 2026 study in the American Economic Review found Hispanic victims became about 30% less likely to report crimes after a local enforcement program began — and crime against them went up."
+            },
+            {
+              "title": "Children separated from parents",
+              "text": "Researchers estimate about 145,000 U.S.-citizen children have had a parent detained since January 2025."
+            },
+            {
+              "title": "Schools and workplaces disrupted",
+              "text": "School absences rose sharply after raids in California's Central Valley (Stanford study, 2025). News reports describe worker shortages in construction and farming after raids."
+            }
+          ]
+        }
+      ]
+    },
+    "fraud": {
+      "title": "Avoid immigration scams",
+      "points": [
+        "Only two kinds of people can give immigration legal advice: licensed attorneys and DOJ-accredited representatives who work at DOJ-recognized nonprofits.",
+        "In the U.S., a \"notario público\" or \"immigration consultant\" is not a lawyer and cannot give legal advice — even though notarios are lawyers in many Latin American countries.",
+        "Warning signs: they promise a guaranteed result or \"special contacts,\" ask you to sign blank forms or lie, keep your original documents, or won't give you a written contract and receipt.",
+        "USCIS forms are free to download at uscis.gov. Never pay for a blank form.",
+        "Check a lawyer on your state bar's website, and an accredited representative on the EOIR roster.",
+        "Report scams to the FTC at reportfraud.ftc.gov. Reporting does not require you to share your immigration status."
+      ]
+    },
+    "updates": {
+      "title": "What's changing (October 2026)",
+      "intro": "These policies are changing fast and are being fought in court. Always check the official source or ask a lawyer.",
+      "items": [
+        {
+          "title": "Expedited removal",
+          "text": "A court allowed the government's nationwide expansion in June 2026. Keep proof of how long you've lived in the U.S."
+        },
+        {
+          "title": "Schools, churches, hospitals",
+          "text": "DHS ended its \"protected areas\" policy in January 2025. There is no national rule keeping ICE away from these places right now; courts have protected only some specific congregations."
+        },
+        {
+          "title": "Registration",
+          "text": "DHS requires many noncitizens to register (Form G-325R), with a final rule published June 29, 2026. If you are undocumented, talk to a lawyer before registering."
+        },
+        {
+          "title": "Bond hearings",
+          "text": "The Supreme Court agreed on October 1, 2026 to decide whether people who entered without inspection can get bond hearings."
+        },
+        {
+          "title": "DACA",
+          "text": "USCIS keeps processing renewals but is not processing first-time requests. Renew 120–150 days before your DACA expires."
+        },
+        {
+          "title": "TPS",
+          "text": "TPS has been ended for many countries, including Venezuela, Haiti, Honduras, and Nicaragua. Check uscis.gov/tps for your country's current status."
+        }
+      ]
+    },
+    "disclaimer": "This page is general information, not legal advice. Laws and enforcement policies are changing quickly. Talk to a licensed immigration attorney or a DOJ-accredited representative about your situation."
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Videos, hotlines, legal help, and trusted news",
+    "visitWebsite": "Visit website →",
+    "video": {
+      "title": "Know Your Rights videos",
+      "description": "Start here. These short videos explain your rights in plain language.",
+      "credit": "Videos by {{source}}.",
+      "comingSoon": "Videos in your language are coming soon.",
+      "watchOnYoutube": "Watch on YouTube →"
+    },
+    "hotlines": {
+      "title": "Hotlines",
+      "description": "Call for help. Save these numbers in your phone and write them down.",
+      "emergency": "In an emergency or if someone is in danger, call 911.",
+      "entries": {
+        "detentionHotline": {
+          "name": "National Immigration Detention Hotline (Freedom for Immigrants)",
+          "description": "For people in immigration detention: dial 9233# from the detention phone for free, confidential help. Open Monday–Friday, 8am–8pm Pacific. Family members can email hotline@freedomforimmigrants.org."
+        },
+        "migraWatch": {
+          "name": "United We Dream MigraWatch Hotline",
+          "description": "Report ICE or Border Patrol activity you saw yourself and get support. Run by trained volunteers."
+        },
+        "rapidResponse": {
+          "name": "Local rapid-response hotlines",
+          "description": "Most \"report ICE\" hotlines are local. Find the one for your state on CLINIC's 50-state list."
+        },
+        "iceDril": {
+          "name": "ICE Detention Reporting and Information Line",
+          "description": "ICE's official line for questions or concerns about someone in detention. Live operators Monday–Friday, 8am–8pm Eastern."
+        },
+        "domesticViolence": {
+          "name": "National Domestic Violence Hotline",
+          "description": "Free, confidential help 24/7, in 200+ languages. Text START to 88788. Threats about immigration status can be a form of abuse."
+        },
+        "trafficking": {
+          "name": "National Human Trafficking Hotline",
+          "description": "Help for people forced to work or trade sex, 24/7. Text 233733."
+        },
+        "twoOneOne": {
+          "name": "211",
+          "description": "Free, confidential help finding local food, housing, health care, and other services."
+        }
+      }
+    },
+    "detention": {
+      "title": "If someone is detained",
+      "description": "Tools to find a person in immigration detention and check their court case.",
+      "entries": {
+        "locator": {
+          "name": "ICE Online Detainee Locator",
+          "description": "Find an adult in ICE detention using their A-number and country of birth, or their full name and country of birth. A new arrest can take about 48 hours to appear."
+        },
+        "eoirCase": {
+          "name": "Immigration court case status (EOIR)",
+          "description": "Check hearing dates and case status with the person's 9-digit A-number, online or by phone (24/7, English and Spanish)."
+        },
+        "proBono": {
+          "name": "EOIR list of free legal service providers",
+          "description": "Nonprofits that give free legal help, listed by immigration court. Updated by the Department of Justice."
+        },
+        "nijc": {
+          "name": "National Immigrant Justice Center",
+          "description": "Legal help for people in immigration detention, especially in the Midwest."
+        }
+      }
+    },
+    "legalAid": {
+      "title": "Free and low-cost legal help",
+      "description": "Find a real immigration lawyer or accredited representative.",
+      "notarioWarning": "⚠️ Never get legal help from a \"notario\" or \"immigration consultant.\" Only licensed attorneys and DOJ-accredited representatives can give immigration legal advice.",
+      "entries": {
+        "immigrationLawHelp": {
+          "name": "ImmigrationLawHelp.org",
+          "description": "Find free or low-cost nonprofit legal help by ZIP code or detention center."
+        },
+        "ianDirectory": {
+          "name": "National Immigration Legal Services Directory",
+          "description": "A directory of nonprofit immigration legal services across the country."
+        },
+        "clinic": {
+          "name": "CLINIC affiliate directory",
+          "description": "More than 400 nonprofit legal programs in 49 states and D.C."
+        },
+        "eoirRoster": {
+          "name": "DOJ-accredited representatives",
+          "description": "Check that a nonprofit and its staff are approved to give immigration legal help — before you pay anyone."
+        },
+        "aila": {
+          "name": "AILA Immigration Lawyer Search",
+          "description": "Find a private immigration lawyer by location and language. Private lawyers usually charge fees."
+        },
+        "scams": {
+          "name": "Report immigration scams (FTC)",
+          "description": "Report a notario or fake immigration helper online or by phone."
+        }
+      }
+    },
+    "community": {
+      "title": "Community organizations",
+      "description": "Groups that offer support, education, and local help.",
+      "entries": {
+        "unitedWeDream": {
+          "name": "United We Dream",
+          "description": "The largest youth-led immigrant network: DACA help, know-your-rights training, and campaigns."
+        },
+        "raices": {
+          "name": "RAICES",
+          "description": "Free and low-cost legal help for immigrants and refugees, based in Texas."
+        },
+        "makeTheRoad": {
+          "name": "Make the Road New York",
+          "description": "Services, legal help, and organizing for immigrant and working-class communities in New York (sister groups in NJ, CT, PA, and NV)."
+        },
+        "informedImmigrant": {
+          "name": "Informed Immigrant",
+          "description": "Plain-language guides on DACA, TPS, detention, and the registration rule, in English and Spanish."
+        },
+        "ilrc": {
+          "name": "Immigrant Legal Resource Center (ILRC)",
+          "description": "Free printable red cards in 59 languages. Never pay for a red card."
+        },
+        "nilc": {
+          "name": "National Immigration Law Center (NILC)",
+          "description": "Free know-your-rights guides and updates on new laws. Does not take individual cases."
+        },
+        "aclu": {
+          "name": "ACLU Immigrants' Rights",
+          "description": "Know-your-rights guides in English and Spanish, and legal action for immigrants."
+        }
+      }
+    },
+    "news": {
+      "title": "Reliable news",
+      "description": "News sites with strong records for accuracy, plus tools to check what you read.",
+      "warningTitle": "Warning",
+      "warningText": "These sources have strong records, but no single source is perfect. Check more than one source, and use fact-checkers before you believe or share something — especially on social media.",
+      "sourcesTitle": "News sources",
+      "checkersTitle": "Fact-checkers and bias checkers"
+    },
+    "noteContent": "We check these resources, but phone numbers and services can change. Confirm details before you rely on them."
+  },
+  "action": {
+    "title": "How to Take Action",
+    "subtitle": "Ways anyone can support immigrant communities",
+    "intro": "You don't have to be an expert to help. Pick one action from the list below and start there.",
+    "support": {
+      "title": "Support",
+      "lead": "Support local immigrant rights organizations.",
+      "points": [
+        "Volunteer, donate, or go to their events.",
+        "Groups like United We Dream, RAICES, Make the Road, and local immigrant coalitions give legal aid and community support.",
+        "Ask a local group if they need volunteers for rapid-response networks, court accompaniment, or translation."
+      ]
+    },
+    "speakOut": {
+      "title": "Speak Out",
+      "lead": "Speak out against injustice.",
+      "points": [
+        "Contact your local, state, and national representatives.",
+        "Ask for an end to inhumane detention conditions, family separation, and racial profiling.",
+        "Ask for laws that protect immigrants and hold immigration agencies accountable.",
+        "Go to town halls and peaceful rallies."
+      ]
+    },
+    "educate": {
+      "title": "Educate",
+      "lead": "Educate yourself and others.",
+      "points": [
+        "Learn about immigration laws, ICE practices, and how they affect people.",
+        "Share what you learn with friends, family, and on social media — from trusted sources.",
+        "Misinformation fuels discrimination. Knowledge is power. Check claims with fact-checkers before you share."
+      ]
+    },
+    "contact": {
+      "title": "Email and Call",
+      "lead": "Email or call your lawmakers.",
+      "points": [
+        "Find your representatives and how to reach them.",
+        "Use 5 Calls for short call scripts and phone numbers, or Resistbot to send a message by text.",
+        "Groups like United We Dream and Indivisible often share ready-made messages — just add your name.",
+        "Calls to local offices often get the most attention. Keep it short: who you are, where you live, what you want them to do."
+      ]
+    },
+    "petitions": {
+      "title": "Sign Petitions",
+      "lead": "Add your name to campaigns.",
+      "points": [
+        "Petitions show lawmakers how many people care about an issue.",
+        "Read who runs a petition before signing, and be careful about what personal information you share."
+      ]
+    },
+    "links": {
+      "uwd": "Youth-led immigrant rights group with campaigns and petitions.",
+      "raices": "Legal services and advocacy for immigrants and refugees.",
+      "makeTheRoad": "Community organizing and services for immigrant and working-class communities.",
+      "findReps": "Official U.S. government tool to find your elected officials.",
+      "fiveCalls": "Call scripts and phone numbers for your representatives.",
+      "resistbot": "Text a message to your lawmakers.",
+      "indivisible": "Local groups and action guides for contacting Congress.",
+      "aclu": "Fights for civil rights, including immigrants' rights, and posts action alerts.",
+      "change": "A global petition platform — search for immigration petitions.",
+      "moveon": "Progressive action campaigns, including immigrant justice."
+    },
+    "safety": {
+      "title": "Stay safe while taking action",
+      "points": [
+        "If you are not a U.S. citizen, talk to a lawyer before doing anything that could lead to an arrest, like civil disobedience. An arrest can hurt an immigration case.",
+        "You have the right to film officers in public if you stay back and don't interfere. Don't post officers' home addresses or personal information — that can be a crime.",
+        "Get consent before posting photos or videos that show other people's faces, especially at rallies or during arrests.",
+        "Read the ACLU's guide to protesters' rights before you go."
+      ]
+    }
+  },
+  "help": {
+    "title": "Paperwork Help",
+    "subtitle": "Common immigration forms",
+    "description": "What the most common USCIS forms are for, what they cost, and how to avoid mistakes.",
+    "commonFormsTitle": "Common forms",
+    "viewFormLabel": "View form on USCIS →",
+    "feeLabel": "Fee",
+    "feesNote": "Fees change — some federal fees went up on October 16, 2026. Always check the official USCIS fee schedule before you file.",
+    "feesLink": "USCIS fee schedule (G-1055) →",
+    "forms": {
+      "i485": {
+        "name": "Green card application",
+        "description": "Apply to become a permanent resident (adjustment of status) from inside the U.S.",
+        "fee": "$1,440 paper / $1,390 online. Under 14 filing with a parent: $950 / $900."
+      },
+      "i130": {
+        "name": "Petition for a relative",
+        "description": "A U.S. citizen or green-card holder asks to bring a family member to live in the U.S.",
+        "fee": "$675 paper / $625 online."
+      },
+      "i765": {
+        "name": "Work permit (EAD)",
+        "description": "Apply for permission to work.",
+        "fee": "Usually $520 paper / $470 online; $260 with a pending I-485. Asylum and TPS applicants pay extra federal fees (for example, $570 for a first asylum-based permit)."
+      },
+      "n400": {
+        "name": "U.S. citizenship (naturalization)",
+        "description": "Apply to become a U.S. citizen.",
+        "fee": "$760 paper / $710 online. Reduced fee $380 (paper) for lower incomes; fee waivers possible."
+      },
+      "i90": {
+        "name": "Replace or renew a green card",
+        "description": "Replace a lost, stolen, or expiring permanent resident card.",
+        "fee": "$465 paper / $415 online."
+      },
+      "i589": {
+        "name": "Asylum application",
+        "description": "Ask for protection if you fear harm in your home country. There is usually a 1-year deadline after arriving — talk to a lawyer quickly.",
+        "fee": "$100 when you file, plus a $105 yearly fee while your case is pending. These fees cannot be waived."
+      },
+      "i821d": {
+        "name": "DACA renewal",
+        "description": "Renew Deferred Action for Childhood Arrivals. USCIS is processing renewals, not first-time requests.",
+        "fee": "$605 paper / $555 online, including the work permit. No fee waivers."
+      },
+      "i821": {
+        "name": "Temporary Protected Status (TPS)",
+        "description": "Apply for or re-register for TPS if your country is designated. Check that your country is still on the list first.",
+        "fee": "First-time: $520 plus $30 biometrics. Re-registration: $30 biometrics."
+      },
+      "i912": {
+        "name": "Fee waiver request",
+        "description": "Ask USCIS not to charge a fee if you can't afford it. It does not cover DACA or the new federal (H.R. 1) fees.",
+        "fee": ""
+      },
+      "g325r": {
+        "name": "Alien registration",
+        "description": "The registration form many noncitizens are now required to file. If you are undocumented, talk to a lawyer or accredited representative before filing — it can expose you to enforcement.",
+        "fee": "$0. Online only."
+      }
+    },
+    "tipsTitle": "Form tips",
+    "tips": [
+      "Download forms only from uscis.gov — they are free. Use the newest edition.",
+      "Read all the instructions before you start.",
+      "Answer every question truthfully. A false answer can get you permanently barred.",
+      "Keep copies of everything you send, plus the mailing or online receipt.",
+      "Ask a licensed attorney or accredited representative before filing, especially if you have ever been arrested, deported, or out of status. Some forms can trigger enforcement.",
+      "Never let a notario or consultant fill out forms for you."
+    ],
+    "chatbotSectionTitle": "Have a question?",
+    "chatbotSectionDescription": "The AI assistant can explain what a form is for or what a word means. It cannot check your case — for that, talk to a legal-aid group.",
+    "disclaimerText": "Always check uscis.gov for the current version and fee of each form."
+  },
+  "about": {
+    "title": "About Immigo",
+    "subtitle": "Information that protects people",
+    "missionTitle": "Our mission",
+    "description": "Immigo helps immigrants and the people who care about them understand their rights, find real help, and take action — in plain language and in six languages.",
+    "originTitle": "Where Immigo started",
+    "originText": "Immigo began as a sociology class project researching immigrant rights, ICE, and the injustices many communities face. The project's welcome page said it best:",
+    "originQuote": "This site was made to inform, empower, and mobilize those who care about immigrant rights. It provides clear, current information on immigration laws, deportation news, and the injustices many communities face. Whether you're advocating for change or just beginning to learn, this is your space to stay informed and get involved.",
+    "whatWeOfferTitle": "What you'll find here",
+    "offers": [
+      {
+        "icon": "📜",
+        "href": "/rights",
+        "label": "Know Your Rights",
+        "text": "what to do and say in each situation, a printable rights card, and a family safety plan."
+      },
+      {
+        "icon": "🧭",
+        "href": "/resources",
+        "label": "Resources",
+        "text": "videos, hotlines, free legal help, and trusted news."
+      },
+      {
+        "icon": "✊",
+        "href": "/take-action",
+        "label": "Take Action",
+        "text": "ways to support immigrant communities and contact lawmakers."
+      },
+      {
+        "icon": "🧾",
+        "href": "/help",
+        "label": "Paperwork Help",
+        "text": "common USCIS forms, fees, and tips."
+      }
+    ],
+    "howWeCheckTitle": "How we check information",
+    "howWeCheckText": "Facts on this site were checked in October 2026 against official government sources (USCIS, ICE, the immigration courts) and trusted legal nonprofits (ACLU, ILRC, NILC, the American Immigration Council), plus court decisions reported by major news outlets. Each page lists its sources.",
+    "disclaimerText": "Immigo is for education only and is not legal advice. Immigration law is complicated and changes often. For advice about your situation, talk to a licensed immigration attorney or a DOJ-accredited representative."
+  },
+  "chatbot": {
+    "title": "AI Assistant",
+    "placeholder": "Ask a question...",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "error": "Something went wrong. Please try again.",
+    "unavailable": "The assistant isn't available right now. You can still use the Know Your Rights and Resources pages.",
+    "welcomeGreeting": "👋 Hi! I'm the Immigo assistant.",
+    "welcomePrompt": "Ask me about your rights, forms, or where to find help.",
+    "notLegalAdvice": "I'm not a lawyer, and this isn't legal advice.",
+    "suggestions": [
+      "What should I do if ICE knocks on my door?",
+      "How do I find free legal help?",
+      "What is an A-number?"
+    ],
+    "toggleAria": "Open or close the AI assistant",
+    "closeAria": "Close the AI assistant"
+  },
+  "footer": {
+    "emergencyLabel": "Emergency?",
+    "emergencyText": "Call 911. If someone was detained by immigration, see Resources → If someone is detained.",
+    "description": "Empowering immigrants with knowledge.",
+    "disclaimer": "General information only — not legal advice.",
+    "rights": "All rights reserved."
+  }
+}

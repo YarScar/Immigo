@@ -1,0 +1,932 @@
+{
+  "nav": {
+    "home": "Akèy",
+    "rights": "Konnen Dwa Ou",
+    "resources": "Resous",
+    "takeAction": "Aji",
+    "help": "Èd pou Papye",
+    "about": "Konsènan Nou",
+    "menu": "Meni",
+    "language": "Chwazi lang"
+  },
+  "common": {
+    "disclaimerTitle": "Avètisman",
+    "disclaimerText": "Sa a se enfòmasyon jeneral, se pa konsèy legal. Pale ak yon avoka imigrasyon ki gen lisans oswa yon reprezantan akredite pa DOJ (Depatman Jistis) sou sitiyasyon ou.",
+    "lastChecked": "Dènye verifikasyon: 16 oktòb 2026. Lwa ak politik yo ap chanje vit.",
+    "clickForInfo": "Klike la a pou plis enfòmasyon →",
+    "sourcesTitle": "Kote enfòmasyon sa yo soti"
+  },
+  "home": {
+    "title": "Byenvini sou Immigo",
+    "subtitle": "Gid ou pou dwa ak resous imigran yo",
+    "description": "Enfòmasyon klè e verifye sou dwa ou, kote pou jwenn èd legal gratis, ak kijan pou sipòte kominote imigran yo — nan sis lang.",
+    "getStarted": "Konnen dwa ou",
+    "needHelpNow": "Mwen bezwen èd kounye a",
+    "quickRightsTitle": "Si ou pa sonje anyen lòt",
+    "quickRights": [
+      {
+        "title": "Ou ka rete an silans.",
+        "text": "Ou pa oblije reponn kesyon sou kote ou fèt oswa sou estati imigrasyon ou."
+      },
+      {
+        "title": "Kenbe pòt ou fèmen.",
+        "text": "Ajan yo bezwen yon manda yon jij siyen pou yo antre. Mande yo glise l anba pòt la."
+      },
+      {
+        "title": "Pa siyen anyen",
+        "text": "ou pa konprann — sitou papye ki dakò pou depòtasyon oswa pou depa \"volontè\"."
+      },
+      {
+        "title": "Mande yon avoka.",
+        "text": "Di: \"Mwen vle pale ak yon avoka anvan mwen reponn okenn kesyon.\""
+      },
+      {
+        "title": "Pa janm bay manti ni kouri.",
+        "text": "Pa montre fo papye e pa reziste. Rete an silans se dwa ou; bay manti ka fè ou tò."
+      }
+    ],
+    "quickRightsMore": "Gade sa pou fè nan chak sitiyasyon →",
+    "featuresLabel": "Sa ou ka fè sou Immigo",
+    "features": {
+      "rights": {
+        "title": "Konnen Dwa Ou",
+        "description": "Sa pou fè ak sa pou di lakay ou, an piblik, nan travay, nan yon machin, nan ayewopò, oswa si yo mete yon moun nan detansyon.",
+        "cta": "Aprann dwa ou"
+      },
+      "resources": {
+        "title": "Jwenn Èd",
+        "description": "Videyo sou dwa ou, liy dirèk (hotline), èd legal gratis, ak nouvèl ou ka fè konfyans.",
+        "cta": "Gade resous yo"
+      },
+      "action": {
+        "title": "Aji",
+        "description": "Sipòte kominote imigran yo: fè volontè, pran lapawòl, kontakte lejislatè yo, epi siyen petisyon.",
+        "cta": "Patisipe"
+      },
+      "chatbot": {
+        "title": "Asistan IA",
+        "description": "Poze yon kesyon jeneral sou dwa, fòm, oswa resous. Li pa yon avoka.",
+        "cta": "Mande asistan an"
+      }
+    }
+  },
+  "rights": {
+    "title": "Konnen Dwa Ou",
+    "subtitle": "Tout moun Ozetazini gen dwa — avèk oswa san papye",
+    "intro": "Konstitisyon Etazini pwoteje chak moun ki nan peyi a, pa sèlman sitwayen yo. Lè ou konnen dwa ou — epi ou pratike sa pou di — sa ka pwoteje ou ak fanmi ou. Pataje paj sa a ak moun ou renmen.",
+    "tocLabel": "Sou paj sa a",
+    "toc": [
+      {
+        "href": "#core",
+        "label": "Dwa debaz ou"
+      },
+      {
+        "href": "#situations",
+        "label": "Sa pou fè ki kote"
+      },
+      {
+        "href": "#warrants",
+        "label": "Verifye manda a"
+      },
+      {
+        "href": "#card",
+        "label": "Kat dwa"
+      },
+      {
+        "href": "#detained",
+        "label": "Si yo mete yon moun nan detansyon"
+      },
+      {
+        "href": "#plan",
+        "label": "Plan sekirite"
+      },
+      {
+        "href": "#everyone",
+        "label": "Dwa pou tout moun"
+      },
+      {
+        "href": "#ice",
+        "label": "Konprann ICE"
+      },
+      {
+        "href": "#fraud",
+        "label": "Evite eskwokri"
+      },
+      {
+        "href": "#updates",
+        "label": "Sa k ap chanje"
+      }
+    ],
+    "core": {
+      "title": "Dwa debaz ou",
+      "items": [
+        {
+          "icon": "🤐",
+          "title": "Ou ka rete an silans",
+          "text": "Ou pa oblije reponn kesyon sou kote ou fèt, sou estati imigrasyon ou, oswa sou kijan ou te vin Ozetazini. Di byen fò: \"Mwen ap sèvi ak dwa m pou m rete an silans.\" (Gen lòt règ ki aplike nan fwontyè a ak nan ayewopò.)"
+        },
+        {
+          "icon": "🚪",
+          "title": "Kenbe pòt la fèmen",
+          "text": "Pou yo antre lakay ou san pèmisyon ou, ajan yo bezwen yon manda yon jij siyen. Yon fòm yon ofisye ICE siyen se pa menm bagay la. Si ou louvri pòt la, yo ka konsidere sa tankou ou ba yo pèmisyon pou antre."
+        },
+        {
+          "icon": "🙅",
+          "title": "Di non pou fouy",
+          "text": "Di klè: \"Mwen pa dakò ak okenn fouy.\" Sa ka pa kanpe yo, men li pwoteje dwa ou pita. Pa janm reziste fizikman."
+        },
+        {
+          "icon": "✋",
+          "title": "Pa siyen anyen",
+          "text": "Pa siyen papye ou pa konprann. Papye \"depa volontè\" (voluntary departure) oswa \"depòtasyon pa akò\" (stipulated removal) ka vle di ou renonse ak dwa ou pou wè yon jij."
+        },
+        {
+          "icon": "⚖️",
+          "title": "Ou ka gen yon avoka",
+          "text": "Ou gen dwa pou gen yon avoka nan tribinal imigrasyon, men gouvènman an p ap peye pou li. Jwenn èd gratis oswa pa chè kounye a, anvan ou bezwen l. Si yo akize w de yon krim, ou ka mande yon avoka piblik gratis (public defender)."
+        },
+        {
+          "icon": "🚫",
+          "title": "Pa janm bay manti ni montre fo papye",
+          "text": "Bay manti oswa sèvi ak fo dokiman ka mennen nan akizasyon kriminèl epi fè dosye ou tò. Ou ka rete an silans pito."
+        }
+      ]
+    },
+    "scenarios": {
+      "title": "Sa pou fè nan chak sitiyasyon",
+      "intro": "Chwazi yon sitiyasyon. Li l kounye a, pou ou pare si sa rive.",
+      "doTitle": "Sa pou fè",
+      "dontTitle": "Sa pou pa fè",
+      "sayTitle": "Sa ou ka di",
+      "items": [
+        {
+          "id": "home",
+          "icon": "🏠",
+          "label": "Lakay ou",
+          "intro": "Si ajan imigrasyon frape pòt ou, ou pa oblije louvri l.",
+          "do": [
+            "Kenbe pòt la fèmen. Pale atravè pòt la oswa yon fenèt.",
+            "Mande: \"Èske nou se ICE? Èske nou gen yon manda yon jij siyen?\"",
+            "Mande yo glise manda a anba pòt la oswa kenbe l kole sou fenèt la.",
+            "Verifye si li gen non yon tribinal epi si se yon jij ki siyen l (gade \"Verifye manda a\" pi ba a).",
+            "Si yo antre kanmenm, di \"Mwen pa dakò pou nou antre ni pou nou fouye,\" epi rete an silans.",
+            "Apre sa, ekri non yo, nimewo badj yo, ajans lan, lè a, ak sa ki te pase. Rele yon avoka oswa yon liy dirèk lokal pou repons rapid."
+          ],
+          "dont": [
+            "Pa louvri pòt la jis paske yo di \"lapolis.\" Ajan ICE souvan mete vès ki ekri POLICE.",
+            "Pa bloke yo fizikman, pa goumen, epi pa kouri.",
+            "Pa bay manti ni montre fo dokiman.",
+            "Pa siyen anyen."
+          ],
+          "say": [
+            "Mwen pa vle pale ak ou.",
+            "Tanpri glise manda a anba pòt la.",
+            "Mwen pa dakò pou ou antre.",
+            "Mwen ap sèvi ak dwa m pou m rete an silans."
+          ]
+        },
+        {
+          "id": "public",
+          "icon": "🚶",
+          "label": "An piblik",
+          "intro": "Nan lari, nan yon magazen, oswa nan yon arè bis, ou ka rete an silans epi mande si ou lib pou ale.",
+          "do": [
+            "Rete kalm. Kenbe men ou kote yo ka wè yo.",
+            "Mande: \"Èske mwen lib pou m ale?\" Si yo di wi, ale san prese.",
+            "Si ou gen 18 an oswa plis epi ou gen papye imigrasyon valab (kat vèt/green card, viza, pèmi travay), pote yo sou ou — lalwa egzije sa — epi montre yo si yon ofisye imigrasyon mande w yo.",
+            "Pote yon kat dwa ak nimewo telefòn yon avoka oswa yon moun ou fè konfyans."
+          ],
+          "dont": [
+            "Pa kouri. Yo ka sèvi ak sa kòm rezon pou yo kanpe w.",
+            "Pa bay manti sou kiyès ou ye ni montre fo papye.",
+            "Si ou pa gen estati legal, anpil gwoup legal konseye pou pa pote papye ki soti nan yon lòt peyi, tankou yon paspò etranje, nan lavi chak jou."
+          ],
+          "say": [
+            "Èske mwen lib pou m ale?",
+            "Mwen ap sèvi ak dwa m pou m rete an silans.",
+            "Mwen pa dakò ak okenn fouy."
+          ]
+        },
+        {
+          "id": "car",
+          "icon": "🚗",
+          "label": "Nan yon machin",
+          "intro": "Si lapolis oswa ajan yo kanpe machin ou, chofè a dwe swiv kèk règ. Pasaje yo gen plis dwa pou rete an silans.",
+          "do": [
+            "Rale sou kote an sekirite, etenn machin nan, epi kenbe men ou sou volan an.",
+            "Chofè: montre lisans ou, papye anrejistreman machin nan, ak prèv asirans si yo mande.",
+            "Pasaje: ou ka mande \"Èske mwen lib pou m ale?\" epi rete an silans. Gen kèk eta ki egzije pou ou bay non ou.",
+            "Di \"Mwen pa dakò ak okenn fouy.\" Lapolis ka fouye kanmenm si yo kwè yo gen yon rezon legal."
+          ],
+          "dont": [
+            "Pa bay yon fo non ni fo papye.",
+            "Pa diskite ni reziste, menm si ou panse yo pa t gen rezon jis pou kanpe w. Ou ka konteste sa pita.",
+            "Evite kondui san lisans lè ou kapab. Kondui san lisans se yon fason komen yon kontwòl trafik tounen yon arestasyon imigrasyon."
+          ],
+          "say": [
+            "Mwen pa dakò ak okenn fouy.",
+            "Èske mwen lib pou m ale?",
+            "Mwen ap sèvi ak dwa m pou m rete an silans."
+          ]
+        },
+        {
+          "id": "work",
+          "icon": "🏭",
+          "label": "Nan travay",
+          "intro": "Ajan yo ka antre nan zòn piblik yon biznis, tankou yon lobi oswa andedan yon magazen. Pou zòn prive kote se sèlman anplwaye ki ka antre, yo bezwen manda yon jij oswa pèmisyon patwon an.",
+          "do": [
+            "Rete kalm epi pa di anyen sou estati ou ni sou kote ou fèt.",
+            "Mande yon avoka anvan ou reponn kesyon.",
+            "Sonje: lwa sou salè minimòm, lè siplemantè, ak sekirite pwoteje w kèlkeswa estati imigrasyon ou."
+          ],
+          "dont": [
+            "Pa kouri — yo ka sèvi ak sa kòm rezon pou yo kenbe w.",
+            "Pa bay manti ni montre fo dokiman.",
+            "Pa siyen anyen san yon avoka."
+          ],
+          "say": [
+            "Mwen ap sèvi ak dwa m pou m rete an silans.",
+            "Mwen vle pale ak yon avoka."
+          ]
+        },
+        {
+          "id": "airport",
+          "icon": "✈️",
+          "label": "Ayewopò ak fwontyè",
+          "intro": "Nan fwontyè a ak nan ayewopò, règ yo diferan. Ofisye yo ka fouye ou ak afè ou san manda.",
+          "do": [
+            "Konnen ofisye yo ka fouye valiz ak telefòn san manda.",
+            "Sitwayen ameriken: yo pa ka refize w antre, men yo ka fè w pran reta si ou pa reponn.",
+            "Moun ki gen kat vèt: reponn kesyon debaz sou kiyès ou ye ak sou vwayaj ou. Ou ka mande pou wè yon jij imigrasyon.",
+            "Moun ki gen viza ak vizitè: yo ka refize w antre si ou refize reponn. Pale ak yon avoka anvan ou vwayaje si ou gen nenpòt istwa imigrasyon oswa kriminèl.",
+            "Nan 100 mil yon fwontyè, pòs kontwòl Border Patrol yo ka poze kesyon sou sitwayènte. Pou fouye machin ou, yo toujou bezwen konsantman ou oswa yon kòz pwobab (probable cause)."
+          ],
+          "dont": [
+            "Moun ki gen kat vèt: pa siyen Fòm I-407. Li fè w abandone kat vèt ou.",
+            "Pa bay ofisye yo manti.",
+            "Pa reziste fizikman lè yo fouye w. Di ou pa dakò."
+          ],
+          "say": [
+            "Mwen pa dakò ak okenn fouy.",
+            "Mwen vle pale ak yon avoka.",
+            "Mwen p ap siyen anyen jiskaske m pale ak yon avoka."
+          ]
+        },
+        {
+          "id": "arrested",
+          "icon": "🚨",
+          "label": "Si yo arete w",
+          "intro": "Si imigrasyon oswa lapolis arete w, pwoteje dosye ou: rete an silans epi mande yon avoka.",
+          "do": [
+            "Di ou vle rete an silans epi ou vle yon avoka.",
+            "Konnen pa kè nimewo telefòn yon manm fanmi ak yon avoka — yo ka pran telefòn ou.",
+            "Di ofisye yo si ou gen pitit ki bezwen moun pou okipe yo, pwoblèm sante, oswa medikaman ou bezwen.",
+            "Mande pou kontakte konsila peyi ou.",
+            "Mande pou wè yon jij imigrasyon epi poze kesyon sou kosyon."
+          ],
+          "dont": [
+            "Pa siyen anyen — sitou \"depa volontè\" oswa \"depòtasyon pa akò\" (stipulated removal) — san yon avoka.",
+            "Pa pale sou estati ou ni sou kijan ou te antre ak pèsonn, sof avoka ou. Yo anrejistre apèl telefòn nan prizon.",
+            "Pa bay manti ni montre fo dokiman."
+          ],
+          "say": [
+            "Mwen vle pale ak yon avoka.",
+            "Mwen p ap siyen anyen jiskaske m pale ak yon avoka.",
+            "Mwen vle kontakte konsila mwen."
+          ]
+        }
+      ]
+    },
+    "warrant": {
+      "title": "Verifye manda a",
+      "intro": "Gen de kalite \"manda.\" Se yon sèl ladan yo ki pèmèt ajan yo antre lakay ou san pèmisyon ou. Ou ka verifye l san ou pa louvri pòt la.",
+      "judicial": {
+        "title": "Manda yon jij (manda jidisyè)",
+        "points": [
+          "Se yon tribinal ki bay li — anwo paj la gen non yon tribinal, tankou \"United States District Court\" oswa yon tribinal eta.",
+          "Se yon jij oswa yon jij majistra ki siyen l.",
+          "Li gen bon adrès ou epi li di sa yo ka fouye oswa kiyès yo ka arete.",
+          "Li gen yon dat epi li pa ekspire.",
+          "Yon manda fouy pèmèt ajan yo fouye kote ki ekri ladan l yo. Yon manda arestasyon pèmèt yo antre pou chèche moun ki nonmen ladan l lan."
+        ]
+      },
+      "admin": {
+        "title": "Yon manda ICE (manda administratif)",
+        "points": [
+          "Li ekri \"Department of Homeland Security\" oswa \"Immigration and Customs Enforcement\" anwo paj la.",
+          "Anjeneral se Fòm I-200 (Warrant for Arrest — manda arestasyon) oswa Fòm I-205 (Warrant of Removal — manda depòtasyon).",
+          "Se yon ofisye imigrasyon ki siyen l, pa yon jij — menm si non ou ekri sou li.",
+          "Pou kont li, li pa bay ajan yo pèmisyon pou antre lakay ou. Ou ka kenbe pòt la fèmen.",
+          "Atansyon: yon memo ICE 2025 pretann ofisye yo ka antre pa fòs nan yon kay ak yon I-205 lè moun nan gen yon lòd depòtasyon final. Gen moun k ap konteste sa nan tribinal. Si yo antre pa fòs, pa reziste — di ou pa dakò, epi di yon avoka sa."
+        ]
+      },
+      "tip": "Mande yo glise papye a anba pòt la oswa kenbe l devan yon fenèt. Ou pa janm oblije louvri pòt la pou li l."
+    },
+    "card": {
+      "title": "Kat dwa ou",
+      "intro": "Enprime kat sa a epi kenbe l nan bous ou oswa toupre pòt ou. Si ajan yo vini, ou ka montre l atravè yon fenèt oswa glise l anba pòt la olye ou pale.",
+      "heading": "Mwen ap sèvi ak dwa konstitisyonèl mwen",
+      "lines": [
+        "Mwen p ap pale ak ou ni reponn kesyon ou. Mwen ap sèvi ak dwa m pou m rete an silans dapre Senkyèm Amannman an.",
+        "Mwen pa ba ou pèmisyon pou antre lakay mwen sof si ou montre m yon manda yon jij siyen.",
+        "Mwen pa dakò pou yo fouye m, kay mwen, machin mwen, ni afè mwen, dapre Katriyèm Amannman an.",
+        "Mwen p ap siyen anyen jiskaske m pale ak yon avoka.",
+        "Mwen vle pale ak yon avoka."
+      ],
+      "print": "Enprime kat sa a",
+      "officialLink": "Jwenn kat wouj ofisyèl ILRC yo nan 59 lang →"
+    },
+    "detained": {
+      "title": "Si yo mete ou oswa yon manm fanmi ou nan detansyon",
+      "intro": "Aji vit. Etap sa yo ka ede w jwenn moun nan epi pwoteje dosye li.",
+      "steps": [
+        {
+          "title": "Chèche konnen ki kote li ye.",
+          "text": "Sèvi ak ICE Online Detainee Locator (zouti sou entènèt pou jwenn moun ki nan detansyon) sou locator.ice.gov. Ou bezwen nimewo A li ki gen 9 chif la ak peyi kote li fèt, oswa non egzak li ak peyi kote li fèt. Sa ka pran youn oswa de jou anvan li parèt, epi li pa bay moun ki poko gen 18 an."
+        },
+        {
+          "title": "Rasanble enfòmasyon li.",
+          "text": "Non konplè, dat nesans, nimewo A (nimewo \"A\" 9 chif ki sou papye imigrasyon yo), peyi kote li fèt, ak ki kote ak ki lè yo te arete l."
+        },
+        {
+          "title": "Jwenn yon avoka vit.",
+          "text": "Kontakte yon gwoup legal gratis oswa pa chè ki sou paj Resous la. Ka detansyon yo mache vit. Pa peye yon notario."
+        },
+        {
+          "title": "Verifye dosye tribinal li.",
+          "text": "Sèvi ak pòtay EOIR Automated Case Information (acis.eoir.justice.gov) oswa rele 1-800-898-7180 ak nimewo A li pou jwenn dat odyans yo."
+        },
+        {
+          "title": "Poze kesyon sou kosyon.",
+          "text": "Kounye a, yo di anpil moun ki te antre san enspeksyon yo pa ka jwenn yon odyans kosyon. Tribinal yo pa dakò youn ak lòt, epi Lakou Siprèm nan te dakò 1ye oktòb 2026 pou l deside kesyon sa a. Yon avoka ka petèt mande yon tribinal federal yon odyans kosyon."
+        },
+        {
+          "title": "Kontakte konsila li.",
+          "text": "Konsila peyi li a ka petèt ede, vizite l, oswa jwenn yon avoka."
+        },
+        {
+          "title": "Okipe fanmi an.",
+          "text": "Sèvi ak plan sekirite ou: asire w gen moun k ap okipe timoun yo epi bòdwo yo ap peye."
+        }
+      ],
+      "hotlinesLink": "Gade liy dirèk pou detansyon ak zouti rechèch →"
+    },
+    "plan": {
+      "title": "Fè yon plan sekirite pou fanmi an",
+      "intro": "Yon plan ou fè davans kenbe fanmi ou plis an sekirite si yo mete yon moun nan detansyon. Make chak etap lè ou fini l.",
+      "progress": "{{done}} sou {{total}} etap fini",
+      "privacyNote": "Lis ou a sove sèlman sou aparèy sa a. Nou pa resevwa anyen.",
+      "items": [
+        {
+          "title": "Konnen 2–3 nimewo telefòn pa kè",
+          "text": "— yon manm fanmi ak yon avoka oswa yon liy dirèk. Yo ka pran telefòn ou."
+        },
+        {
+          "title": "Chwazi yon moun pou okipe pitit ou",
+          "text": "epi ranpli fòm eta ou pou moun k ap okipe timoun oswa fòm pwokirasyon (power of attorney) avèk yon gwoup èd legal (pa yon notario). Règ yo diferan nan chak eta."
+        },
+        {
+          "title": "Di lekòl ak doktè pitit ou",
+          "text": "kiyès ki gen dwa vin chèche yo."
+        },
+        {
+          "title": "Kenbe dokiman enpòtan yo an sekirite",
+          "text": "— paspò, batistè, papye imigrasyon, avi tribinal — epi kite kopi nan men yon moun ou fè konfyans."
+        },
+        {
+          "title": "Ekri nimewo A ou",
+          "text": "ak non ak nimewo avoka ou, epi bay yon moun ou fè konfyans yon kopi."
+        },
+        {
+          "title": "Kenbe prèv ou viv Ozetazini depi 2 an oswa plis",
+          "text": "— kontra lwaye, souch chèk, dosye lekòl oswa dosye medikal. Sa enpòtan akoz depòtasyon rapid (expedited removal)."
+        },
+        {
+          "title": "Planifye pou lajan ak bòdwo",
+          "text": "— lwaye, kouran ak dlo (utilities), bèt kay. Deside kiyès ki ka jere kont ou yo si sa nesesè."
+        },
+        {
+          "title": "Jwenn yon gwoup èd legal kounye a",
+          "text": "anvan gen yon ijans, epi sove nimewo yo."
+        },
+        {
+          "title": "Pratike ak fanmi ou",
+          "text": "— timoun yo tou — sa pou di ak sa pou fè si ajan yo vini."
+        }
+      ]
+    },
+    "everyone": {
+      "title": "Dwa tout moun genyen, kèlkeswa estati yo",
+      "intro": "Pwoteksyon sa yo aplike pou tout moun ki Ozetazini.",
+      "items": [
+        {
+          "icon": "🛡️",
+          "title": "Dwa konstitisyonèl",
+          "text": "Katriyèm, Senkyèm ak Katòzyèm Amannman yo pwoteje chak moun: pwoteksyon kont fouy ki pa rezonab, dwa pou rete an silans, ak dwa pou yo trete w jistman dapre lalwa."
+        },
+        {
+          "icon": "🏫",
+          "title": "Lekòl piblik",
+          "text": "Tout timoun ka ale lekòl piblik gratis (K–12, soti jadendanfan rive 12yèm ane), kèlkeswa estati yo oswa estati paran yo. Sa soti nan ka Lakou Siprèm Plyler v. Doe (1982), ki toujou lalwa. Gen kèk eta k ap eseye konteste l."
+        },
+        {
+          "icon": "🏥",
+          "title": "Swen medikal dijans",
+          "text": "Sal ijans lopital yo dwe egzamine ak estabilize nenpòt moun ki gen yon ijans, kèlkeswa estati li oswa kapasite li pou peye."
+        },
+        {
+          "icon": "💼",
+          "title": "Dwa travayè yo",
+          "text": "Lwa sou salè minimòm, lè siplemantè ak sekirite nan travay pwoteje w kèlkeswa estati ou. Li ilegal pou yon patwon pini w paske ou plenyen."
+        },
+        {
+          "icon": "📞",
+          "title": "Rele pou jwenn èd",
+          "text": "Nan yon ijans, rele 911. Viktim kèk krim oswa trafik moun ka kalifye pou viza espesyal (viza U oswa T). Mande yon avoka."
+        }
+      ]
+    },
+    "ice": {
+      "title": "Konprann ICE",
+      "intro": "Seksyon sa a soti nan pwojè sosyoloji ki te kòmanse Immigo, epi nou mete l ajou ak enfòmasyon aktyèl.",
+      "sections": [
+        {
+          "icon": "👮",
+          "title": "Kisa ICE ye?",
+          "text": "ICE (U.S. Immigration and Customs Enforcement — ajans imigrasyon ak ladwàn) se yon ajans gouvènman ki fè pati Department of Homeland Security (Depatman Sekirite Enteryè). Yo te kreye l an 2003. Li chèche, arete, mete nan detansyon, epi depòte moun li di k ap vyole lwa imigrasyon yo. Moun konn rele yo \"lapolis ICE.\"",
+          "points": [
+            {
+              "title": "ERO",
+              "text": "Enforcement and Removal Operations — pati nan ICE ki arete, mete nan detansyon, epi depòte moun."
+            },
+            {
+              "title": "HSI",
+              "text": "Homeland Security Investigations — fè envestigasyon sou krim tankou kontrebann moun ak trafik moun."
+            },
+            {
+              "title": "Border Patrol (CBP)",
+              "text": "Yon lòt ajans ki travay nan fwontyè ak nan ayewopò — men depi 2025 li fè arestasyon imigrasyon nan vil yo tou."
+            }
+          ]
+        },
+        {
+          "icon": "⚠️",
+          "title": "Kisa ICE ka fè?",
+          "points": [
+            {
+              "title": "Arete moun",
+              "text": "ICE ka arete moun li kwè ki Ozetazini san pèmisyon."
+            },
+            {
+              "title": "Mete moun nan detansyon",
+              "text": "Apre yon arestasyon, ICE ka kenbe moun nan sant detansyon, pafwa pou lontan."
+            },
+            {
+              "title": "Depòte moun — pafwa san odyans",
+              "text": "\"Depòtasyon rapid\" (expedited removal) pèmèt ofisye yo depòte kèk moun san yo pa wè yon jij. Depi 2025, gouvènman an sèvi ak li nenpòt kote Ozetazini pou moun ki pa ka pwouve yo gen 2 an nan peyi a, epi yon tribinal te pèmèt sa nan mwa jen 2026."
+            },
+            {
+              "title": "Fè arestasyon lakay moun, nan travay, ak nan tribinal",
+              "text": "ICE fè operasyon lakay moun ak nan kote travay, epi li te arete moun deyò tribinal imigrasyon."
+            },
+            {
+              "title": "Travay ak lapolis lokal",
+              "text": "Gras ak akò \"287(g)\", lapolis lokal ka ede fè respekte lwa imigrasyon. Te gen apeprè 1 950 akò nan 39 eta nan mwa jen 2026, konpare ak apeprè 135 nan mwa janvye 2025."
+            },
+            {
+              "title": "Sèvi ak teknoloji",
+              "text": "ICE sèvi ak zouti tankou yon aplikasyon telefòn ki eskane figi, done kamera ki li plak machin, ak enfòmasyon ki soti nan lòt ajans gouvènman. Tribinal yo poko fin deside konbyen done (pa egzanp, ki soti nan IRS oswa Medicaid) yo ka pataje."
+            }
+          ]
+        },
+        {
+          "icon": "🛑",
+          "title": "Sa ICE pa ka fè",
+          "points": [
+            "ICE pa ka fòse w reponn kesyon — ou ka rete an silans.",
+            "ICE pa ka fouye kay ou san manda yon jij oswa san pèmisyon ou (sof nan ka ijans, epi gade avètisman sou I-205 la pi wo a).",
+            "ICE pa ka efase videyo ou ni fouye telefòn ou san manda yon jij (fouy nan fwontyè diferan).",
+            "ICE pa gen dwa depòte sitwayen ameriken — men gen sitwayen yo te mete nan detansyon pa erè, kidonk sitwayen yo ta dwe konnen dwa yo tou."
+          ]
+        },
+        {
+          "icon": "🏘️",
+          "title": "Efè sou kominote yo",
+          "points": [
+            {
+              "title": "Laperèz ak twomatis",
+              "text": "Rechèch Brookings Institution te revize (2026) fè lyen ant aplikasyon lwa imigrasyon ak sentòm depresyon, anksyete, ak PTSD (twoub estrès apre yon twomatis) nan timoun."
+            },
+            {
+              "title": "Moun sispann rapòte krim",
+              "text": "Yon etid 2026 nan American Economic Review te jwenn viktim Ispanik yo te vin gen apeprè 30% mwens chans pou rapòte krim apre yon pwogram lokal pou fè respekte lwa imigrasyon te kòmanse — epi krim kont yo te ogmante."
+            },
+            {
+              "title": "Timoun separe ak paran yo",
+              "text": "Chèchè yo estime apeprè 145 000 timoun ki sitwayen ameriken te gen yon paran yo mete nan detansyon depi janvye 2025."
+            },
+            {
+              "title": "Lekòl ak kote travay deranje",
+              "text": "Absans nan lekòl te monte anpil apre deskont nan Central Valley Kalifòni (etid Stanford, 2025). Rapò nouvèl dekri mank travayè nan konstriksyon ak agrikilti apre deskont yo."
+            }
+          ]
+        }
+      ]
+    },
+    "fraud": {
+      "title": "Evite eskwokri imigrasyon",
+      "points": [
+        "Se sèlman de kalite moun ki ka bay konsèy legal sou imigrasyon: avoka ki gen lisans ak reprezantan akredite pa DOJ ki travay nan òganizasyon san bi likratif DOJ rekonèt.",
+        "Ozetazini, yon \"notario público\" oswa yon \"konsiltan imigrasyon\" pa yon avoka epi li pa ka bay konsèy legal — menm si notario yo se avoka nan anpil peyi Amerik Latin.",
+        "Siy danje: yo pwomèt yon rezilta garanti oswa \"kontak espesyal,\" yo mande w siyen fòm vid oswa bay manti, yo kenbe dokiman orijinal ou, oswa yo pa vle ba w yon kontra ekri ak yon resi.",
+        "Ou ka telechaje fòm USCIS gratis sou uscis.gov. Pa janm peye pou yon fòm vid.",
+        "Verifye yon avoka sou sitwèb bawo eta ou (state bar), epi yon reprezantan akredite sou lis (roster) EOIR la.",
+        "Rapòte eskwokri bay FTC sou reportfraud.ftc.gov. Pou rapòte, ou pa oblije di estati imigrasyon ou."
+      ]
+    },
+    "updates": {
+      "title": "Sa k ap chanje (oktòb 2026)",
+      "intro": "Politik sa yo ap chanje vit epi gen batay sou yo nan tribinal. Toujou verifye sous ofisyèl la oswa mande yon avoka.",
+      "items": [
+        {
+          "title": "Depòtasyon rapid (expedited removal)",
+          "text": "Yon tribinal te pèmèt gouvènman an elaji l nan tout peyi a nan mwa jen 2026. Kenbe prèv sou konbyen tan ou genyen depi w ap viv Ozetazini."
+        },
+        {
+          "title": "Lekòl, legliz, lopital",
+          "text": "DHS te mete fen ak politik \"zòn pwoteje\" li an janvye 2025. Kounye a pa gen okenn règ nasyonal ki kenbe ICE lwen kote sa yo; tribinal yo pwoteje sèlman kèk kongregasyon espesifik."
+        },
+        {
+          "title": "Anrejistreman",
+          "text": "DHS egzije anpil moun ki pa sitwayen anrejistre (Fòm G-325R), ak yon règ final ki te pibliye 29 jen 2026. Si ou pa gen papye, pale ak yon avoka anvan ou anrejistre."
+        },
+        {
+          "title": "Odyans kosyon",
+          "text": "Lakou Siprèm nan te dakò 1ye oktòb 2026 pou l deside si moun ki te antre san enspeksyon ka jwenn odyans kosyon."
+        },
+        {
+          "title": "DACA",
+          "text": "USCIS kontinye trete renouvèlman, men li pa trete premye demann. Renouvle 120–150 jou anvan DACA ou ekspire."
+        },
+        {
+          "title": "TPS",
+          "text": "Yo mete fen ak TPS (Estati Pwoteksyon Tanporè) pou anpil peyi, tankou Venezyela, Ayiti, Ondiras, ak Nikaragwa. Gade uscis.gov/tps pou estati aktyèl peyi ou."
+        }
+      ]
+    },
+    "disclaimer": "Paj sa a se enfòmasyon jeneral, se pa konsèy legal. Lwa ak politik pou fè respekte lwa imigrasyon yo ap chanje vit. Pale ak yon avoka imigrasyon ki gen lisans oswa yon reprezantan akredite pa DOJ sou sitiyasyon ou."
+  },
+  "resources": {
+    "title": "Resous",
+    "subtitle": "Videyo, liy dirèk, èd legal, ak nouvèl ou ka fè konfyans",
+    "visitWebsite": "Vizite sitwèb la →",
+    "video": {
+      "title": "Videyo Konnen Dwa Ou",
+      "description": "Kòmanse la a. Ti videyo sa yo esplike dwa ou nan langaj senp.",
+      "credit": "Videyo pa {{source}}.",
+      "comingSoon": "Videyo nan lang ou ap vini byento.",
+      "watchOnYoutube": "Gade l sou YouTube →"
+    },
+    "hotlines": {
+      "title": "Liy dirèk",
+      "description": "Rele pou jwenn èd. Sove nimewo sa yo nan telefòn ou epi ekri yo sou papye.",
+      "emergency": "Nan yon ijans oswa si yon moun an danje, rele 911.",
+      "entries": {
+        "detentionHotline": {
+          "name": "National Immigration Detention Hotline (Freedom for Immigrants)",
+          "description": "Pou moun ki nan detansyon imigrasyon: konpoze 9233# sou telefòn sant detansyon an pou jwenn èd gratis e konfidansyèl. Louvri lendi–vandredi, 8è maten–8è swa, lè Pasifik. Manm fanmi ka voye imèl bay hotline@freedomforimmigrants.org."
+        },
+        "migraWatch": {
+          "name": "United We Dream MigraWatch Hotline",
+          "description": "Rapòte aktivite ICE oswa Border Patrol ou te wè ak pwòp je ou epi jwenn sipò. Se volontè ki resevwa fòmasyon ki jere l."
+        },
+        "rapidResponse": {
+          "name": "Liy dirèk lokal pou repons rapid",
+          "description": "Pifò liy dirèk pou \"rapòte ICE\" se liy lokal. Jwenn sa ki pou eta ou nan lis 50 eta CLINIC la."
+        },
+        "iceDril": {
+          "name": "ICE Detention Reporting and Information Line",
+          "description": "Liy ofisyèl ICE pou kesyon oswa enkyetid sou yon moun ki nan detansyon. Gen operatè an dirèk lendi–vandredi, 8è maten–8è swa, lè Lès."
+        },
+        "domesticViolence": {
+          "name": "National Domestic Violence Hotline",
+          "description": "Èd gratis e konfidansyèl 24/7, nan plis pase 200 lang. Voye tèks START bay 88788. Menas sou estati imigrasyon ka yon fòm abi."
+        },
+        "trafficking": {
+          "name": "National Human Trafficking Hotline",
+          "description": "Èd pou moun yo fòse travay oswa fè komès sèks, 24/7. Voye tèks bay 233733."
+        },
+        "twoOneOne": {
+          "name": "211",
+          "description": "Èd gratis e konfidansyèl pou jwenn manje, lojman, swen sante, ak lòt sèvis lokal."
+        }
+      }
+    },
+    "detention": {
+      "title": "Si yo mete yon moun nan detansyon",
+      "description": "Zouti pou jwenn yon moun ki nan detansyon imigrasyon epi verifye dosye tribinal li.",
+      "entries": {
+        "locator": {
+          "name": "ICE Online Detainee Locator",
+          "description": "Jwenn yon granmoun ki nan detansyon ICE ak nimewo A li ak peyi kote li fèt, oswa non konplè li ak peyi kote li fèt. Yon nouvo arestasyon ka pran apeprè 48 èdtan pou parèt."
+        },
+        "eoirCase": {
+          "name": "Estati dosye tribinal imigrasyon (EOIR)",
+          "description": "Verifye dat odyans ak estati dosye a ak nimewo A 9 chif moun nan, sou entènèt oswa pa telefòn (24/7, an anglè ak an panyòl)."
+        },
+        "proBono": {
+          "name": "Lis EOIR pou founisè sèvis legal gratis",
+          "description": "Òganizasyon san bi likratif ki bay èd legal gratis, klase pa tribinal imigrasyon. Depatman Jistis (Department of Justice) mete l ajou."
+        },
+        "nijc": {
+          "name": "National Immigrant Justice Center",
+          "description": "Èd legal pou moun ki nan detansyon imigrasyon, sitou nan Midwès (Midwest)."
+        }
+      }
+    },
+    "legalAid": {
+      "title": "Èd legal gratis oswa pa chè",
+      "description": "Jwenn yon vrè avoka imigrasyon oswa yon reprezantan akredite.",
+      "notarioWarning": "⚠️ Pa janm chèche èd legal nan men yon \"notario\" oswa yon \"konsiltan imigrasyon.\" Se sèlman avoka ki gen lisans ak reprezantan akredite pa DOJ ki ka bay konsèy legal sou imigrasyon.",
+      "entries": {
+        "immigrationLawHelp": {
+          "name": "ImmigrationLawHelp.org",
+          "description": "Jwenn èd legal gratis oswa pa chè nan òganizasyon san bi likratif, dapre kòd postal (ZIP) oswa sant detansyon."
+        },
+        "ianDirectory": {
+          "name": "National Immigration Legal Services Directory",
+          "description": "Yon anyè sèvis legal imigrasyon san bi likratif atravè tout peyi a."
+        },
+        "clinic": {
+          "name": "Anyè afilye CLINIC",
+          "description": "Plis pase 400 pwogram legal san bi likratif nan 49 eta ak D.C."
+        },
+        "eoirRoster": {
+          "name": "Reprezantan akredite pa DOJ",
+          "description": "Verifye si yon òganizasyon san bi likratif ak anplwaye li yo gen apwobasyon pou bay èd legal sou imigrasyon — anvan ou peye pèsonn."
+        },
+        "aila": {
+          "name": "AILA Immigration Lawyer Search (rechèch avoka imigrasyon)",
+          "description": "Jwenn yon avoka imigrasyon prive dapre kote ou ye ak lang ou pale. Avoka prive yo anjeneral fè moun peye."
+        },
+        "scams": {
+          "name": "Rapòte eskwokri imigrasyon (FTC)",
+          "description": "Rapòte yon notario oswa yon fo moun k ap ede nan imigrasyon, sou entènèt oswa pa telefòn."
+        }
+      }
+    },
+    "community": {
+      "title": "Òganizasyon kominotè",
+      "description": "Gwoup ki ofri sipò, edikasyon, ak èd lokal.",
+      "entries": {
+        "unitedWeDream": {
+          "name": "United We Dream",
+          "description": "Pi gwo rezo imigran jèn yo dirije: èd pou DACA, fòmasyon sou dwa ou, ak kanpay."
+        },
+        "raices": {
+          "name": "RAICES",
+          "description": "Èd legal gratis oswa pa chè pou imigran ak refijye, ki baze nan Texas."
+        },
+        "makeTheRoad": {
+          "name": "Make the Road New York",
+          "description": "Sèvis, èd legal, ak òganizasyon kominotè pou kominote imigran ak kominote travayè nan New York (gwoup sè nan NJ, CT, PA, ak NV)."
+        },
+        "informedImmigrant": {
+          "name": "Informed Immigrant",
+          "description": "Gid nan langaj senp sou DACA, TPS, detansyon, ak règ anrejistreman an, an anglè ak an panyòl."
+        },
+        "ilrc": {
+          "name": "Immigrant Legal Resource Center (ILRC)",
+          "description": "Kat wouj gratis pou enprime nan 59 lang. Pa janm peye pou yon kat wouj."
+        },
+        "nilc": {
+          "name": "National Immigration Law Center (NILC)",
+          "description": "Gid gratis sou dwa ou ak nouvèl sou nouvo lwa. Li pa pran ka endividyèl."
+        },
+        "aclu": {
+          "name": "ACLU Immigrants' Rights (dwa imigran yo)",
+          "description": "Gid sou dwa ou an anglè ak an panyòl, ak aksyon legal pou imigran."
+        }
+      }
+    },
+    "news": {
+      "title": "Nouvèl serye",
+      "description": "Sit nouvèl ki gen bon repitasyon pou egzaktitid, plis zouti pou verifye sa ou li.",
+      "warningTitle": "Atansyon",
+      "warningText": "Sous sa yo gen bon repitasyon, men pa gen okenn sous ki pafè. Tcheke plis pase yon sous, epi sèvi ak verifikatè enfòmasyon (fact-checkers) anvan ou kwè oswa pataje yon bagay — sitou sou rezo sosyal.",
+      "sourcesTitle": "Sous nouvèl",
+      "checkersTitle": "Verifikatè enfòmasyon ak verifikatè patipri"
+    },
+    "noteContent": "Nou verifye resous sa yo, men nimewo telefòn ak sèvis ka chanje. Konfime detay yo anvan ou konte sou yo."
+  },
+  "action": {
+    "title": "Kijan pou Aji",
+    "subtitle": "Fason nenpòt moun ka sipòte kominote imigran yo",
+    "intro": "Ou pa bezwen se yon ekspè pou ede. Chwazi yon aksyon nan lis ki anba a epi kòmanse la.",
+    "support": {
+      "title": "Sipòte",
+      "lead": "Sipòte òganizasyon lokal ki defann dwa imigran yo.",
+      "points": [
+        "Fè volontè, bay don, oswa ale nan aktivite yo.",
+        "Gwoup tankou United We Dream, RAICES, Make the Road, ak koalisyon imigran lokal yo bay èd legal ak sipò kominotè.",
+        "Mande yon gwoup lokal si yo bezwen volontè pou rezo repons rapid, pou akonpaye moun nan tribinal, oswa pou tradiksyon."
+      ]
+    },
+    "speakOut": {
+      "title": "Pran Lapawòl",
+      "lead": "Pran lapawòl kont lenjistis.",
+      "points": [
+        "Kontakte reprezantan lokal, eta, ak nasyonal ou yo.",
+        "Mande pou yo mete fen ak kondisyon detansyon ki pa imen, separasyon fanmi, ak pwofilaj rasyal.",
+        "Mande lwa ki pwoteje imigran epi ki fè ajans imigrasyon yo reponn pou aksyon yo.",
+        "Ale nan reyinyon piblik (town hall) ak rasanbleman pasifik."
+      ]
+    },
+    "educate": {
+      "title": "Edike",
+      "lead": "Enfòme tèt ou ak lòt moun.",
+      "points": [
+        "Aprann sou lwa imigrasyon, pratik ICE, ak kijan yo afekte moun.",
+        "Pataje sa ou aprann ak zanmi, fanmi, ak sou rezo sosyal — apati sous ou ka fè konfyans.",
+        "Fo enfòmasyon ankouraje diskriminasyon. Konesans se pouvwa. Verifye sa moun di ak verifikatè enfòmasyon anvan ou pataje."
+      ]
+    },
+    "contact": {
+      "title": "Imèl ak Apèl",
+      "lead": "Voye imèl oswa rele lejislatè ou yo.",
+      "points": [
+        "Jwenn reprezantan ou yo ak kijan pou kontakte yo.",
+        "Sèvi ak 5 Calls pou ti tèks pou apèl ak nimewo telefòn, oswa Resistbot pou voye yon mesaj pa tèks.",
+        "Gwoup tankou United We Dream ak Indivisible souvan pataje mesaj ki deja pare — ou jis ajoute non ou.",
+        "Apèl nan biwo lokal yo souvan jwenn plis atansyon. Fè l kout: kiyès ou ye, ki kote ou rete, kisa ou vle yo fè."
+      ]
+    },
+    "petitions": {
+      "title": "Siyen Petisyon",
+      "lead": "Ajoute non ou nan kanpay.",
+      "points": [
+        "Petisyon montre lejislatè yo konbyen moun ki konsène pa yon pwoblèm.",
+        "Li kiyès ki jere yon petisyon anvan ou siyen, epi fè atansyon ak ki enfòmasyon pèsonèl ou pataje."
+      ]
+    },
+    "links": {
+      "uwd": "Gwoup jèn yo dirije ki defann dwa imigran, ak kanpay ak petisyon.",
+      "raices": "Sèvis legal ak defans pou imigran ak refijye.",
+      "makeTheRoad": "Òganizasyon kominotè ak sèvis pou kominote imigran ak kominote travayè.",
+      "findReps": "Zouti ofisyèl gouvènman ameriken an pou jwenn ofisyèl eli ou yo.",
+      "fiveCalls": "Tèks pou apèl ak nimewo telefòn reprezantan ou yo.",
+      "resistbot": "Voye yon mesaj pa tèks bay lejislatè ou yo.",
+      "indivisible": "Gwoup lokal ak gid aksyon pou kontakte Kongrè a.",
+      "aclu": "Goumen pou dwa sivil, tankou dwa imigran, epi pibliye alèt pou aksyon.",
+      "change": "Yon platfòm petisyon mondyal — chèche petisyon sou imigrasyon.",
+      "moveon": "Kanpay aksyon pwogresis, tankou jistis pou imigran."
+    },
+    "safety": {
+      "title": "Rete an sekirite pandan w ap aji",
+      "points": [
+        "Si ou pa sitwayen ameriken, pale ak yon avoka anvan ou fè nenpòt bagay ki ka mennen nan yon arestasyon, tankou dezobeyisans sivil. Yon arestasyon ka fè dosye imigrasyon ou tò.",
+        "Ou gen dwa filme ofisye an piblik si ou rete a distans epi ou pa entèfere. Pa pibliye adrès lakay ofisye yo ni enfòmasyon pèsonèl yo — sa ka yon krim.",
+        "Mande konsantman anvan ou pibliye foto oswa videyo ki montre figi lòt moun, sitou nan rasanbleman oswa pandan arestasyon.",
+        "Li gid ACLU a sou dwa manifestan yo anvan ou ale."
+      ]
+    }
+  },
+  "help": {
+    "title": "Èd pou Papye",
+    "subtitle": "Fòm imigrasyon komen",
+    "description": "Pou kisa fòm USCIS ki pi komen yo sèvi, konbyen yo koute, ak kijan pou evite erè.",
+    "commonFormsTitle": "Fòm komen",
+    "viewFormLabel": "Gade fòm nan sou USCIS →",
+    "feeLabel": "Frè",
+    "feesNote": "Frè yo chanje — kèk frè federal te monte 16 oktòb 2026. Toujou verifye lis frè ofisyèl USCIS la anvan ou depoze.",
+    "feesLink": "Lis frè USCIS (G-1055) →",
+    "forms": {
+      "i485": {
+        "name": "Aplikasyon pou kat vèt",
+        "description": "Aplike pou vin rezidan pèmanan (ajisteman estati) pandan ou andedan Etazini.",
+        "fee": "$1,440 sou papye / $1,390 sou entènèt. Moun ki poko gen 14 an k ap depoze ansanm ak yon paran: $950 / $900."
+      },
+      "i130": {
+        "name": "Petisyon pou yon fanmi",
+        "description": "Yon sitwayen ameriken oswa yon moun ki gen kat vèt mande pou fè yon manm fanmi vin viv Ozetazini.",
+        "fee": "$675 sou papye / $625 sou entènèt."
+      },
+      "i765": {
+        "name": "Pèmi travay (EAD)",
+        "description": "Aplike pou pèmisyon pou travay.",
+        "fee": "Anjeneral $520 sou papye / $470 sou entènèt; $260 si ou gen yon I-485 k ap tann. Moun k ap mande azil ak TPS peye frè federal anplis (pa egzanp, $570 pou yon premye pèmi ki baze sou azil)."
+      },
+      "n400": {
+        "name": "Sitwayènte ameriken (natiralizasyon)",
+        "description": "Aplike pou vin sitwayen ameriken.",
+        "fee": "$760 sou papye / $710 sou entènèt. Frè redwi $380 (sou papye) pou moun ki gen ti revni; egzansyon frè posib."
+      },
+      "i90": {
+        "name": "Ranplase oswa renouvle yon kat vèt",
+        "description": "Ranplase yon kat rezidan pèmanan ki pèdi, yo vòlè, oswa k ap ekspire.",
+        "fee": "$465 sou papye / $415 sou entènèt."
+      },
+      "i589": {
+        "name": "Aplikasyon pou azil",
+        "description": "Mande pwoteksyon si ou pè yo fè w mal nan peyi ou. Anjeneral gen yon dat limit 1 an apre ou rive — pale ak yon avoka vit.",
+        "fee": "$100 lè ou depoze, plis yon frè $105 chak ane pandan dosye ou ap tann. Pa gen egzansyon pou frè sa yo."
+      },
+      "i821d": {
+        "name": "Renouvèlman DACA",
+        "description": "Renouvle Deferred Action for Childhood Arrivals (aksyon diferé pou moun ki te rive timoun). USCIS ap trete renouvèlman, pa premye demann.",
+        "fee": "$605 sou papye / $555 sou entènèt, sa gen ladan pèmi travay la. Pa gen egzansyon frè."
+      },
+      "i821": {
+        "name": "Temporary Protected Status (TPS — Estati Pwoteksyon Tanporè)",
+        "description": "Aplike oswa re-anrejistre pou TPS si peyi ou deziyen. Verifye anvan si peyi ou toujou sou lis la.",
+        "fee": "Premye fwa: $520 plis $30 pou byometri. Re-anrejistreman: $30 pou byometri."
+      },
+      "i912": {
+        "name": "Demann egzansyon frè",
+        "description": "Mande USCIS pou l pa fè w peye yon frè si ou pa ka peye l. Li pa kouvri DACA ni nouvo frè federal yo (H.R. 1).",
+        "fee": ""
+      },
+      "g325r": {
+        "name": "Anrejistreman etranje",
+        "description": "Fòm anrejistreman anpil moun ki pa sitwayen oblije depoze kounye a. Si ou pa gen papye, pale ak yon avoka oswa yon reprezantan akredite anvan ou depoze l — li ka ekspoze w devan otorite imigrasyon yo.",
+        "fee": "$0. Sou entènèt sèlman."
+      }
+    },
+    "tipsTitle": "Konsèy pou fòm",
+    "tips": [
+      "Telechaje fòm sèlman sou uscis.gov — yo gratis. Sèvi ak dènye edisyon an.",
+      "Li tout enstriksyon yo anvan ou kòmanse.",
+      "Reponn chak kesyon ak verite. Yon fo repons ka fè yo entèdi w pou toujou.",
+      "Kenbe kopi tout sa ou voye, ansanm ak resi lapòs la oswa resi sou entènèt la.",
+      "Mande yon avoka ki gen lisans oswa yon reprezantan akredite anvan ou depoze, sitou si yo te janm arete w, depòte w, oswa si ou te janm san estati. Gen kèk fòm ki ka atire atansyon otorite imigrasyon yo.",
+      "Pa janm kite yon notario oswa yon konsiltan ranpli fòm pou ou."
+    ],
+    "chatbotSectionTitle": "Ou gen yon kesyon?",
+    "chatbotSectionDescription": "Asistan IA a ka esplike pou kisa yon fòm sèvi oswa kisa yon mo vle di. Li pa ka verifye dosye ou — pou sa, pale ak yon gwoup èd legal.",
+    "disclaimerText": "Toujou verifye uscis.gov pou vèsyon ak frè aktyèl chak fòm."
+  },
+  "about": {
+    "title": "Konsènan Immigo",
+    "subtitle": "Enfòmasyon ki pwoteje moun",
+    "missionTitle": "Misyon nou",
+    "description": "Immigo ede imigran ak moun ki pran swen yo konprann dwa yo, jwenn vrè èd, epi aji — nan langaj senp e nan sis lang.",
+    "originTitle": "Kote Immigo te kòmanse",
+    "originText": "Immigo te kòmanse kòm yon pwojè klas sosyoloji ki t ap fè rechèch sou dwa imigran, ICE, ak lenjistis anpil kominote ap sibi. Paj akèy pwojè a te di sa pi byen:",
+    "originQuote": "Sit sa a te fèt pou enfòme, bay pouvwa, epi mobilize moun ki pran dwa imigran yo a kè. Li bay enfòmasyon klè e aktyèl sou lwa imigrasyon, nouvèl sou depòtasyon, ak lenjistis anpil kominote ap sibi. Kit w ap defann chanjman, kit w ap jis kòmanse aprann, sa a se espas ou pou rete enfòme epi patisipe.",
+    "whatWeOfferTitle": "Sa ou ap jwenn isit la",
+    "offers": [
+      {
+        "icon": "📜",
+        "href": "/rights",
+        "label": "Konnen Dwa Ou",
+        "text": "sa pou fè ak sa pou di nan chak sitiyasyon, yon kat dwa ou ka enprime, ak yon plan sekirite pou fanmi an."
+      },
+      {
+        "icon": "🧭",
+        "href": "/resources",
+        "label": "Resous",
+        "text": "videyo, liy dirèk, èd legal gratis, ak nouvèl ou ka fè konfyans."
+      },
+      {
+        "icon": "✊",
+        "href": "/take-action",
+        "label": "Aji",
+        "text": "fason pou sipòte kominote imigran yo epi kontakte lejislatè yo."
+      },
+      {
+        "icon": "🧾",
+        "href": "/help",
+        "label": "Èd pou Papye",
+        "text": "fòm USCIS komen, frè, ak konsèy."
+      }
+    ],
+    "howWeCheckTitle": "Kijan nou verifye enfòmasyon",
+    "howWeCheckText": "Nou te verifye enfòmasyon ki sou sit sa a an oktòb 2026 ak sous ofisyèl gouvènman an (USCIS, ICE, tribinal imigrasyon yo) ak òganizasyon legal san bi likratif ou ka fè konfyans (ACLU, ILRC, NILC, American Immigration Council), plis desizyon tribinal gwo medya rapòte. Chak paj bay lis sous li yo.",
+    "disclaimerText": "Immigo se pou edikasyon sèlman, se pa konsèy legal. Lwa imigrasyon konplike epi li chanje souvan. Pou konsèy sou sitiyasyon ou, pale ak yon avoka imigrasyon ki gen lisans oswa yon reprezantan akredite pa DOJ."
+  },
+  "chatbot": {
+    "title": "Asistan IA",
+    "placeholder": "Poze yon kesyon...",
+    "send": "Voye",
+    "thinking": "M ap reflechi...",
+    "error": "Gen yon bagay ki pa mache. Tanpri eseye ankò.",
+    "unavailable": "Asistan an pa disponib kounye a. Ou ka toujou sèvi ak paj Konnen Dwa Ou ak paj Resous yo.",
+    "welcomeGreeting": "👋 Bonjou! Mwen se asistan Immigo a.",
+    "welcomePrompt": "Poze m kesyon sou dwa ou, sou fòm, oswa sou kote pou jwenn èd.",
+    "notLegalAdvice": "Mwen pa yon avoka, epi sa a se pa konsèy legal.",
+    "suggestions": [
+      "Kisa pou m fè si ICE frape pòt mwen?",
+      "Kijan pou m jwenn èd legal gratis?",
+      "Kisa yon nimewo A ye?"
+    ],
+    "toggleAria": "Louvri oswa fèmen asistan IA a",
+    "closeAria": "Fèmen asistan IA a"
+  },
+  "footer": {
+    "emergencyLabel": "Ijans?",
+    "emergencyText": "Rele 911. Si imigrasyon mete yon moun nan detansyon, gade Resous → Si yo mete yon moun nan detansyon.",
+    "description": "N ap bay imigran pouvwa grasa konesans.",
+    "disclaimer": "Enfòmasyon jeneral sèlman — se pa konsèy legal.",
+    "rights": "Tout dwa rezève."
+  }
+}

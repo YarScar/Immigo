@@ -1,45 +1,65 @@
-import { Link } from 'react-router-dom'
+'use client'
+
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
-import logo from '../assets/image.png'
-import '../styles/Navbar.css'
 
-function Navbar() {
+const LINKS = [
+  { href: '/', key: 'nav.home' },
+  { href: '/rights', key: 'nav.rights' },
+  { href: '/resources', key: 'nav.resources' },
+  { href: '/take-action', key: 'nav.takeAction' },
+  { href: '/help', key: 'nav.help' },
+  { href: '/about', key: 'nav.about' },
+]
+
+export default function Navbar() {
   const { t } = useTranslation()
+  const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+
+  // Close the mobile menu whenever the route changes.
+  useEffect(() => setOpen(false), [pathname])
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" aria-label="Main">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          <img src={logo} alt="Immigo" className="navbar-logo-img" />
+        <Link href="/" className="navbar-logo">
+          <Image src="/logo.png" alt="" width={45} height={45} className="navbar-logo-img" priority />
           <span className="navbar-logo-text">Immigo</span>
         </Link>
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <Link to="/" className="navbar-link">
-              {t('nav.home')}
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/rights" className="navbar-link">
-              {t('nav.rights')}
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/resources" className="navbar-link">
-              {t('nav.resources')}
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/help" className="navbar-link">
-              {t('nav.help')}
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/about" className="navbar-link">
-              {t('nav.about')}
-            </Link>
-          </li>
+
+        <button
+          type="button"
+          className="navbar-toggle"
+          aria-expanded={open}
+          aria-controls="navbar-menu"
+          aria-label={t('nav.menu')}
+          onClick={() => setOpen((o) => !o)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <ul id="navbar-menu" className={`navbar-menu ${open ? 'open' : ''}`}>
+          {LINKS.map(({ href, key }) => {
+            const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
+            return (
+              <li key={href} className="navbar-item">
+                <Link
+                  href={href}
+                  className={`navbar-link ${active ? 'active' : ''}`}
+                  aria-current={active ? 'page' : undefined}
+                >
+                  {t(key)}
+                </Link>
+              </li>
+            )
+          })}
           <li className="navbar-item">
             <LanguageSwitcher />
           </li>
@@ -48,6 +68,3 @@ function Navbar() {
     </nav>
   )
 }
-
-export default Navbar
-

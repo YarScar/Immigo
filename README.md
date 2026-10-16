@@ -1,131 +1,70 @@
 # 🌎 Immigo
 
-Immigo is a **React + Vite** web application designed to help immigrants in the United States understand and access their **rights**, **resources**, and **legal information** — regardless of language or documentation status.
+Immigo is a **Next.js + React** web app that helps immigrants in the United States understand their **rights**, find **trusted help**, and **get involved** — in English, Spanish, French, Arabic, Chinese and Haitian Creole.
 
-This app empowers users to:
-- Learn about their rights as **documented or undocumented** immigrants.
-- Access reliable **legal and community resources**.
-- Use a built-in **AI assistant** to ask questions about immigration laws, forms, and protection options.
-- Switch between **multiple languages** for accessibility and inclusion.
+The idea started as a sociology class project about immigrant rights and ICE. This version keeps that research (Understanding ICE, How to Take Action, Reliable News) and builds on it.
 
----
+## What's inside
 
-## 🧠 Features
+| Page | What it does |
+|---|---|
+| **Know Your Rights** (`/rights`) | Core rights, what to do at home / in public / in a car / at work / at the airport / if arrested, judicial vs. administrative warrants, a printable rights card, what to do if someone is detained, a family safety-plan checklist, rights everyone has regardless of status, Understanding ICE, and notario-fraud warnings. |
+| **Resources** (`/resources`) | Know-your-rights video (first), emergency hotlines, detention lookup tools, free/low-cost legal help, community groups, and reliable news + fact-checkers. |
+| **Take Action** (`/take-action`) | Support, Speak Out, Educate, Email & Call, and Sign Petitions — from the original project. |
+| **Paperwork Help** (`/help`) | Common USCIS forms with current fees and filing tips. |
+| **AI Assistant** | A chat helper for general questions (not legal advice). |
 
-- 🗣️ **Multilingual Support** — switch between languages (e.g., English, Spanish, French, Arabic, Mandarin, etc.)
-- 🤖 **AI Chatbot Assistant** — answers immigration-related questions using OpenAI API.
-- 📜 **Know Your Rights** section — simplified breakdown of immigrant rights and protections.
-- 🧾 **Paperwork Help** — guides users through common immigration forms and applications.
-- 🧭 **Resource Finder** — local organizations, hotlines, and free legal aid.
-- 💡 **Simple and Accessible UI** — clean design for all users, mobile-friendly.
+All facts were checked against official and legal-nonprofit sources in October 2026. Immigration policy changes often — re-check the "What's changing" section and the form fees before relying on them.
 
----
+## Tech stack
 
-## 🏗️ Tech Stack
+- **Next.js 16** (App Router) + **React 19**
+- **i18next / react-i18next** — translations live in `src/i18n/locales/*.json`
+- **OpenAI API** for the assistant, called from a **server route** (`src/app/api/chat/route.js`) so the API key is never sent to the browser
+- Plain CSS (`src/styles/`)
 
-| Category | Tools |
-|-----------|-------|
-| **Frontend Framework** | React 18 + Vite |
-| **Styling** | CSS3 |
-| **Language Support** | i18next |
-| **AI Assistant** | OpenAI API |
-| **Version Control** | Git & GitHub |
-| **Environment Variables** | `.env` file with `VITE_OPENAI_API_KEY` |
+## Getting started
 
----
-
-## 🧩 Folder Structure
-
-Immigo/
-│
-├── public/ # Static assets
-│ └── favicon.ico
-│
-├── src/
-│ ├── assets/ # Images and icons
-│ ├── components/ # Reusable UI components
-│ │ ├── Navbar.jsx
-│ │ ├── Footer.jsx
-│ │ ├── LanguageSwitcher.jsx
-│ │ └── Chatbot.jsx
-│ │
-│ ├── pages/ # Main app pages
-│ │ ├── Home.jsx
-│ │ ├── Rights.jsx
-│ │ ├── Resources.jsx
-│ │ ├── Help.jsx
-│ │ └── About.jsx
-│ │
-│ ├── styles/ # CSS files
-│ │ ├── App.css
-│ │ ├── Navbar.css
-│ │ └── Chatbot.css
-│ │
-│ ├── App.jsx # Root component
-│ ├── main.jsx # Entry file for React + Vite
-│ └── i18n.js # Language configuration
-│
-├── .env # Contains your API key (VITE_OPENAI_API_KEY)
-├── .gitignore
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-- OpenAI API key (for chatbot functionality)
-
-### Installation
-
-1. **Clone the repository** (or navigate to the project directory):
-   ```bash
-   cd Immigo
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**:
-   - Create a `.env` file in the root directory
-   - Add your OpenAI API key:
-     ```
-     VITE_OPENAI_API_KEY=your_openai_api_key_here
-     ```
-
-4. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-5. **Open your browser** and navigate to `http://localhost:3000`
-
-### Building for Production
+Requires Node.js 20.9 or newer.
 
 ```bash
-npm run build
+npm install
+cp .env.example .env.local   # then add your OPENAI_API_KEY
+npm run dev
 ```
 
-The built files will be in the `dist` directory.
-
-### Preview Production Build
+Open http://localhost:3000. The site works without a key; only the assistant is disabled.
 
 ```bash
-npm run preview
+npm run build   # production build
+npm start       # serve the production build
 ```
 
----
+### Environment variables
 
-## 📝 Notes
+| Name | Where | Purpose |
+|---|---|---|
+| `OPENAI_API_KEY` | server only | Powers the AI assistant. **Do not** rename it to `NEXT_PUBLIC_…` — that would expose it. |
+| `OPENAI_MODEL` | server only, optional | Chat model, default `gpt-4o-mini`. |
 
-- The chatbot requires a valid OpenAI API key to function
-- Language support is currently available in English, Spanish, and French
-- All information provided is for educational purposes only and does not constitute legal advice
+On Vercel, add these under Project → Settings → Environment Variables. No `vercel.json` is needed.
+
+## Project structure
+
+```
+src/
+  app/            routes (page.jsx per page), layout, api/chat
+  views/          the client component for each page
+  components/     Navbar, Footer, Chatbot, LanguageSwitcher, Accordion, …
+  data/links.js   phone numbers, URLs, video IDs, form fees (language-independent)
+  i18n/           i18next setup + locales/{en,es,fr,ar,zh,ht}.json
+  styles/         CSS
+public/           logo, favicon
+```
+
+To change a phone number or link, edit `src/data/links.js`. To change wording, edit the locale files (English is the source; other languages fall back to English for any missing text).
+
+## Notes
+
+- Information only — **not legal advice**. Talk to a licensed immigration attorney or a DOJ-accredited representative about your situation.
+- Arabic switches the page to right-to-left automatically.

@@ -1,0 +1,836 @@
+/* Styles for the Next.js rebuild: shared helpers, the rebuilt Know Your Rights
+   page, Take Action, and the news section. The red + cream accents come from
+   the original sociology-project mockups. */
+
+:root {
+  --accent-red: #d7261e;
+  --accent-red-dark: #a51b15;
+  --accent-cream: #ffe7b3;
+  --accent-cream-light: #fff6e0;
+  --ok-green: #2f7d4f;
+  --focus-ring: 0 0 0 3px rgba(91, 154, 139, 0.45);
+}
+
+a {
+  color: var(--primary-dark);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 6px;
+}
+
+/* Visually hidden until focused. Not moved off-screen with left:-9999px, which
+   adds a huge scrollable area in right-to-left (Arabic) layouts. */
+.skip-link {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  z-index: 2000;
+  background: var(--text-color);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 0.5rem 0;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.skip-link:focus {
+  clip-path: none;
+  width: auto;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .star,
+  .shooting-star {
+    display: none;
+  }
+}
+
+/* ---------- Home ---------- */
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+.quick-rights {
+  background: var(--accent-cream-light);
+  border: 2px solid var(--accent-cream);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.quick-rights h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+  color: var(--accent-red-dark);
+}
+
+.quick-rights-list {
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.quick-rights-list li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.quick-rights-number {
+  flex: 0 0 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent-red);
+  color: white;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.features-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ---------- Shared page pieces ---------- */
+
+.rights-lead {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.callout {
+  background: var(--accent-cream-light);
+  border-left: 4px solid var(--accent-red);
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.disclaimer-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* ---------- Know Your Rights ---------- */
+
+.rights-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: -1rem auto 2.5rem;
+  max-width: 900px;
+}
+
+.rights-toc a {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+}
+
+.rights-toc a:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-dark);
+}
+
+.rights-block {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  scroll-margin-top: 90px;
+}
+
+.rights-block > h2 {
+  font-size: 1.75rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.block-intro {
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+  max-width: 820px;
+}
+
+.rights-block ul,
+.rights-block ol {
+  padding-inline-start: 1.25rem;
+}
+
+.rights-block li {
+  margin-bottom: 0.5rem;
+  line-height: 1.65;
+}
+
+.core-rights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.core-rights .rights-card {
+  padding: 1.25rem 1.4rem;
+  background: var(--bg-light);
+  box-shadow: none;
+}
+
+.core-rights .rights-card h3 {
+  font-size: 1.15rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.4rem;
+}
+
+/* Scenario tabs */
+.scenario-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.scenario-tab {
+  font: inherit;
+  border: 2px solid var(--border-color);
+  background: var(--bg-light);
+  color: var(--text-color);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.scenario-tab:hover {
+  border-color: var(--secondary-color);
+}
+
+.scenario-tab.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.scenario-panel {
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.scenario-intro {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+
+.do-dont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.do-list,
+.dont-list,
+.say-this {
+  border-radius: 0.75rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.do-list {
+  background: #ecf7f0;
+  border-left: 4px solid var(--ok-green);
+}
+
+.dont-list {
+  background: #fdeceb;
+  border-left: 4px solid var(--accent-red);
+}
+
+.say-this {
+  margin-top: 1rem;
+  background: var(--accent-cream-light);
+  border-left: 4px solid #e0a106;
+}
+
+.do-list h3,
+.dont-list h3,
+.say-this h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.say-this q {
+  font-weight: 600;
+}
+
+/* Warrant comparison */
+.warrant-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.warrant-card {
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border: 2px solid;
+}
+
+.warrant-card.judicial {
+  border-color: var(--ok-green);
+  background: #f3faf6;
+}
+
+.warrant-card.administrative {
+  border-color: #e0a106;
+  background: #fffaf0;
+}
+
+.warrant-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.warrant-tip {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Printable red card */
+.red-card {
+  background: var(--accent-red);
+  color: white;
+  border-radius: 1rem;
+  padding: 1.5rem 1.75rem;
+  max-width: 560px;
+  box-shadow: 0 10px 24px rgba(165, 27, 21, 0.25);
+  border: 3px solid var(--accent-red-dark);
+}
+
+.red-card p {
+  margin-bottom: 0.6rem;
+  line-height: 1.55;
+}
+
+.red-card-heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+  background: var(--accent-cream);
+  color: var(--accent-red-dark);
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+/* Steps */
+.steps-list {
+  counter-reset: step;
+  list-style: none;
+  padding: 0 !important;
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.steps-list li {
+  counter-increment: step;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.5rem;
+  background: var(--bg-light);
+  border-radius: 0.75rem;
+}
+
+.steps-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+[dir='rtl'] .steps-list li {
+  padding: 1rem 3.5rem 1rem 1rem;
+}
+
+[dir='rtl'] .steps-list li::before {
+  left: auto;
+  right: 1rem;
+}
+
+.steps-list p {
+  margin-top: 0.25rem;
+  color: var(--text-color);
+}
+
+/* Safety plan checklist */
+.plan-progress {
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.plan-list {
+  list-style: none;
+  padding: 0 !important;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.plan-list label {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: var(--bg-light);
+  padding: 0.85rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.plan-list input {
+  margin-top: 0.35rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--primary-color);
+  flex: 0 0 auto;
+}
+
+.plan-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Accordions (Understanding ICE, Take Action) */
+.accordion-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.accordion {
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 2px solid var(--accent-red-dark);
+  background: white;
+}
+
+.accordion-heading {
+  margin: 0;
+}
+
+.accordion-trigger {
+  width: 100%;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  text-align: start;
+  background: var(--accent-red);
+  color: white;
+  border: none;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+}
+
+.accordion-trigger:hover {
+  background: var(--accent-red-dark);
+}
+
+.accordion-icon {
+  font-size: 1.6rem;
+}
+
+.accordion-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.accordion-hint {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.accordion-chevron {
+  background: var(--accent-cream);
+  color: var(--accent-red-dark);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  line-height: 1;
+  padding-bottom: 0.4rem;
+  transition: transform 0.25s ease;
+}
+
+.accordion.open .accordion-chevron {
+  transform: rotate(180deg);
+  padding-bottom: 0;
+  padding-top: 0.4rem;
+}
+
+.accordion-panel {
+  padding: 1.25rem 1.5rem;
+  background: var(--accent-cream-light);
+}
+
+.accordion-panel ul {
+  padding-inline-start: 1.25rem;
+}
+
+.accordion-panel li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.accordion-panel p {
+  margin-bottom: 0.75rem;
+}
+
+.accordion-lead {
+  font-weight: 600;
+}
+
+.action-links {
+  margin-top: 1rem;
+  border-top: 1px dashed var(--accent-red);
+  padding-top: 0.9rem;
+}
+
+.action-list {
+  max-width: 860px;
+  margin: 0 auto 2rem;
+}
+
+.safety-block,
+.fraud-block {
+  border-left: 5px solid var(--accent-red);
+}
+
+.updates-list li {
+  margin-bottom: 0.75rem;
+}
+
+.sources-block h2 {
+  font-size: 1.25rem !important;
+}
+
+.sources-list {
+  columns: 2 260px;
+  font-size: 0.9rem;
+}
+
+.sources-list li {
+  break-inside: avoid;
+}
+
+/* ---------- Resources ---------- */
+
+.video-frame {
+  background: #0d1117;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 900px;
+  margin: 1rem auto;
+}
+
+.video-ratio {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-ratio iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 6px;
+}
+
+.video-credit {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.emergency-callout {
+  background: #fdeceb;
+  border-left: 4px solid var(--accent-red);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+.resource-item {
+  cursor: default;
+}
+
+.resource-phone a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resource-phone a:hover {
+  text-decoration: underline;
+}
+
+.news-warning {
+  background: var(--accent-red);
+  color: white;
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.4rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.news-warning h3 {
+  margin-bottom: 0.4rem;
+}
+
+.chips-heading {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.link-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.link-chips a {
+  display: inline-block;
+  background: var(--accent-red);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  text-decoration: underline;
+  font-weight: 600;
+  box-shadow: 0 4px 0 var(--accent-red-dark);
+  transition: transform 0.15s ease;
+}
+
+.link-chips a:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Help ---------- */
+
+.form-number {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.95rem;
+  margin-inline-end: 0.35rem;
+}
+
+.form-fee {
+  font-size: 0.95rem;
+}
+
+.form-card {
+  cursor: default;
+}
+
+/* ---------- About ---------- */
+
+.origin-quote {
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--accent-red);
+  color: var(--accent-cream-light);
+  border-radius: 1rem;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.features-list a {
+  color: var(--primary-dark);
+}
+
+/* ---------- Footer ---------- */
+
+.footer-emergency {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-disclaimer {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  opacity: 0.85;
+}
+
+/* ---------- Chatbot additions ---------- */
+
+.chatbot-welcome-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.chatbot-note {
+  font-size: 0.8rem;
+}
+
+.chatbot-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.chatbot-suggestions button {
+  font: inherit;
+  font-size: 0.9rem;
+  text-align: start;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.chatbot-suggestions button:hover {
+  border-color: var(--primary-color);
+}
+
+.chatbot-message ul,
+.chatbot-message ol {
+  padding-inline-start: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+.chatbot-message.assistant a {
+  color: var(--primary-dark);
+}
+
+/* ---------- Print: only the red card ---------- */
+
+@media print {
+  body.printing-card * {
+    visibility: hidden;
+  }
+  body.printing-card .print-card,
+  body.printing-card .print-card * {
+    visibility: visible;
+  }
+  body.printing-card .print-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@media (max-width: 768px) {
+  .rights-block {
+    padding: 1.25rem;
+  }
+  .scenario-panel {
+    padding: 1rem;
+  }
+  .quick-rights {
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .resources-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .core-rights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .forms-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,932 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "rights": "Conoce tus derechos",
+    "resources": "Recursos",
+    "takeAction": "Toma acción",
+    "help": "Ayuda con trámites",
+    "about": "Acerca de",
+    "menu": "Menú",
+    "language": "Elige el idioma"
+  },
+  "common": {
+    "disclaimerTitle": "Aviso",
+    "disclaimerText": "Esta es información general, no es asesoría legal. Habla con un abogado de inmigración con licencia o con un representante acreditado por el DOJ (Departamento de Justicia) sobre tu situación.",
+    "lastChecked": "Última revisión: 16 de octubre de 2026. Las leyes y las políticas están cambiando rápido.",
+    "clickForInfo": "Haz clic aquí para más información →",
+    "sourcesTitle": "De dónde viene esta información"
+  },
+  "home": {
+    "title": "Bienvenido a Immigo",
+    "subtitle": "Tu guía sobre los derechos y recursos para inmigrantes",
+    "description": "Información clara y verificada sobre tus derechos, dónde encontrar ayuda legal gratis y cómo apoyar a las comunidades inmigrantes — en seis idiomas.",
+    "getStarted": "Conoce tus derechos",
+    "needHelpNow": "Necesito ayuda ahora",
+    "quickRightsTitle": "Si no recuerdas nada más, recuerda esto",
+    "quickRights": [
+      {
+        "title": "Puedes guardar silencio.",
+        "text": "No tienes que responder preguntas sobre dónde naciste ni sobre tu estatus migratorio."
+      },
+      {
+        "title": "Mantén la puerta cerrada.",
+        "text": "Para entrar, los agentes necesitan una orden firmada por un juez. Pídeles que la pasen por debajo de la puerta."
+      },
+      {
+        "title": "No firmes nada",
+        "text": "que no entiendas — sobre todo papeles en los que aceptas la deportación o la salida \"voluntaria\"."
+      },
+      {
+        "title": "Pide un abogado.",
+        "text": "Di: \"Quiero hablar con un abogado antes de responder cualquier pregunta\"."
+      },
+      {
+        "title": "Nunca mientas ni corras.",
+        "text": "No muestres papeles falsos ni te resistas. Guardar silencio es tu derecho; mentir te puede perjudicar."
+      }
+    ],
+    "quickRightsMore": "Mira qué hacer en cada situación →",
+    "featuresLabel": "Lo que puedes hacer en Immigo",
+    "features": {
+      "rights": {
+        "title": "Conoce tus derechos",
+        "description": "Qué hacer y qué decir en casa, en público, en el trabajo, en el carro, en el aeropuerto o si detienen a alguien.",
+        "cta": "Aprende tus derechos"
+      },
+      "resources": {
+        "title": "Encuentra ayuda",
+        "description": "Videos sobre tus derechos, líneas de ayuda, ayuda legal gratis y noticias confiables.",
+        "cta": "Ver recursos"
+      },
+      "action": {
+        "title": "Toma acción",
+        "description": "Apoya a las comunidades inmigrantes: sé voluntario, alza la voz, comunícate con tus legisladores y firma peticiones.",
+        "cta": "Participa"
+      },
+      "chatbot": {
+        "title": "Asistente de IA",
+        "description": "Haz una pregunta general sobre derechos, formularios o recursos. No es un abogado.",
+        "cta": "Pregúntale al asistente"
+      }
+    }
+  },
+  "rights": {
+    "title": "Conoce tus derechos",
+    "subtitle": "Todas las personas en EE. UU. tienen derechos — con o sin papeles",
+    "intro": "La Constitución de EE. UU. protege a todas las personas que están en el país, no solo a los ciudadanos. Conocer tus derechos — y practicar qué decir — puede protegerte a ti y a tu familia. Comparte esta página con las personas que quieres.",
+    "tocLabel": "En esta página",
+    "toc": [
+      {
+        "href": "#core",
+        "label": "Tus derechos básicos"
+      },
+      {
+        "href": "#situations",
+        "label": "Qué hacer en cada lugar"
+      },
+      {
+        "href": "#warrants",
+        "label": "Revisa la orden"
+      },
+      {
+        "href": "#card",
+        "label": "Tarjeta de derechos"
+      },
+      {
+        "href": "#detained",
+        "label": "Si detienen a alguien"
+      },
+      {
+        "href": "#plan",
+        "label": "Plan de seguridad"
+      },
+      {
+        "href": "#everyone",
+        "label": "Derechos para todos"
+      },
+      {
+        "href": "#ice",
+        "label": "Qué es ICE"
+      },
+      {
+        "href": "#fraud",
+        "label": "Evita estafas"
+      },
+      {
+        "href": "#updates",
+        "label": "Qué está cambiando"
+      }
+    ],
+    "core": {
+      "title": "Tus derechos básicos",
+      "items": [
+        {
+          "icon": "🤐",
+          "title": "Puedes guardar silencio",
+          "text": "No tienes que responder preguntas sobre dónde naciste, tu estatus migratorio o cómo llegaste a EE. UU. Di en voz alta: \"Estoy usando mi derecho a guardar silencio\". (En la frontera y en los aeropuertos hay otras reglas)."
+        },
+        {
+          "icon": "🚪",
+          "title": "Mantén la puerta cerrada",
+          "text": "Para entrar a tu casa sin tu permiso, los agentes necesitan una orden firmada por un juez. Un formulario firmado por un oficial de ICE no es lo mismo. Abrir la puerta puede tomarse como permiso para entrar."
+        },
+        {
+          "icon": "🙅",
+          "title": "Di que no a los registros",
+          "text": "Di claramente: \"No doy mi consentimiento para un registro\". Puede que eso no los detenga, pero protege tus derechos más adelante. Nunca te resistas físicamente."
+        },
+        {
+          "icon": "✋",
+          "title": "No firmes nada",
+          "text": "No firmes papeles que no entiendas. Los papeles de \"salida voluntaria\" o \"remoción estipulada\" pueden significar que renuncias a tu derecho a ver a un juez."
+        },
+        {
+          "icon": "⚖️",
+          "title": "Puedes tener un abogado",
+          "text": "Tienes derecho a un abogado en la corte de inmigración, pero el gobierno no lo va a pagar. Busca ayuda gratis o de bajo costo ahora, antes de que la necesites. Si te acusan de un delito, puedes pedir un defensor público gratis."
+        },
+        {
+          "icon": "🚫",
+          "title": "Nunca mientas ni muestres papeles falsos",
+          "text": "Mentir o usar documentos falsos puede llevar a cargos criminales y perjudicar tu caso. En vez de eso, puedes guardar silencio."
+        }
+      ]
+    },
+    "scenarios": {
+      "title": "Qué hacer en cada situación",
+      "intro": "Elige una situación. Léela ahora para que estés preparado si pasa.",
+      "doTitle": "Haz esto",
+      "dontTitle": "No hagas esto",
+      "sayTitle": "Lo que puedes decir",
+      "items": [
+        {
+          "id": "home",
+          "icon": "🏠",
+          "label": "En casa",
+          "intro": "Si agentes de inmigración tocan a tu puerta, no tienes que abrirla.",
+          "do": [
+            "Mantén la puerta cerrada. Habla a través de la puerta o de una ventana.",
+            "Pregunta: \"¿Son de ICE? ¿Tienen una orden firmada por un juez?\"",
+            "Pídeles que pasen la orden por debajo de la puerta o que la pongan contra la ventana.",
+            "Revisa que diga el nombre de una corte y que esté firmada por un juez (mira \"Revisa la orden\" más abajo).",
+            "Si entran de todos modos, di \"No doy mi consentimiento para que entren ni para un registro\" y luego guarda silencio.",
+            "Después, anota los nombres, los números de placa, la agencia, la hora y lo que pasó. Llama a un abogado o a una línea local de respuesta rápida."
+          ],
+          "dont": [
+            "No abras la puerta solo porque digan \"policía\". Los agentes de ICE muchas veces usan chalecos que dicen POLICE (policía).",
+            "No bloquees la entrada con tu cuerpo, no pelees ni corras.",
+            "No mientas ni muestres documentos falsos.",
+            "No firmes nada."
+          ],
+          "say": [
+            "No quiero hablar con ustedes.",
+            "Por favor, pasen la orden por debajo de la puerta.",
+            "No doy mi consentimiento para que entren.",
+            "Estoy usando mi derecho a guardar silencio."
+          ]
+        },
+        {
+          "id": "public",
+          "icon": "🚶",
+          "label": "En público",
+          "intro": "En la calle, en una tienda o en una parada de autobús, puedes guardar silencio y preguntar si te puedes ir.",
+          "do": [
+            "Mantén la calma. Deja las manos donde se puedan ver.",
+            "Pregunta: \"¿Me puedo ir?\" Si dicen que sí, aléjate con calma.",
+            "Si tienes 18 años o más y tienes papeles migratorios válidos (green card, visa, permiso de trabajo), llévalos contigo — la ley lo exige — y muéstralos si un oficial de inmigración te los pide.",
+            "Lleva una tarjeta de derechos y el número de teléfono de un abogado o de alguien de confianza."
+          ],
+          "dont": [
+            "No corras. Correr se puede usar como motivo para detenerte.",
+            "No mientas sobre quién eres ni muestres papeles falsos.",
+            "Si no tienes estatus legal, muchos grupos legales recomiendan no llevar en el día a día papeles de otro país, como un pasaporte extranjero."
+          ],
+          "say": [
+            "¿Me puedo ir?",
+            "Estoy usando mi derecho a guardar silencio.",
+            "No doy mi consentimiento para un registro."
+          ]
+        },
+        {
+          "id": "car",
+          "icon": "🚗",
+          "label": "En el carro",
+          "intro": "Si la policía o los agentes detienen tu carro, quien maneja tiene que seguir algunas reglas. Los pasajeros tienen más derecho a guardar silencio.",
+          "do": [
+            "Oríllate en un lugar seguro, apaga el carro y deja las manos en el volante.",
+            "Si manejas: muestra tu licencia, el registro del vehículo y el comprobante de seguro si te los piden.",
+            "Si eres pasajero: puedes preguntar \"¿Me puedo ir?\" y guardar silencio. Algunos estados exigen que digas tu nombre.",
+            "Di \"No doy mi consentimiento para un registro\". La policía todavía puede registrar si cree que tiene un motivo legal."
+          ],
+          "dont": [
+            "No des un nombre falso ni papeles falsos.",
+            "No discutas ni te resistas, aunque creas que la parada es injusta. Puedes impugnarla después.",
+            "Evita manejar sin licencia siempre que puedas. Manejar sin licencia es una forma común en que una parada de tráfico termina en un arresto de inmigración."
+          ],
+          "say": [
+            "No doy mi consentimiento para un registro.",
+            "¿Me puedo ir?",
+            "Estoy usando mi derecho a guardar silencio."
+          ]
+        },
+        {
+          "id": "work",
+          "icon": "🏭",
+          "label": "En el trabajo",
+          "intro": "Los agentes pueden entrar a las áreas públicas de un negocio, como el vestíbulo o el piso de ventas de una tienda. Para las áreas privadas, solo para empleados, necesitan una orden de un juez o el permiso del empleador.",
+          "do": [
+            "Mantén la calma y guarda silencio sobre tu estatus y dónde naciste.",
+            "Pide un abogado antes de responder preguntas.",
+            "Recuerda: las leyes de salario mínimo, horas extra y seguridad te protegen sin importar tu estatus migratorio."
+          ],
+          "dont": [
+            "No corras — se puede usar como motivo para detenerte.",
+            "No mientas ni muestres documentos falsos.",
+            "No firmes nada sin un abogado."
+          ],
+          "say": [
+            "Estoy usando mi derecho a guardar silencio.",
+            "Quiero hablar con un abogado."
+          ]
+        },
+        {
+          "id": "airport",
+          "icon": "✈️",
+          "label": "Aeropuerto y frontera",
+          "intro": "En la frontera y en los aeropuertos, las reglas son diferentes. Los oficiales pueden registrarte a ti y tus cosas sin una orden.",
+          "do": [
+            "Debes saber que los oficiales pueden revisar maletas y teléfonos sin una orden.",
+            "Ciudadanos de EE. UU.: no te pueden negar la entrada, pero te pueden demorar si no respondes.",
+            "Residentes permanentes (con green card): responde preguntas básicas sobre quién eres y sobre tu viaje. Puedes pedir ver a un juez de inmigración.",
+            "Personas con visa y visitantes: te pueden negar la entrada si te niegas a responder. Habla con un abogado antes de viajar si tienes cualquier historial migratorio o criminal.",
+            "A menos de 100 millas de una frontera, en los puestos de control de la Border Patrol (Patrulla Fronteriza) te pueden preguntar por tu ciudadanía. Para registrar tu carro igual necesitan tu consentimiento o una causa probable."
+          ],
+          "dont": [
+            "Residentes permanentes: no firmes el Formulario I-407. Con él renuncias a tu green card.",
+            "No les mientas a los oficiales.",
+            "No te resistas físicamente a un registro. Di que no das tu consentimiento."
+          ],
+          "say": [
+            "No doy mi consentimiento para un registro.",
+            "Quiero hablar con un abogado.",
+            "No voy a firmar nada hasta hablar con un abogado."
+          ]
+        },
+        {
+          "id": "arrested",
+          "icon": "🚨",
+          "label": "Si te arrestan",
+          "intro": "Si inmigración o la policía te arrestan, protege tu caso guardando silencio y pidiendo un abogado.",
+          "do": [
+            "Di que quieres guardar silencio y que quieres un abogado.",
+            "Memoriza los números de teléfono de un familiar y de un abogado — te pueden quitar el teléfono.",
+            "Diles a los oficiales si tienes hijos que necesitan cuidado, problemas de salud o medicinas que necesitas.",
+            "Pide comunicarte con el consulado de tu país.",
+            "Pide ver a un juez de inmigración y pregunta por la fianza."
+          ],
+          "dont": [
+            "No firmes nada — sobre todo \"salida voluntaria\" o \"remoción estipulada\" — sin un abogado.",
+            "No hables de tu estatus ni de cómo entraste con nadie, excepto con tu abogado. Las llamadas desde la cárcel se graban.",
+            "No mientas ni muestres documentos falsos."
+          ],
+          "say": [
+            "Quiero hablar con un abogado.",
+            "No voy a firmar nada hasta hablar con un abogado.",
+            "Quiero comunicarme con mi consulado."
+          ]
+        }
+      ]
+    },
+    "warrant": {
+      "title": "Revisa la orden",
+      "intro": "Hay dos tipos de \"órdenes\". Solo una permite que los agentes entren a tu casa sin tu permiso. Puedes revisarla sin abrir la puerta.",
+      "judicial": {
+        "title": "Orden de un juez (orden judicial)",
+        "points": [
+          "La emite una corte — arriba aparece el nombre de una corte, como \"United States District Court\" (Corte de Distrito de EE. UU.) o una corte estatal.",
+          "Está firmada por un juez o un juez magistrado.",
+          "Tiene tu dirección correcta y dice qué se puede registrar o a quién se puede arrestar.",
+          "Tiene fecha y no está vencida.",
+          "Una orden de registro permite que los agentes registren los lugares que menciona. Una orden de arresto les permite entrar a buscar a la persona nombrada."
+        ]
+      },
+      "admin": {
+        "title": "Orden de ICE (orden administrativa)",
+        "points": [
+          "Arriba dice \"Department of Homeland Security\" (Departamento de Seguridad Nacional) o \"Immigration and Customs Enforcement\" (Servicio de Inmigración y Control de Aduanas).",
+          "Por lo general es el Formulario I-200 (Warrant for Arrest, orden de arresto) o el Formulario I-205 (Warrant of Removal, orden de deportación).",
+          "La firma un oficial de inmigración, no un juez — aunque tenga tu nombre.",
+          "Por sí sola, no les da a los agentes permiso para entrar a tu casa. Puedes mantener la puerta cerrada.",
+          "Atención: un memorando de ICE de 2025 dice que los oficiales pueden entrar a la fuerza a una casa con un I-205 cuando la persona tiene una orden final de deportación. Esto se está disputando en la corte. Si entran a la fuerza, no te resistas — di que no das tu consentimiento y avísale a un abogado."
+        ]
+      },
+      "tip": "Pídeles que pasen el papel por debajo de la puerta o que lo muestren en una ventana. Nunca tienes que abrir la puerta para leerlo."
+    },
+    "card": {
+      "title": "Tu tarjeta de derechos",
+      "intro": "Imprime esta tarjeta y guárdala en tu cartera o junto a tu puerta. Si llegan agentes, puedes mostrarla por una ventana o pasarla por debajo de la puerta en vez de hablar.",
+      "heading": "Estoy usando mis derechos constitucionales",
+      "lines": [
+        "No voy a hablar con usted ni a responder sus preguntas. Estoy usando mi derecho a guardar silencio bajo la Quinta Enmienda.",
+        "No le doy permiso para entrar a mi casa, a menos que me muestre una orden firmada por un juez.",
+        "No doy mi consentimiento para que me registren a mí, ni mi casa, mi carro o mis pertenencias, bajo la Cuarta Enmienda.",
+        "No voy a firmar nada hasta hablar con un abogado.",
+        "Quiero hablar con un abogado."
+      ],
+      "print": "Imprimir esta tarjeta",
+      "officialLink": "Consigue las tarjetas rojas oficiales de ILRC en 59 idiomas →"
+    },
+    "detained": {
+      "title": "Si te detienen a ti o a un familiar",
+      "intro": "Actúa rápido. Estos pasos te pueden ayudar a encontrar a la persona y proteger su caso.",
+      "steps": [
+        {
+          "title": "Averigua dónde está.",
+          "text": "Usa el ICE Online Detainee Locator (localizador de detenidos de ICE) en locator.ice.gov. Necesitas su número A de 9 dígitos y su país de nacimiento, o su nombre exacto y su país de nacimiento. Puede tardar uno o dos días en aparecer, y no incluye a menores de 18 años."
+        },
+        {
+          "title": "Reúne su información.",
+          "text": "Nombre completo, fecha de nacimiento, número A (el número de 9 dígitos que empieza con \"A\" en los papeles de inmigración), país de nacimiento, y dónde y cuándo la arrestaron."
+        },
+        {
+          "title": "Consigue un abogado rápido.",
+          "text": "Comunícate con un grupo legal gratis o de bajo costo de la página de Recursos. Los casos de detención avanzan rápido. No le pagues a un notario."
+        },
+        {
+          "title": "Revisa su caso en la corte.",
+          "text": "Usa el portal EOIR Automated Case Information (información automatizada de casos, acis.eoir.justice.gov) o llama al 1-800-898-7180 con su número A para saber las fechas de sus audiencias."
+        },
+        {
+          "title": "Pregunta por la fianza.",
+          "text": "Ahora mismo, a muchas personas que entraron sin inspección les están diciendo que no pueden tener una audiencia de fianza. Las cortes no están de acuerdo, y el 1 de octubre de 2026 la Corte Suprema aceptó decidir la cuestión. Un abogado podría pedirle a una corte federal una audiencia de fianza."
+        },
+        {
+          "title": "Comunícate con su consulado.",
+          "text": "El consulado de su país podría ayudar, visitarla o encontrarle un abogado."
+        },
+        {
+          "title": "Cuida a la familia.",
+          "text": "Usa tu plan de seguridad: asegúrate de que alguien cuide a los niños y de que se paguen las cuentas."
+        }
+      ],
+      "hotlinesLink": "Ver líneas de ayuda y herramientas de búsqueda para personas detenidas →"
+    },
+    "plan": {
+      "title": "Haz un plan de seguridad familiar",
+      "intro": "Un plan hecho con tiempo mantiene a tu familia más segura si detienen a alguien. Marca cada paso cuando lo termines.",
+      "progress": "{{done}} de {{total}} pasos completados",
+      "privacyNote": "Tu lista se guarda solo en este dispositivo. No se nos envía nada.",
+      "items": [
+        {
+          "title": "Memoriza 2 o 3 números de teléfono",
+          "text": "— de un familiar y de un abogado o una línea de ayuda. Te pueden quitar el teléfono."
+        },
+        {
+          "title": "Elige a alguien que cuide a tus hijos",
+          "text": "y llena el formulario de cuidador o de poder legal de tu estado con un grupo de asistencia legal (no con un notario). Las reglas son distintas en cada estado."
+        },
+        {
+          "title": "Dile a la escuela y al médico de tus hijos",
+          "text": "quién tiene permiso para recogerlos."
+        },
+        {
+          "title": "Guarda tus documentos importantes en un lugar seguro",
+          "text": "— pasaportes, actas de nacimiento, papeles de inmigración, avisos de la corte — y deja copias con alguien de confianza."
+        },
+        {
+          "title": "Anota tu número A",
+          "text": "y el nombre y número de tu abogado, y dale una copia a una persona de confianza."
+        },
+        {
+          "title": "Guarda pruebas de que has vivido en EE. UU. 2 años o más",
+          "text": "— contratos de alquiler, talones de pago, registros escolares o médicos. Esto importa por la deportación acelerada."
+        },
+        {
+          "title": "Planea cómo manejar el dinero y las cuentas",
+          "text": "— renta, servicios, mascotas. Decide quién puede usar tus cuentas si hace falta."
+        },
+        {
+          "title": "Busca un grupo de asistencia legal ahora",
+          "text": "antes de que haya una emergencia, y guarda su número."
+        },
+        {
+          "title": "Practica con tu familia",
+          "text": "— incluidos los niños — qué decir y qué hacer si llegan agentes."
+        }
+      ]
+    },
+    "everyone": {
+      "title": "Derechos que todos tienen, sin importar su estatus",
+      "intro": "Estas protecciones se aplican a todas las personas en Estados Unidos.",
+      "items": [
+        {
+          "icon": "🛡️",
+          "title": "Derechos constitucionales",
+          "text": "La 4.ª, 5.ª y 14.ª Enmiendas protegen a todas las personas: protección contra registros irrazonables, el derecho a guardar silencio y el derecho a un trato justo bajo la ley."
+        },
+        {
+          "icon": "🏫",
+          "title": "Escuela pública",
+          "text": "Todos los niños pueden ir a la escuela pública gratis (de kínder a 12.º grado), sin importar su estatus ni el de sus padres. Esto viene del caso de la Corte Suprema Plyler v. Doe (1982), que sigue siendo ley. Algunos estados están tratando de impugnarlo."
+        },
+        {
+          "icon": "🏥",
+          "title": "Atención médica de emergencia",
+          "text": "Las salas de emergencia de los hospitales tienen que examinar y estabilizar a cualquier persona con una emergencia, sin importar su estatus o si puede pagar."
+        },
+        {
+          "icon": "💼",
+          "title": "Derechos de los trabajadores",
+          "text": "Las leyes de salario mínimo, horas extra y seguridad en el trabajo te protegen sin importar tu estatus. Es ilegal que un empleador te castigue por quejarte."
+        },
+        {
+          "icon": "📞",
+          "title": "Pedir ayuda",
+          "text": "En una emergencia, llama al 911. Las víctimas de ciertos delitos o de trata de personas pueden calificar para visas especiales (visas U o T). Pregúntale a un abogado."
+        }
+      ]
+    },
+    "ice": {
+      "title": "Qué es ICE",
+      "intro": "Esta sección nació del proyecto de sociología con el que empezó Immigo, actualizado con datos recientes.",
+      "sections": [
+        {
+          "icon": "👮",
+          "title": "¿Qué es ICE?",
+          "text": "ICE (U.S. Immigration and Customs Enforcement, Servicio de Inmigración y Control de Aduanas) es una agencia del gobierno que forma parte del Departamento de Seguridad Nacional. Se creó en 2003. Busca, arresta, detiene y deporta a personas que, según la agencia, están violando las leyes de inmigración. A veces la gente los llama \"policía de ICE\".",
+          "points": [
+            {
+              "title": "ERO",
+              "text": "Enforcement and Removal Operations (Operaciones de Control y Deportación) — la parte de ICE que arresta, detiene y deporta a las personas."
+            },
+            {
+              "title": "HSI",
+              "text": "Homeland Security Investigations (Investigaciones de Seguridad Nacional) — investiga delitos como el contrabando y la trata de personas."
+            },
+            {
+              "title": "Border Patrol (CBP)",
+              "text": "La Patrulla Fronteriza es otra agencia, que trabaja en las fronteras y los aeropuertos — pero desde 2025 también ha hecho arrestos de inmigración en ciudades."
+            }
+          ]
+        },
+        {
+          "icon": "⚠️",
+          "title": "¿Qué puede hacer ICE?",
+          "points": [
+            {
+              "title": "Arrestar personas",
+              "text": "ICE puede arrestar a personas que cree que están en EE. UU. sin permiso."
+            },
+            {
+              "title": "Detener personas",
+              "text": "Después de un arresto, ICE puede retener a las personas en centros de detención, a veces por mucho tiempo."
+            },
+            {
+              "title": "Deportar personas — a veces sin una audiencia",
+              "text": "La \"deportación acelerada\" permite que los oficiales deporten a algunas personas sin que vean a un juez. Desde 2025 el gobierno la usa en cualquier parte de EE. UU. contra personas que no pueden probar 2 años en el país, y una corte lo permitió en junio de 2026."
+            },
+            {
+              "title": "Hacer arrestos en casas, lugares de trabajo y cortes",
+              "text": "ICE hace operativos en casas y lugares de trabajo, y ha arrestado a personas afuera de la corte de inmigración."
+            },
+            {
+              "title": "Trabajar con la policía local",
+              "text": "Por medio de acuerdos \"287(g)\", la policía local puede ayudar con el control migratorio. Había unos 1,950 acuerdos en 39 estados en junio de 2026, frente a unos 135 en enero de 2025."
+            },
+            {
+              "title": "Usar tecnología",
+              "text": "ICE usa herramientas como una aplicación de teléfono que escanea caras, datos de cámaras que leen placas de carros e información de otras agencias del gobierno. Las cortes todavía están decidiendo cuántos datos (por ejemplo, del IRS o de Medicaid) se pueden compartir."
+            }
+          ]
+        },
+        {
+          "icon": "🛑",
+          "title": "Lo que ICE no puede hacer",
+          "points": [
+            "ICE no te puede obligar a responder preguntas — puedes guardar silencio.",
+            "ICE no puede registrar tu casa sin una orden de un juez o sin tu permiso (excepto en emergencias; y mira la advertencia sobre el I-205 más arriba).",
+            "ICE no puede borrar tus videos ni revisar tu teléfono sin una orden de un juez (los registros en la frontera son diferentes).",
+            "ICE no tiene permitido deportar a ciudadanos de EE. UU. — pero han detenido a ciudadanos por error, así que los ciudadanos también deben conocer sus derechos."
+          ]
+        },
+        {
+          "icon": "🏘️",
+          "title": "Efectos en las comunidades",
+          "points": [
+            {
+              "title": "Miedo y trauma",
+              "text": "Investigaciones revisadas por la Brookings Institution (2026) relacionan el control migratorio con depresión, ansiedad y síntomas de estrés postraumático (PTSD) en niños."
+            },
+            {
+              "title": "La gente deja de denunciar delitos",
+              "text": "Un estudio de 2026 en la American Economic Review encontró que las víctimas hispanas se volvieron cerca de un 30% menos propensas a denunciar delitos después de que empezó un programa local de control migratorio — y los delitos contra ellas aumentaron."
+            },
+            {
+              "title": "Niños separados de sus padres",
+              "text": "Los investigadores calculan que unos 145,000 niños ciudadanos de EE. UU. han tenido a un padre o una madre detenidos desde enero de 2025."
+            },
+            {
+              "title": "Problemas en escuelas y lugares de trabajo",
+              "text": "Las ausencias escolares subieron mucho después de las redadas en el Valle Central de California (estudio de Stanford, 2025). Las noticias reportan falta de trabajadores en la construcción y la agricultura después de las redadas."
+            }
+          ]
+        }
+      ]
+    },
+    "fraud": {
+      "title": "Evita las estafas de inmigración",
+      "points": [
+        "Solo dos tipos de personas pueden dar asesoría legal de inmigración: abogados con licencia y representantes acreditados por el DOJ (Departamento de Justicia) que trabajan en organizaciones sin fines de lucro reconocidas por el DOJ.",
+        "En EE. UU., un \"notario público\" o un \"consultor de inmigración\" no es abogado y no puede dar asesoría legal — aunque en muchos países de América Latina los notarios sí son abogados.",
+        "Señales de alerta: te prometen un resultado garantizado o \"contactos especiales\", te piden firmar formularios en blanco o mentir, se quedan con tus documentos originales, o no te dan un contrato por escrito ni un recibo.",
+        "Los formularios de USCIS se descargan gratis en uscis.gov. Nunca pagues por un formulario en blanco.",
+        "Verifica a un abogado en el sitio web del colegio de abogados (state bar) de tu estado, y a un representante acreditado en la lista oficial (roster) de EOIR.",
+        "Denuncia las estafas ante la FTC en reportfraud.ftc.gov. Para denunciar no tienes que decir cuál es tu estatus migratorio."
+      ]
+    },
+    "updates": {
+      "title": "Qué está cambiando (octubre de 2026)",
+      "intro": "Estas políticas están cambiando rápido y se están disputando en las cortes. Siempre revisa la fuente oficial o pregúntale a un abogado.",
+      "items": [
+        {
+          "title": "Deportación acelerada",
+          "text": "En junio de 2026, una corte permitió que el gobierno la ampliara a todo el país. Guarda pruebas de cuánto tiempo has vivido en EE. UU."
+        },
+        {
+          "title": "Escuelas, iglesias, hospitales",
+          "text": "El DHS terminó su política de \"áreas protegidas\" en enero de 2025. Ahora mismo no hay una regla nacional que mantenga a ICE lejos de estos lugares; las cortes solo han protegido a algunas congregaciones específicas."
+        },
+        {
+          "title": "Registro",
+          "text": "El DHS exige que muchas personas que no son ciudadanas se registren (Formulario G-325R), con una regla final publicada el 29 de junio de 2026. Si eres indocumentado, habla con un abogado antes de registrarte."
+        },
+        {
+          "title": "Audiencias de fianza",
+          "text": "El 1 de octubre de 2026, la Corte Suprema aceptó decidir si las personas que entraron sin inspección pueden tener audiencias de fianza."
+        },
+        {
+          "title": "DACA",
+          "text": "USCIS sigue procesando renovaciones, pero no está procesando solicitudes por primera vez. Renueva entre 120 y 150 días antes de que se venza tu DACA."
+        },
+        {
+          "title": "TPS",
+          "text": "El TPS se ha terminado para muchos países, como Venezuela, Haití, Honduras y Nicaragua. Revisa uscis.gov/tps para ver la situación actual de tu país."
+        }
+      ]
+    },
+    "disclaimer": "Esta página es información general, no es asesoría legal. Las leyes y las políticas de control migratorio están cambiando rápido. Habla con un abogado de inmigración con licencia o con un representante acreditado por el DOJ (Departamento de Justicia) sobre tu situación."
+  },
+  "resources": {
+    "title": "Recursos",
+    "subtitle": "Videos, líneas de ayuda, ayuda legal y noticias confiables",
+    "visitWebsite": "Visitar el sitio web →",
+    "video": {
+      "title": "Videos sobre tus derechos",
+      "description": "Empieza aquí. Estos videos cortos explican tus derechos en lenguaje sencillo.",
+      "credit": "Videos de {{source}}.",
+      "comingSoon": "Pronto habrá videos en tu idioma.",
+      "watchOnYoutube": "Ver en YouTube →"
+    },
+    "hotlines": {
+      "title": "Líneas de ayuda",
+      "description": "Llama para pedir ayuda. Guarda estos números en tu teléfono y anótalos en papel.",
+      "emergency": "En una emergencia o si alguien está en peligro, llama al 911.",
+      "entries": {
+        "detentionHotline": {
+          "name": "National Immigration Detention Hotline (línea nacional para personas en detención migratoria, de Freedom for Immigrants)",
+          "description": "Para personas en detención migratoria: marca 9233# desde el teléfono del centro de detención para recibir ayuda gratis y confidencial. Abierta de lunes a viernes, de 8 a. m. a 8 p. m., hora del Pacífico. Los familiares pueden escribir a hotline@freedomforimmigrants.org."
+        },
+        "migraWatch": {
+          "name": "Línea MigraWatch de United We Dream",
+          "description": "Reporta actividad de ICE o de la Border Patrol (Patrulla Fronteriza) que hayas visto tú mismo y recibe apoyo. La atienden voluntarios capacitados."
+        },
+        "rapidResponse": {
+          "name": "Líneas locales de respuesta rápida",
+          "description": "La mayoría de las líneas para \"reportar a ICE\" son locales. Busca la de tu estado en la lista de los 50 estados de CLINIC."
+        },
+        "iceDril": {
+          "name": "ICE Detention Reporting and Information Line (línea de información sobre detenidos de ICE)",
+          "description": "La línea oficial de ICE para preguntas o inquietudes sobre alguien que está detenido. Atienden operadores en vivo de lunes a viernes, de 8 a. m. a 8 p. m., hora del Este."
+        },
+        "domesticViolence": {
+          "name": "National Domestic Violence Hotline (Línea Nacional contra la Violencia Doméstica)",
+          "description": "Ayuda gratis y confidencial las 24 horas, los 7 días, en más de 200 idiomas. Envía START por mensaje de texto al 88788. Las amenazas sobre tu estatus migratorio pueden ser una forma de abuso."
+        },
+        "trafficking": {
+          "name": "National Human Trafficking Hotline (Línea Nacional contra la Trata de Personas)",
+          "description": "Ayuda para personas obligadas a trabajar o a tener relaciones sexuales a cambio de dinero, las 24 horas, los 7 días. Envía un mensaje de texto al 233733."
+        },
+        "twoOneOne": {
+          "name": "211",
+          "description": "Ayuda gratis y confidencial para encontrar comida, vivienda, atención médica y otros servicios en tu zona."
+        }
+      }
+    },
+    "detention": {
+      "title": "Si detienen a alguien",
+      "description": "Herramientas para encontrar a una persona en detención migratoria y revisar su caso en la corte.",
+      "entries": {
+        "locator": {
+          "name": "ICE Online Detainee Locator (localizador de detenidos de ICE)",
+          "description": "Encuentra a un adulto detenido por ICE con su número A y su país de nacimiento, o con su nombre completo y su país de nacimiento. Un arresto reciente puede tardar unas 48 horas en aparecer."
+        },
+        "eoirCase": {
+          "name": "Estado del caso en la corte de inmigración (EOIR)",
+          "description": "Revisa las fechas de las audiencias y el estado del caso con el número A de 9 dígitos de la persona, en línea o por teléfono (las 24 horas, los 7 días, en inglés y español)."
+        },
+        "proBono": {
+          "name": "Lista de EOIR de proveedores de servicios legales gratis",
+          "description": "Organizaciones sin fines de lucro que dan ayuda legal gratis, organizadas por corte de inmigración. La actualiza el Departamento de Justicia."
+        },
+        "nijc": {
+          "name": "National Immigrant Justice Center (Centro Nacional de Justicia para Inmigrantes)",
+          "description": "Ayuda legal para personas en detención migratoria, sobre todo en el Medio Oeste."
+        }
+      }
+    },
+    "legalAid": {
+      "title": "Ayuda legal gratis y de bajo costo",
+      "description": "Encuentra un abogado de inmigración de verdad o un representante acreditado.",
+      "notarioWarning": "⚠️ Nunca busques ayuda legal con un \"notario\" o un \"consultor de inmigración\". Solo los abogados con licencia y los representantes acreditados por el DOJ (Departamento de Justicia) pueden dar asesoría legal de inmigración.",
+      "entries": {
+        "immigrationLawHelp": {
+          "name": "ImmigrationLawHelp.org",
+          "description": "Encuentra ayuda legal gratis o de bajo costo de organizaciones sin fines de lucro por código postal o por centro de detención."
+        },
+        "ianDirectory": {
+          "name": "National Immigration Legal Services Directory (directorio nacional de servicios legales de inmigración)",
+          "description": "Un directorio de servicios legales de inmigración sin fines de lucro en todo el país."
+        },
+        "clinic": {
+          "name": "Directorio de afiliados de CLINIC",
+          "description": "Más de 400 programas legales sin fines de lucro en 49 estados y en D.C."
+        },
+        "eoirRoster": {
+          "name": "Representantes acreditados por el DOJ",
+          "description": "Verifica que una organización sin fines de lucro y su personal estén aprobados para dar ayuda legal de inmigración — antes de pagarle a nadie."
+        },
+        "aila": {
+          "name": "AILA Immigration Lawyer Search (buscador de abogados de inmigración)",
+          "description": "Encuentra un abogado de inmigración privado por ubicación e idioma. Los abogados privados por lo general cobran."
+        },
+        "scams": {
+          "name": "Denuncia estafas de inmigración (FTC)",
+          "description": "Denuncia a un notario o a un falso ayudante de inmigración en línea o por teléfono."
+        }
+      }
+    },
+    "community": {
+      "title": "Organizaciones comunitarias",
+      "description": "Grupos que ofrecen apoyo, educación y ayuda local.",
+      "entries": {
+        "unitedWeDream": {
+          "name": "United We Dream",
+          "description": "La red de inmigrantes más grande dirigida por jóvenes: ayuda con DACA, talleres sobre tus derechos y campañas."
+        },
+        "raices": {
+          "name": "RAICES",
+          "description": "Ayuda legal gratis y de bajo costo para inmigrantes y refugiados, con sede en Texas."
+        },
+        "makeTheRoad": {
+          "name": "Make the Road New York",
+          "description": "Servicios, ayuda legal y organización comunitaria para comunidades inmigrantes y trabajadoras en Nueva York (con grupos hermanos en NJ, CT, PA y NV)."
+        },
+        "informedImmigrant": {
+          "name": "Informed Immigrant",
+          "description": "Guías en lenguaje sencillo sobre DACA, TPS, la detención y la regla de registro, en inglés y español."
+        },
+        "ilrc": {
+          "name": "Immigrant Legal Resource Center (ILRC)",
+          "description": "Tarjetas rojas gratis para imprimir en 59 idiomas. Nunca pagues por una tarjeta roja."
+        },
+        "nilc": {
+          "name": "National Immigration Law Center (NILC)",
+          "description": "Guías gratis sobre tus derechos y novedades sobre leyes nuevas. No toma casos individuales."
+        },
+        "aclu": {
+          "name": "ACLU: derechos de los inmigrantes",
+          "description": "Guías sobre tus derechos en inglés y español, y acciones legales a favor de los inmigrantes."
+        }
+      }
+    },
+    "news": {
+      "title": "Noticias confiables",
+      "description": "Sitios de noticias con un buen historial de precisión, y herramientas para verificar lo que lees.",
+      "warningTitle": "Advertencia",
+      "warningText": "Estas fuentes tienen un buen historial, pero ninguna fuente es perfecta. Revisa más de una fuente y usa verificadores de datos antes de creer o compartir algo — sobre todo en las redes sociales.",
+      "sourcesTitle": "Fuentes de noticias",
+      "checkersTitle": "Verificadores de datos y de sesgo"
+    },
+    "noteContent": "Revisamos estos recursos, pero los números de teléfono y los servicios pueden cambiar. Confirma los detalles antes de depender de ellos."
+  },
+  "action": {
+    "title": "Cómo tomar acción",
+    "subtitle": "Formas en que cualquiera puede apoyar a las comunidades inmigrantes",
+    "intro": "No tienes que ser experto para ayudar. Elige una acción de la lista de abajo y empieza por ahí.",
+    "support": {
+      "title": "Apoya",
+      "lead": "Apoya a las organizaciones locales de derechos de los inmigrantes.",
+      "points": [
+        "Sé voluntario, dona o ve a sus eventos.",
+        "Grupos como United We Dream, RAICES, Make the Road y las coaliciones locales de inmigrantes dan ayuda legal y apoyo a la comunidad.",
+        "Pregúntale a un grupo local si necesita voluntarios para redes de respuesta rápida, acompañamiento a la corte o traducción."
+      ]
+    },
+    "speakOut": {
+      "title": "Alza la voz",
+      "lead": "Alza la voz contra la injusticia.",
+      "points": [
+        "Comunícate con tus representantes locales, estatales y nacionales.",
+        "Pide que terminen las condiciones inhumanas de detención, la separación de familias y el perfil racial.",
+        "Pide leyes que protejan a los inmigrantes y que hagan responsables a las agencias de inmigración.",
+        "Ve a reuniones públicas con tus representantes (town halls) y a manifestaciones pacíficas."
+      ]
+    },
+    "educate": {
+      "title": "Infórmate",
+      "lead": "Infórmate tú e informa a otros.",
+      "points": [
+        "Aprende sobre las leyes de inmigración, las prácticas de ICE y cómo afectan a las personas.",
+        "Comparte lo que aprendas con amigos, familiares y en las redes sociales — usando fuentes confiables.",
+        "La desinformación alimenta la discriminación. El conocimiento es poder. Revisa la información con verificadores de datos antes de compartirla."
+      ]
+    },
+    "contact": {
+      "title": "Escribe y llama",
+      "lead": "Escríbeles o llama a tus legisladores.",
+      "points": [
+        "Averigua quiénes son tus representantes y cómo comunicarte con ellos.",
+        "Usa 5 Calls para conseguir guiones cortos y números de teléfono, o Resistbot para enviar un mensaje por texto.",
+        "Grupos como United We Dream e Indivisible muchas veces comparten mensajes ya escritos — solo agrega tu nombre.",
+        "Las llamadas a las oficinas locales muchas veces reciben más atención. Sé breve: quién eres, dónde vives y qué quieres que hagan."
+      ]
+    },
+    "petitions": {
+      "title": "Firma peticiones",
+      "lead": "Agrega tu nombre a las campañas.",
+      "points": [
+        "Las peticiones les muestran a los legisladores cuántas personas se preocupan por un tema.",
+        "Antes de firmar, revisa quién organiza la petición, y ten cuidado con la información personal que compartes."
+      ]
+    },
+    "links": {
+      "uwd": "Grupo de derechos de los inmigrantes dirigido por jóvenes, con campañas y peticiones.",
+      "raices": "Servicios legales y defensa de inmigrantes y refugiados.",
+      "makeTheRoad": "Organización comunitaria y servicios para comunidades inmigrantes y trabajadoras.",
+      "findReps": "Herramienta oficial del gobierno de EE. UU. para encontrar a tus funcionarios electos.",
+      "fiveCalls": "Guiones de llamada y números de teléfono de tus representantes.",
+      "resistbot": "Envía un mensaje de texto a tus legisladores.",
+      "indivisible": "Grupos locales y guías de acción para comunicarte con el Congreso.",
+      "aclu": "Lucha por los derechos civiles, incluidos los derechos de los inmigrantes, y publica alertas de acción.",
+      "change": "Una plataforma mundial de peticiones — busca peticiones sobre inmigración.",
+      "moveon": "Campañas de acción progresistas, incluida la justicia para los inmigrantes."
+    },
+    "safety": {
+      "title": "Cuídate mientras tomas acción",
+      "points": [
+        "Si no eres ciudadano de EE. UU., habla con un abogado antes de hacer algo que podría terminar en un arresto, como la desobediencia civil. Un arresto puede perjudicar un caso de inmigración.",
+        "Tienes derecho a grabar a los oficiales en público si te mantienes a distancia y no interfieres. No publiques las direcciones de las casas de los oficiales ni su información personal — eso puede ser un delito.",
+        "Pide permiso antes de publicar fotos o videos en los que se vean las caras de otras personas, sobre todo en manifestaciones o durante arrestos.",
+        "Lee la guía de la ACLU sobre los derechos de los manifestantes antes de ir."
+      ]
+    }
+  },
+  "help": {
+    "title": "Ayuda con trámites",
+    "subtitle": "Formularios de inmigración comunes",
+    "description": "Para qué sirven los formularios más comunes de USCIS, cuánto cuestan y cómo evitar errores.",
+    "commonFormsTitle": "Formularios comunes",
+    "viewFormLabel": "Ver el formulario en USCIS →",
+    "feeLabel": "Costo",
+    "feesNote": "Los costos cambian — algunas tarifas federales subieron el 16 de octubre de 2026. Siempre revisa la lista oficial de tarifas de USCIS antes de presentar tu solicitud.",
+    "feesLink": "Lista de tarifas de USCIS (G-1055) →",
+    "forms": {
+      "i485": {
+        "name": "Solicitud de green card",
+        "description": "Solicita la residencia permanente (ajuste de estatus) desde dentro de EE. UU.",
+        "fee": "$1,440 en papel / $1,390 en línea. Menores de 14 años que presentan con uno de sus padres: $950 / $900."
+      },
+      "i130": {
+        "name": "Petición para un familiar",
+        "description": "Un ciudadano de EE. UU. o un residente permanente pide traer a un familiar a vivir a EE. UU.",
+        "fee": "$675 en papel / $625 en línea."
+      },
+      "i765": {
+        "name": "Permiso de trabajo (EAD)",
+        "description": "Solicita permiso para trabajar.",
+        "fee": "Por lo general $520 en papel / $470 en línea; $260 si tienes un I-485 pendiente. Quienes solicitan asilo o TPS pagan tarifas federales adicionales (por ejemplo, $570 por un primer permiso basado en asilo)."
+      },
+      "n400": {
+        "name": "Ciudadanía de EE. UU. (naturalización)",
+        "description": "Solicita hacerte ciudadano de EE. UU.",
+        "fee": "$760 en papel / $710 en línea. Tarifa reducida de $380 (en papel) para personas con ingresos más bajos; es posible pedir una exención de tarifa."
+      },
+      "i90": {
+        "name": "Reemplazar o renovar la green card",
+        "description": "Reemplaza una tarjeta de residente permanente perdida, robada o que está por vencer.",
+        "fee": "$465 en papel / $415 en línea."
+      },
+      "i589": {
+        "name": "Solicitud de asilo",
+        "description": "Pide protección si temes que te hagan daño en tu país de origen. Por lo general hay un plazo de 1 año después de llegar — habla con un abogado pronto.",
+        "fee": "$100 al presentar la solicitud, más una tarifa anual de $105 mientras tu caso esté pendiente. No se puede pedir exención de estas tarifas."
+      },
+      "i821d": {
+        "name": "Renovación de DACA",
+        "description": "Renueva Deferred Action for Childhood Arrivals (Acción Diferida para los Llegados en la Infancia). USCIS está procesando renovaciones, no solicitudes por primera vez.",
+        "fee": "$605 en papel / $555 en línea, incluido el permiso de trabajo. No hay exención de tarifa."
+      },
+      "i821": {
+        "name": "Temporary Protected Status (TPS, Estatus de Protección Temporal)",
+        "description": "Solicita el TPS o vuelve a inscribirte si tu país está designado. Primero revisa que tu país siga en la lista.",
+        "fee": "Primera vez: $520 más $30 de datos biométricos. Reinscripción: $30 de datos biométricos."
+      },
+      "i912": {
+        "name": "Solicitud de exención de tarifa",
+        "description": "Pídele a USCIS que no te cobre una tarifa si no puedes pagarla. No cubre DACA ni las nuevas tarifas federales (H.R. 1).",
+        "fee": ""
+      },
+      "g325r": {
+        "name": "Registro de extranjeros",
+        "description": "El formulario de registro que ahora muchas personas que no son ciudadanas tienen que presentar. Si eres indocumentado, habla con un abogado o un representante acreditado antes de presentarlo — puede exponerte a medidas de control migratorio.",
+        "fee": "$0. Solo en línea."
+      }
+    },
+    "tipsTitle": "Consejos para los formularios",
+    "tips": [
+      "Descarga los formularios solo de uscis.gov — son gratis. Usa la edición más reciente.",
+      "Lee todas las instrucciones antes de empezar.",
+      "Responde cada pregunta con la verdad. Una respuesta falsa puede hacer que quedes vetado para siempre.",
+      "Guarda copias de todo lo que envías, y también el recibo de envío por correo o en línea.",
+      "Consulta con un abogado con licencia o un representante acreditado antes de presentar, sobre todo si alguna vez te han arrestado, deportado o has estado fuera de estatus. Algunos formularios pueden provocar medidas de control migratorio.",
+      "Nunca dejes que un notario o un consultor llene formularios por ti."
+    ],
+    "chatbotSectionTitle": "¿Tienes una pregunta?",
+    "chatbotSectionDescription": "El asistente de IA puede explicarte para qué sirve un formulario o qué significa una palabra. No puede revisar tu caso — para eso, habla con un grupo de asistencia legal.",
+    "disclaimerText": "Siempre revisa uscis.gov para ver la versión y el costo actuales de cada formulario."
+  },
+  "about": {
+    "title": "Acerca de Immigo",
+    "subtitle": "Información que protege a las personas",
+    "missionTitle": "Nuestra misión",
+    "description": "Immigo ayuda a los inmigrantes y a las personas que se preocupan por ellos a entender sus derechos, encontrar ayuda real y tomar acción — en lenguaje sencillo y en seis idiomas.",
+    "originTitle": "Cómo empezó Immigo",
+    "originText": "Immigo empezó como un proyecto de una clase de sociología que investigaba los derechos de los inmigrantes, ICE y las injusticias que enfrentan muchas comunidades. La página de bienvenida del proyecto lo dijo mejor:",
+    "originQuote": "Este sitio se creó para informar, empoderar y movilizar a quienes se preocupan por los derechos de los inmigrantes. Ofrece información clara y actual sobre las leyes de inmigración, las noticias sobre deportaciones y las injusticias que enfrentan muchas comunidades. Ya sea que estés luchando por un cambio o apenas empezando a aprender, este es tu espacio para mantenerte informado y participar.",
+    "whatWeOfferTitle": "Lo que encontrarás aquí",
+    "offers": [
+      {
+        "icon": "📜",
+        "href": "/rights",
+        "label": "Conoce tus derechos",
+        "text": "qué hacer y qué decir en cada situación, una tarjeta de derechos para imprimir y un plan de seguridad familiar."
+      },
+      {
+        "icon": "🧭",
+        "href": "/resources",
+        "label": "Recursos",
+        "text": "videos, líneas de ayuda, ayuda legal gratis y noticias confiables."
+      },
+      {
+        "icon": "✊",
+        "href": "/take-action",
+        "label": "Toma acción",
+        "text": "formas de apoyar a las comunidades inmigrantes y de comunicarte con tus legisladores."
+      },
+      {
+        "icon": "🧾",
+        "href": "/help",
+        "label": "Ayuda con trámites",
+        "text": "formularios comunes de USCIS, costos y consejos."
+      }
+    ],
+    "howWeCheckTitle": "Cómo verificamos la información",
+    "howWeCheckText": "Los datos de este sitio se verificaron en octubre de 2026 con fuentes oficiales del gobierno (USCIS, ICE, las cortes de inmigración) y con organizaciones legales sin fines de lucro confiables (ACLU, ILRC, NILC, American Immigration Council), además de decisiones de las cortes reportadas por medios de noticias importantes. Cada página indica sus fuentes.",
+    "disclaimerText": "Immigo es solo para fines educativos y no es asesoría legal. Las leyes de inmigración son complicadas y cambian seguido. Para recibir asesoría sobre tu situación, habla con un abogado de inmigración con licencia o con un representante acreditado por el DOJ (Departamento de Justicia)."
+  },
+  "chatbot": {
+    "title": "Asistente de IA",
+    "placeholder": "Haz una pregunta...",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "unavailable": "El asistente no está disponible en este momento. Todavía puedes usar las páginas Conoce tus derechos y Recursos.",
+    "welcomeGreeting": "👋 ¡Hola! Soy el asistente de Immigo.",
+    "welcomePrompt": "Pregúntame sobre tus derechos, formularios o dónde encontrar ayuda.",
+    "notLegalAdvice": "No soy abogado, y esto no es asesoría legal.",
+    "suggestions": [
+      "¿Qué debo hacer si ICE toca a mi puerta?",
+      "¿Cómo encuentro ayuda legal gratis?",
+      "¿Qué es un número A?"
+    ],
+    "toggleAria": "Abrir o cerrar el asistente de IA",
+    "closeAria": "Cerrar el asistente de IA"
+  },
+  "footer": {
+    "emergencyLabel": "¿Emergencia?",
+    "emergencyText": "Llama al 911. Si inmigración detuvo a alguien, ve a Recursos → Si detienen a alguien.",
+    "description": "Damos a los inmigrantes el poder del conocimiento.",
+    "disclaimer": "Solo información general — no es asesoría legal.",
+    "rights": "Todos los derechos reservados."
+  }
+}
