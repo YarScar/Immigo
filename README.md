@@ -47,7 +47,7 @@ npm start       # serve the production build
 | `OPENAI_API_KEY` | server only | Powers the AI assistant. **Do not** rename it to `NEXT_PUBLIC_…` — that would expose it. |
 | `OPENAI_MODEL` | server only, optional | Chat model, default `gpt-4o-mini`. |
 
-On Vercel, add these under Project → Settings → Environment Variables. No `vercel.json` is needed.
+On Vercel, add these under Project → Settings → Environment Variables. `vercel.json` pins the framework to Next.js so an old Vite project setting can't break the build.
 
 ## Project structure
 
