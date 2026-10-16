@@ -1,8 +1,9 @@
+import Anthropic from '@anthropic-ai/sdk'
 import { NextResponse } from 'next/server'
 
-// The OpenAI key stays on the server. The old Vite app shipped it to every
-// visitor's browser as VITE_OPENAI_API_KEY, where anyone could copy it.
+// The Anthropic key stays on the server; it is never sent to the browser.
 
+const MODEL = process.env.ANTHROPIC_MODEL || 'claude-opus-5-5'
 const MAX_MESSAGES = 12
 const MAX_CHARS = 2000
 
@@ -33,9 +34,15 @@ Rules:
 The site has these pages you can point to: Know Your Rights (/rights), Resources and hotlines (/resources), Take Action (/take-action), Paperwork Help with USCIS forms (/help).`
 }
 
+// One client per server instance; reads ANTHROPIC_API_KEY from the environment.
+let client
+function getClient() {
+  client ??= new Anthropic()
+  return client
+}
+
 export async function POST(request) {
-  const apiKey = process.env.OPENAI_API_KEY
-  if (!apiKey) {
+  if (!process.env.ANTHROPIC_API_KEY) {
     return NextResponse.json({ error: 'unavailable' }, { status: 503 })
   }
 
@@ -48,40 +55,52 @@ export async function POST(request) {
 
   const messages = Array.isArray(body?.messages) ? body.messages : []
   const cleaned = messages
-    .filter((m) => (m?.role === 'user' || m?.role === 'assistant') && typeof m.content === 'string')
+    .filter((m) => (m?.role === 'user' || m?.role === 'assistant') && typeof m.content === 'string' && m.content.trim())
     .slice(-MAX_MESSAGES)
     .map((m) => ({ role: m.role, content: m.content.slice(0, MAX_CHARS) }))
 
+  // The conversation sent to Claude must start with the user and end with a new user message.
+  while (cleaned.length && cleaned[0].role !== 'user') cleaned.shift()
   if (cleaned.length === 0 || cleaned[cleaned.length - 1].role !== 'user') {
     return NextResponse.json({ error: 'bad_request' }, { status: 400 })
   }
 
   try {
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
-        temperature: 0.3,
-        max_tokens: 600,
-        messages: [{ role: 'system', content: systemPrompt(body?.language) }, ...cleaned],
-      }),
+    const response = await getClient().beta.messages.create({
+      model: MODEL,
+      max_tokens: 4000,
+      // Short chat answers don't need deep reasoning; keeps replies fast and cheap.
+      output_config: { effort: 'low' },
+      // If the model declines for policy reasons, let the API retry on its default fallback model.
+      betas: ['server-side-fallback-2026-07-01'],
+      fallbacks: 'default',
+      system: systemPrompt(body?.language),
+      messages: cleaned,
     })
 
-    const data = await response.json()
-    if (!response.ok) {
-      console.error('OpenAI request failed', response.status, data?.error?.type)
-      return NextResponse.json({ error: 'upstream' }, { status: 502 })
+    if (response.stop_reason === 'refusal') {
+      return NextResponse.json({ error: 'refused' }, { status: 502 })
     }
 
-    const reply = data.choices?.[0]?.message?.content?.trim()
+    const reply = response.content
+      .filter((block) => block.type === 'text')
+      .map((block) => block.text)
+      .join('')
+      .trim()
     if (!reply) return NextResponse.json({ error: 'upstream' }, { status: 502 })
     return NextResponse.json({ reply })
   } catch (error) {
-    console.error('OpenAI request error', error?.name)
+    if (error instanceof Anthropic.AuthenticationError) {
+      console.error('Anthropic API key was rejected')
+      return NextResponse.json({ error: 'unavailable' }, { status: 503 })
+    }
+    if (error instanceof Anthropic.RateLimitError) {
+      console.error('Anthropic rate limit hit')
+    } else if (error instanceof Anthropic.APIError) {
+      console.error('Anthropic API error', error.status)
+    } else {
+      console.error('Anthropic request failed', error?.name)
+    }
     return NextResponse.json({ error: 'upstream' }, { status: 502 })
   }
 }

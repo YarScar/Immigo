@@ -20,7 +20,7 @@ All facts were checked against official and legal-nonprofit sources in October 2
 
 - **Next.js 16** (App Router) + **React 19**
 - **i18next / react-i18next** — translations live in `src/i18n/locales/*.json`
-- **OpenAI API** for the assistant, called from a **server route** (`src/app/api/chat/route.js`) so the API key is never sent to the browser
+- **Anthropic Claude API** for the assistant, called from a **server route** (`src/app/api/chat/route.js`) so the API key is never sent to the browser
 - Plain CSS (`src/styles/`)
 
 ## Getting started
@@ -29,7 +29,7 @@ Requires Node.js 20.9 or newer.
 
 ```bash
 npm install
-cp .env.example .env.local   # then add your OPENAI_API_KEY
+cp .env.example .env.local   # then add your ANTHROPIC_API_KEY
 npm run dev
 ```
 
@@ -44,8 +44,8 @@ npm start       # serve the production build
 
 | Name | Where | Purpose |
 |---|---|---|
-| `OPENAI_API_KEY` | server only | Powers the AI assistant. **Do not** rename it to `NEXT_PUBLIC_…` — that would expose it. |
-| `OPENAI_MODEL` | server only, optional | Chat model, default `gpt-4o-mini`. |
+| `ANTHROPIC_API_KEY` | server only | Powers the AI assistant. **Do not** rename it to `NEXT_PUBLIC_…` — that would expose it. |
+| `ANTHROPIC_MODEL` | server only, optional | Chat model, default `claude-opus-5-5`. |
 
 On Vercel, add these under Project → Settings → Environment Variables. `vercel.json` pins the framework to Next.js so an old Vite project setting can't break the build.
 
